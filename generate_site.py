@@ -23,6 +23,7 @@ BOOKS = [
         "bn_url": "https://www.barnesandnoble.com/s/Buying+Wealth+Connor+Robertson",
         "google_play_url": "https://play.google.com/store/books/details?id=Dw2HEQAAQBAJ",
         "color": "#1a5276",
+        "cover_image": "/images/covers/buying-wealth-cover.jpg",
         "accent": "#2e86c1",
         "isbn": "9780000000001",
         "publisher": "Independent",
@@ -71,6 +72,7 @@ BOOKS = [
         "bn_url": "https://www.barnesandnoble.com/s/Creative+Acquisitions+Connor+Robertson",
         "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShtCGQoXChVDcmVhdGl2ZSBBY3F1aXNpdGlvbnM%3D",
         "color": "#1a4731",
+        "cover_image": "/images/covers/creative-acquisitions-cover.png",
         "accent": "#27ae60",
         "isbn": "9780000000002",
         "publisher": "Independent",
@@ -117,6 +119,7 @@ BOOKS = [
         "bn_url": "https://www.barnesandnoble.com/s/The+7+Minute+Phone+Call+Connor+Robertson",
         "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShlCFwoVChNUaGUgNyBNaW51dGUgUGhvbmU%3D",
         "color": "#6c3483",
+        "cover_image": "/images/covers/the-7-minute-phone-call-cover.jpg",
         "accent": "#8e44ad",
         "isbn": "9780000000003",
         "publisher": "Independent",
@@ -161,6 +164,7 @@ BOOKS = [
         "bn_url": "https://www.barnesandnoble.com/s/Built+to+Run+Connor+Robertson",
         "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShZCFAoSChBCdWlsdCB0byBSdW4%3D",
         "color": "#7b241c",
+        "cover_image": "/images/covers/built-to-run-cover.jpg",
         "accent": "#c0392b",
         "isbn": "9780000000004",
         "publisher": "Independent",
@@ -1047,6 +1051,42 @@ img { max-width: 100%; height: auto; }
     .book-cover { height: 260px; }
     .book-cover-inner { width: 140px; height: 200px; }
 }
+
+/* Real Book Cover Images */
+.book-cover-img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.book-cover-img:hover {
+    transform: scale(1.03);
+}
+
+.book-detail-cover-img {
+    width: 220px;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .book-detail-cover-img {
+        margin: 0 auto;
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-cover-img {
+        width: 140px;
+        height: 200px;
+    }
+}
 """
 
 
@@ -1264,11 +1304,9 @@ def generate_homepage():
         book_cards += f"""
         <div class="book-card">
             <div class="book-cover" style="background: {b['color']}15;">
-                <div class="book-cover-inner" style="background: linear-gradient(160deg, {b['color']}, {b['accent']});">
-                    <h3>{b['title']}</h3>
-                    <div class="cover-line"></div>
-                    <div class="cover-author">Dr. Connor Robertson</div>
-                </div>
+                <a href="/books/{b['slug']}/">
+                    <img src="{b['cover_image']}" alt="{b['title']} by Dr. Connor Robertson" class="book-cover-img" loading="lazy">
+                </a>
             </div>
             <div class="book-card-body">
                 <h3><a href="/books/{b['slug']}/">{b['title']}</a></h3>
@@ -1426,11 +1464,7 @@ def generate_book_landing(book):
     content += f"""
 <div class="book-detail-hero" style="background: linear-gradient(135deg, {book['color']}, {book['accent']});">
     <div class="book-detail-inner">
-        <div class="book-detail-cover" style="background: linear-gradient(160deg, {book['color']}, {book['accent']}); border: 2px solid rgba(255,255,255,0.2);">
-            <h2>{book['title']}</h2>
-            <div class="cover-line"></div>
-            <div class="cover-author">Dr. Connor Robertson</div>
-        </div>
+        <img src="{book['cover_image']}" alt="{book['title']} by Dr. Connor Robertson" class="book-detail-cover-img" style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; max-height: 350px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
         <div class="book-detail-info">
             <h1>{book['title']}</h1>
             <div class="subtitle">{book['subtitle']}</div>
