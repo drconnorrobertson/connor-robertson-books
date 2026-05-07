@@ -19,9 +19,10 @@ BOOKS = [
         "description": "A practical guide to building ownership by buying real assets, using leverage responsibly, and building disciplined systems for growth. Dr. Connor Robertson breaks down how ordinary people can build extraordinary wealth not by earning more, but by owning more.",
         "long_description": "Buying Wealth challenges the conventional wisdom that wealth comes from high income. Instead, Dr. Connor Robertson lays out a systematic framework for acquiring assets that generate returns, using leverage as a strategic tool rather than a liability, and building the disciplines required for long-term financial growth. Drawing on years of experience in acquisitions and tax strategy, this book provides a roadmap for anyone ready to shift from earning wealth to owning it.",
         "google_play_id": "Dw2HEQAAQBAJ",
-        "amazon_url": "https://www.amazon.com/s?k=Buying+Wealth+Connor+Robertson",
-        "bn_url": "https://www.barnesandnoble.com/s/Buying+Wealth+Connor+Robertson",
-        "google_play_url": "https://play.google.com/store/books/details?id=Dw2HEQAAQBAJ",
+        "amazon_url": "",
+        "bn_url": "",
+        "kobo_url": "",
+        "google_play_url": "https://play.google.com/store/books/details/Dr_Connor_Robertson_Buying_Wealth?id=Dw2HEQAAQBAJ",
         "color": "#1a5276",
         "cover_image": "/images/covers/buying-wealth-cover.jpg",
         "accent": "#2e86c1",
@@ -68,9 +69,10 @@ BOOKS = [
         "subtitle": "Unconventional Strategies for Buying Businesses",
         "description": "A guide to creative approaches for business acquisitions, covering non-traditional deal structures, seller financing, earn-outs, and strategies that allow entrepreneurs to acquire businesses with less capital and more creativity.",
         "long_description": "Creative Acquisitions is the playbook for entrepreneurs who want to buy businesses but do not have deep pockets or private equity backing. Dr. Connor Robertson draws on real-world deal experience to show how creative structuring, seller financing, earn-outs, and partnership arrangements can make acquisitions accessible to a much wider range of buyers. This book is about thinking differently about deals and finding paths to ownership that conventional wisdom overlooks.",
-        "amazon_url": "https://www.amazon.com/s?k=Creative+Acquisitions+Connor+Robertson",
-        "bn_url": "https://www.barnesandnoble.com/s/Creative+Acquisitions+Connor+Robertson",
-        "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShtCGQoXChVDcmVhdGl2ZSBBY3F1aXNpdGlvbnM%3D",
+        "amazon_url": "",
+        "bn_url": "https://www.barnesandnoble.com/w/creative-acquisitions-by-dr-connor-robertson-connor-robertson/1148958050",
+        "kobo_url": "https://www.kobo.com/us/en/ebook/creative-acquisitions-by-dr-connor-robertson",
+        "google_play_url": "",
         "color": "#1a4731",
         "cover_image": "/images/covers/creative-acquisitions-cover.png",
         "accent": "#27ae60",
@@ -115,9 +117,10 @@ BOOKS = [
         "subtitle": "Restart Stalled Conversations and Move Deals Forward",
         "description": "A guide showing entrepreneurs how to restart stalled conversations and move deals forward with short, structured phone calls. Learn the framework that turns cold leads into closed deals in just seven minutes.",
         "long_description": "The 7 Minute Phone Call is Dr. Connor Robertson's field-tested framework for the single most underrated skill in business: picking up the phone. In an era of email chains, CRM automations, and social media outreach, the direct phone call remains the fastest way to restart a stalled deal, reconnect with a prospect, or move a relationship forward. This book gives you the exact structure, scripts, and mindset to make every call count, all in seven minutes or less.",
-        "amazon_url": "https://www.amazon.com/s?k=The+7+Minute+Phone+Call+Connor+Robertson",
-        "bn_url": "https://www.barnesandnoble.com/s/The+7+Minute+Phone+Call+Connor+Robertson",
-        "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShlCFwoVChNUaGUgNyBNaW51dGUgUGhvbmU%3D",
+        "amazon_url": "",
+        "bn_url": "",
+        "kobo_url": "",
+        "google_play_url": "https://play.google.com/store/books/details/Dr_Connor_Robertson_The_7_Minute_Phone_Call?id=9QyHEQAAQBAJ",
         "color": "#6c3483",
         "cover_image": "/images/covers/the-7-minute-phone-call-cover.jpg",
         "accent": "#8e44ad",
@@ -160,9 +163,10 @@ BOOKS = [
         "subtitle": "Building Business Systems That Work Without You",
         "description": "A guide to building business systems and operations that run without the founder. Learn how to create processes, delegate effectively, and build an organization that thrives independently.",
         "long_description": "Built to Run is the book for every founder who has built something successful but cannot step away from it. Dr. Connor Robertson shares the frameworks, systems, and mindset shifts required to transform an owner-dependent business into one that runs on its own. From documenting processes to hiring the right people to building a culture of accountability, this book provides a practical roadmap for the hardest transition in entrepreneurship: going from operator to owner.",
-        "amazon_url": "https://www.amazon.com/s?k=Built+to+Run+Connor+Robertson",
-        "bn_url": "https://www.barnesandnoble.com/s/Built+to+Run+Connor+Robertson",
-        "google_play_url": "https://play.google.com/store/books/collection/cluster?gsr=ShZCFAoSChBCdWlsdCB0byBSdW4%3D",
+        "amazon_url": "",
+        "bn_url": "",
+        "kobo_url": "",
+        "google_play_url": "",
         "color": "#7b241c",
         "cover_image": "/images/covers/built-to-run-cover.jpg",
         "accent": "#c0392b",
@@ -393,7 +397,8 @@ SOCIAL_PROFILES = [
     {"name": "Goodreads", "url": "https://www.goodreads.com/author/show/drconnorrobertson"},
     {"name": "Google Play Books", "url": "https://play.google.com/store/books/author?id=Connor+Robertson"},
     {"name": "Apple Books", "url": "https://books.apple.com/us/author/connor-robertson"},
-    {"name": "Barnes & Noble", "url": "https://www.barnesandnoble.com/s/Connor+Robertson"}
+    {"name": "Barnes & Noble", "url": "https://www.barnesandnoble.com/s/Connor+Robertson"},
+    {"name": "Kobo", "url": "https://www.kobo.com/us/en/search?query=Connor+Robertson&fcsearchfield=Author"}
 ]
 
 WEBSITES = [
@@ -1314,9 +1319,9 @@ def generate_homepage():
                 <p>{b['description'][:150]}...</p>
                 <div class="book-links">
                     <a href="/books/{b['slug']}/">Learn More</a>
-                    <a href="{b['amazon_url']}" target="_blank" rel="noopener">Amazon</a>
-                    <a href="{b['bn_url']}" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                    <a href="{b['google_play_url']}" target="_blank" rel="noopener">Google Play</a>
+                    {'<a href="' + b['google_play_url'] + '" target="_blank" rel="noopener">Google Play</a>' if b.get('google_play_url') else ''}
+                    {'<a href="' + b['bn_url'] + '" target="_blank" rel="noopener">Barnes &amp; Noble</a>' if b.get('bn_url') else ''}
+                    {'<a href="' + b['kobo_url'] + '" target="_blank" rel="noopener">Kobo</a>' if b.get('kobo_url') else ''}
                 </div>
             </div>
         </div>"""
@@ -1470,9 +1475,9 @@ def generate_book_landing(book):
             <div class="subtitle">{book['subtitle']}</div>
             <p>{book['long_description']}</p>
             <div class="buy-buttons">
-                <a href="{book['amazon_url']}" class="buy-btn primary-btn" target="_blank" rel="noopener">Amazon</a>
-                <a href="{book['bn_url']}" class="buy-btn" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                <a href="{book['google_play_url']}" class="buy-btn" target="_blank" rel="noopener">Google Play</a>
+                {'<a href="' + book['google_play_url'] + '" class="buy-btn primary-btn" target="_blank" rel="noopener">Google Play</a>' if book.get('google_play_url') else ''}
+                {'<a href="' + book['bn_url'] + '" class="buy-btn primary-btn" target="_blank" rel="noopener">Barnes &amp; Noble</a>' if book.get('bn_url') else ''}
+                {'<a href="' + book['kobo_url'] + '" class="buy-btn" target="_blank" rel="noopener">Kobo</a>' if book.get('kobo_url') else ''}
             </div>
         </div>
     </div>
@@ -1617,7 +1622,9 @@ def generate_key_lessons(book):
             <div class="buy-buttons" style="justify-content:center;">
                 <a href="{book['amazon_url']}" class="buy-btn primary-btn" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--primary);">Amazon</a>
                 <a href="{book['bn_url']}" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                <a href="{book['google_play_url']}" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Google Play</a>
+                {'<a href="' + book['google_play_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Google Play</a>' if book.get('google_play_url') else ''}
+                {'<a href="' + book['bn_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Barnes &amp; Noble</a>' if book.get('bn_url') else ''}
+                {'<a href="' + book['kobo_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Kobo</a>' if book.get('kobo_url') else ''}
             </div>
         </div>
     </div>
@@ -1670,7 +1677,9 @@ def generate_who_should_read(book):
             <div class="buy-buttons" style="justify-content:center;">
                 <a href="{book['amazon_url']}" class="buy-btn primary-btn" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--primary);">Amazon</a>
                 <a href="{book['bn_url']}" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                <a href="{book['google_play_url']}" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Google Play</a>
+                {'<a href="' + book['google_play_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Google Play</a>' if book.get('google_play_url') else ''}
+                {'<a href="' + book['bn_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Barnes &amp; Noble</a>' if book.get('bn_url') else ''}
+                {'<a href="' + book['kobo_url'] + '" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Kobo</a>' if book.get('kobo_url') else ''}
             </div>
         </div>
     </div>

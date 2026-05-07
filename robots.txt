@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drconnorrobertsonbooks.com/sitemap.xml
+Sitemap: https://connorrobertsonbooks.com/sitemap.xml
