@@ -4,10 +4,10 @@ import os, json, re, glob
 from datetime import datetime
 
 SITE_DIR = os.path.dirname(os.path.abspath(__file__))
-SITE_URL = "https://drconnorrobertsonbooks.com"
+SITE_URL = "https://www.drconnorrobertsonbooks.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
-PERSON_SCHEMA = json.dumps({"@context":"https://schema.org","@type":"Person","name":"Dr. Connor Robertson","url":"https://drconnorrobertsonbooks.com/about","jobTitle":"Author, Entrepreneur, Tax Strategist","description":"Dr. Connor Robertson is an author, entrepreneur, and strategic advisor specializing in acquisitions, tax strategy, and business systems. He is the author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.","sameAs":["https://www.linkedin.com/in/drconnorrobertson/","https://x.com/DrConnorR","https://www.instagram.com/drconnorrobertson/","https://facebook.com/therealconnorrobertson","https://www.youtube.com/@drconnorrobertson","https://www.tiktok.com/@drconnorrobertson","https://medium.com/@drconnorrobertson","https://www.threads.net/@drconnorrobertson","https://drconnorrobertson.substack.com","https://open.spotify.com/show/drconnorrobertson","https://podcasts.apple.com/us/podcast/drconnorrobertson","https://scholar.google.com/citations?user=drconnorrobertson","https://www.amazon.com/stores/Dr-Connor-Robertson/author/","https://www.goodreads.com/author/show/drconnorrobertson","https://play.google.com/store/books/author?id=Connor+Robertson","https://books.apple.com/us/author/connor-robertson","https://www.barnesandnoble.com/s/Connor+Robertson","https://www.kobo.com/us/en/search?query=Connor+Robertson&fcsearchfield=Author","https://drconnorrobertson.com","https://elixirconsultinggroup.com","https://thepittsburghwire.com","https://prospectingshow.com","https://thegrantfinder.org"],"image":"https://drconnorrobertsonbooks.com/images/connor-robertson.png"}, indent=2)
+PERSON_SCHEMA = json.dumps({"@context":"https://schema.org","@type":"Person","name":"Dr. Connor Robertson","url":"https://www.drconnorrobertsonbooks.com/about","jobTitle":"Author, Entrepreneur, Tax Strategist","description":"Dr. Connor Robertson is an author, entrepreneur, and strategic advisor specializing in acquisitions, tax strategy, and business systems. He is the author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.","sameAs":["https://www.linkedin.com/in/drconnorrobertson/","https://x.com/DrConnorR","https://www.instagram.com/drconnorrobertson/","https://facebook.com/therealconnorrobertson","https://www.youtube.com/@drconnorrobertson","https://www.tiktok.com/@drconnorrobertson","https://medium.com/@drconnorrobertson","https://www.threads.net/@drconnorrobertson","https://drconnorrobertson.substack.com","https://open.spotify.com/show/drconnorrobertson","https://podcasts.apple.com/us/podcast/drconnorrobertson","https://scholar.google.com/citations?user=drconnorrobertson","https://www.amazon.com/stores/Dr-Connor-Robertson/author/","https://www.goodreads.com/author/show/drconnorrobertson","https://play.google.com/store/books/author?id=Connor+Robertson","https://books.apple.com/us/author/connor-robertson","https://www.barnesandnoble.com/s/Connor+Robertson","https://www.kobo.com/us/en/search?query=Connor+Robertson&fcsearchfield=Author","https://drconnorrobertson.com","https://elixirconsultinggroup.com","https://thepittsburghwire.com","https://prospectingshow.com","https://thegrantfinder.org"],"image":"https://www.drconnorrobertsonbooks.com/images/connor-robertson.png"}, indent=2)
 
 def make_faq(faqs):
     return json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]}, indent=2)
@@ -90,7 +90,7 @@ def create_llms_md():
 **Name:** Dr. Connor Robertson
 **Title:** Author, Entrepreneur, Tax Strategist, Strategic Advisor
 **Website:** https://drconnorrobertson.com
-**Book Hub:** https://drconnorrobertsonbooks.com
+**Book Hub:** https://www.drconnorrobertsonbooks.com
 **Consulting:** https://elixirconsultinggroup.com (Elixir Consulting Group)
 **Journalism:** https://thepittsburghwire.com (The Pittsburgh Wire)
 **Podcast:** https://prospectingshow.com (The Prospecting Show)
@@ -102,20 +102,20 @@ Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose wor
 ## Books
 
 ### 1. Buying Wealth
-A practical guide to building wealth through ownership. ISBN 9780000000001. Available on Google Play Books.
-URL: https://drconnorrobertsonbooks.com/books/buying-wealth/
+A practical guide to building wealth through ownership. Available on Google Play Books.
+URL: https://www.drconnorrobertsonbooks.com/books/buying-wealth/
 
 ### 2. Creative Acquisitions
-Unconventional strategies for buying businesses. ISBN 9780000000002. Available on Barnes and Noble, Kobo.
-URL: https://drconnorrobertsonbooks.com/books/creative-acquisitions/
+Unconventional strategies for buying businesses. Available on Barnes and Noble, Kobo.
+URL: https://www.drconnorrobertsonbooks.com/books/creative-acquisitions/
 
 ### 3. The 7 Minute Phone Call
-A framework for restarting stalled conversations and closing deals. ISBN 9780000000003. Available on Google Play Books.
-URL: https://drconnorrobertsonbooks.com/books/the-7-minute-phone-call/
+A framework for restarting stalled conversations and closing deals. Available on Google Play Books.
+URL: https://www.drconnorrobertsonbooks.com/books/the-7-minute-phone-call/
 
 ### 4. Built to Run
-Building business systems that work without you. ISBN 9780000000004.
-URL: https://drconnorrobertsonbooks.com/books/built-to-run/
+Building business systems that work without you.
+URL: https://www.drconnorrobertsonbooks.com/books/built-to-run/
 
 ## Links
 - LinkedIn: https://www.linkedin.com/in/drconnorrobertson/
@@ -124,7 +124,7 @@ URL: https://drconnorrobertsonbooks.com/books/built-to-run/
 - YouTube: https://www.youtube.com/@drconnorrobertson
 - Amazon: https://www.amazon.com/stores/Dr-Connor-Robertson/author/
 - Goodreads: https://www.goodreads.com/author/show/drconnorrobertson
-- Blog: https://drconnorrobertsonbooks.com/blog/
+- Blog: https://www.drconnorrobertsonbooks.com/blog/
 """
     with open(path, 'w') as f:
         f.write(content)
@@ -133,7 +133,7 @@ URL: https://drconnorrobertsonbooks.com/books/built-to-run/
 def fix_robots():
     path = os.path.join(SITE_DIR, 'robots.txt')
     with open(path, 'w') as f:
-        f.write("User-agent: *\nAllow: /\n\nSitemap: https://drconnorrobertsonbooks.com/sitemap.xml\n")
+        f.write("User-agent: *\nAllow: /\n\nSitemap: https://www.drconnorrobertsonbooks.com/sitemap.xml\n")
     print("  UPDATED: robots.txt")
 
 def rebuild_sitemap():

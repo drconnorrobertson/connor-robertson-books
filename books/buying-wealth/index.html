@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buying Wealth by Dr. Connor Robertson - A Practical Guide to Building Ownership</title>
     <meta name="description" content="A practical guide to building ownership by buying real assets, using leverage responsibly, and building disciplined systems for growth. Dr. Connor Robertson breaks down how ordinary people can build extraordinary wealth not by earning more, but by owning more.">
-    <link rel="canonical" href="https://drconnorrobertsonbooks.com/books/buying-wealth/">
+    <link rel="canonical" href="https://www.drconnorrobertsonbooks.com/books/buying-wealth/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Buying Wealth by Dr. Connor Robertson - A Practical Guide to Building Ownership">
     <meta property="og:description" content="A practical guide to building ownership by buying real assets, using leverage responsibly, and building disciplined systems for growth. Dr. Connor Robertson breaks down how ordinary people can build extraordinary wealth not by earning more, but by owning more.">
-    <meta property="og:url" content="https://drconnorrobertsonbooks.com/books/buying-wealth/">
-    <meta property="og:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta property="og:url" content="https://www.drconnorrobertsonbooks.com/books/buying-wealth/">
+    <meta property="og:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Dr. Connor Robertson - Author">
 
@@ -19,10 +19,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Buying Wealth by Dr. Connor Robertson - A Practical Guide to Building Ownership">
     <meta name="twitter:description" content="A practical guide to building ownership by buying real assets, using leverage responsibly, and building disciplined systems for growth. Dr. Connor Robertson breaks down how ordinary people can build extraordinary wealth not by earning more, but by owning more.">
-    <meta name="twitter:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta name="twitter:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
 
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/refresh.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
     <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Book",
@@ -31,16 +33,15 @@
   "author": {
     "@type": "Person",
     "name": "Dr. Connor Robertson",
-    "url": "https://drconnorrobertsonbooks.com/about"
+    "url": "https://www.drconnorrobertsonbooks.com/about"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Independent"
   },
-  "isbn": "9780000000001",
   "bookFormat": "https://schema.org/EBook",
-  "url": "https://drconnorrobertsonbooks.com/books/buying-wealth/",
-  "image": "https://drconnorrobertsonbooks.com/images/buying-wealth-cover.png"
+  "url": "https://www.drconnorrobertsonbooks.com/books/buying-wealth/",
+  "image": "https://www.drconnorrobertsonbooks.com/images/covers/buying-wealth-cover.svg"
 }</script>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -50,57 +51,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://drconnorrobertsonbooks.com/"
+      "item": "https://www.drconnorrobertsonbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Books",
-      "item": "https://drconnorrobertsonbooks.com/"
+      "item": "https://www.drconnorrobertsonbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Buying Wealth",
-      "item": "https://drconnorrobertsonbooks.com/books/buying-wealth/"
-    }
-  ]
-}</script>
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Buying Wealth by Dr. Connor Robertson about?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Buying Wealth is a practical guide to building wealth through ownership. Dr. Connor Robertson explains how to acquire real assets, use leverage responsibly, and build disciplined systems for long-term financial growth."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who should read Buying Wealth?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Buying Wealth is ideal for first-time investors, W-2 professionals looking to build equity, small business owners wanting to diversify, and anyone interested in acquiring income-producing assets."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I buy Buying Wealth by Dr. Connor Robertson?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Buying Wealth is available on Google Play Books. Visit drconnorrobertsonbooks.com/books/buying-wealth/ for all purchase links and chapter previews."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Buying Wealth suitable for beginners?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Dr. Connor Robertson wrote Buying Wealth specifically to help people who are new to acquisitions and investing understand the fundamentals of building wealth through ownership."
-      }
+      "item": "https://www.drconnorrobertsonbooks.com/books/buying-wealth/"
     }
   ]
 }</script>
@@ -108,7 +71,7 @@
 <body><header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">Dr. Connor <span>Robertson</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
             <a href="/" >Home</a>
             <a href="/books/buying-wealth/" class='active'>Buying Wealth</a>
             <a href="/books/creative-acquisitions/" >Creative Acquisitions</a>
@@ -117,20 +80,20 @@
             <a href="/about" >About</a>
             <a href="/blog/" >Blog</a>
         </nav>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav').style.display=document.querySelector('.main-nav').style.display==='flex'?'none':'flex'" aria-label="Menu">&#9776;</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
     </div>
 </header>
 <div class="book-detail-hero" style="background: linear-gradient(135deg, #1a5276, #2e86c1);">
     <div class="book-detail-inner">
-        <img src="/images/covers/buying-wealth-cover.jpg" alt="Buying Wealth by Dr. Connor Robertson" class="book-detail-cover-img" style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; max-height: 350px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
+        <img src="/images/covers/buying-wealth-cover.svg" alt="Buying Wealth by Dr. Connor Robertson" class="book-detail-cover-img" style="border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; max-height: 350px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
         <div class="book-detail-info">
             <h1>Buying Wealth</h1>
             <div class="subtitle">A Practical Guide to Building Ownership</div>
             <p>Buying Wealth challenges the conventional wisdom that wealth comes from high income. Instead, Dr. Connor Robertson lays out a systematic framework for acquiring assets that generate returns, using leverage as a strategic tool rather than a liability, and building the disciplines required for long-term financial growth. Drawing on years of experience in acquisitions and tax strategy, this book provides a roadmap for anyone ready to shift from earning wealth to owning it.</p>
             <div class="buy-buttons">
                 <a href="https://play.google.com/store/books/details/Dr_Connor_Robertson_Buying_Wealth?id=Dw2HEQAAQBAJ" class="buy-btn primary-btn" target="_blank" rel="noopener">Google Play</a>
-                
-                
+
+
             </div>
         </div>
     </div>
@@ -150,13 +113,11 @@
 <a href="/books/buying-wealth/chapters/8/" >Ch. 8: Scaling the Portfolio</a>
 <a href="/books/buying-wealth/key-lessons/" >Key Lessons</a>
 <a href="/books/buying-wealth/who-should-read/" >Who Should Read</a>
-<a href="/blog/buying-wealth-blog/" >Related Post</a>
+<a href="/blog/5-lessons-from-buying-wealth/" >Related Post</a>
 
 </aside>
     <div class="page-content" style="padding-top:0;">
-        <h2>What Readers Are Saying</h2>
-        <div class="reviews"><div class="review"><p>"A refreshingly practical approach to wealth building that cuts through the noise."</p><div class="reviewer">-- Amazon Reader</div></div><div class="review"><p>"Finally, a book that explains how real people build real wealth through ownership."</p><div class="reviewer">-- Google Play Review</div></div><div class="review"><p>"Robertson's framework for evaluating acquisitions is worth the price of the book alone."</p><div class="reviewer">-- Verified Purchaser</div></div></div>
-
+        <div class="book-intro"><span class="eyebrow">INSIDE THE BOOK</span><h2>Start with a chapter.</h2><p>Explore the key ideas and choose the section most relevant to the decision in front of you.</p></div>
         <h2>Chapter by Chapter</h2>
         <div class="chapter-list"><a href="/books/buying-wealth/chapters/1/" class="chapter-item">
             <div class="chapter-num">Chapter 1</div>
@@ -207,7 +168,7 @@
         </div>
         <div class="footer-col">
             <h4>Blog</h4>
-            <a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a><a href="/blog/the-story-behind-the-7-minute-phone-call/">The Story Behind The 7 Minute Phone Call</a><a href="/blog/how-built-to-run-changed-my-approach/">How Built to Run Changed My Approach to Business</a>
+            <a href="/blog/seller-financing-questions-before-you-sign/">Seven Seller Financing Questions to Answer Before You Sign</a><a href="/blog/the-founder-bottleneck-audit/">The Founder Bottleneck Audit: A 30-Minute Exercise</a><a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a>
         </div>
         <div class="footer-col">
             <h4>Websites</h4>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Built to Run Changed My Approach to Business |…</title>
-    <meta name="description" content="A practical Robertson Books guide to how built to run changed my approach to business, including evidence, risks, downside tests, implementation steps,…">
-    <link rel="canonical" href="https://drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/">
+    <title>How Built to Run Changed My Approach to Business - Dr. Connor Robertson</title>
+    <meta name="description" content="How Built to Run Changed My Approach to Business by Dr. Connor Robertson.">
+    <link rel="canonical" href="https://www.drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="How Built to Run Changed My Approach to Business - Dr. Connor Robertson">
     <meta property="og:description" content="How Built to Run Changed My Approach to Business by Dr. Connor Robertson.">
-    <meta property="og:url" content="https://drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/">
-    <meta property="og:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta property="og:url" content="https://www.drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/">
+    <meta property="og:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Dr. Connor Robertson - Author">
 
@@ -19,10 +19,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How Built to Run Changed My Approach to Business - Dr. Connor Robertson">
     <meta name="twitter:description" content="How Built to Run Changed My Approach to Business by Dr. Connor Robertson.">
-    <meta name="twitter:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta name="twitter:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
 
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/refresh.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
     <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -32,14 +34,14 @@
   "author": {
     "@type": "Person",
     "name": "Dr. Connor Robertson",
-    "url": "https://drconnorrobertsonbooks.com/about"
+    "url": "https://www.drconnorrobertsonbooks.com/about"
   },
   "publisher": {
     "@type": "Person",
     "name": "Dr. Connor Robertson"
   },
-  "url": "https://drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/",
-  "mainEntityOfPage": "https://drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/"
+  "url": "https://www.drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/",
+  "mainEntityOfPage": "https://www.drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/"
 }</script>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -49,19 +51,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://drconnorrobertsonbooks.com/"
+      "item": "https://www.drconnorrobertsonbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://drconnorrobertsonbooks.com/blog/"
+      "item": "https://www.drconnorrobertsonbooks.com/blog/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "How Built to Run Changed My Approach to Business",
-      "item": "https://drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/"
+      "item": "https://www.drconnorrobertsonbooks.com/blog/how-built-to-run-changed-my-approach/"
     }
   ]
 }</script>
@@ -69,7 +71,7 @@
 <body><header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">Dr. Connor <span>Robertson</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
             <a href="/" >Home</a>
             <a href="/books/buying-wealth/" >Buying Wealth</a>
             <a href="/books/creative-acquisitions/" >Creative Acquisitions</a>
@@ -78,7 +80,7 @@
             <a href="/about" >About</a>
             <a href="/blog/" class='active'>Blog</a>
         </nav>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav').style.display=document.querySelector('.main-nav').style.display==='flex'?'none':'flex'" aria-label="Menu">&#9776;</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
     </div>
 </header><div class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> How Built to Run Changed My Approach to Business</div>
 <div class="page-content">
@@ -87,7 +89,7 @@
         <h1 style="font-size:2.2rem;color:var(--primary);font-weight:400;margin-bottom:10px;">How Built to Run Changed My Approach to Business</h1>
         <p style="color:var(--text-light);font-style:italic;">By Dr. Connor Robertson</p>
     </div>
-    
+
         <p>Writing <em>Built to Run</em> changed how I operate my own businesses. That might sound strange for an author, but the process of codifying these ideas forced me to confront where I was still the bottleneck.</p>
 
         <h2>The Honest Assessment</h2>
@@ -100,7 +102,7 @@
         <p>Building a business that runs without you is not about working less, although that is a nice side effect. It is about building something with genuine enterprise value. A business that depends on its founder is worth less than one that runs on systems. Built to Run is ultimately about creating something that has value beyond your personal effort.</p>
 
         <p>If you are a founder who feels chained to your business, <a href="/books/built-to-run/">Built to Run</a> is the roadmap to freedom.</p>
-        
+
 </div>
 <footer class="site-footer">
     <div class="footer-inner">
@@ -110,7 +112,7 @@
         </div>
         <div class="footer-col">
             <h4>Blog</h4>
-            <a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a><a href="/blog/the-story-behind-the-7-minute-phone-call/">The Story Behind The 7 Minute Phone Call</a><a href="/blog/how-built-to-run-changed-my-approach/">How Built to Run Changed My Approach to Business</a>
+            <a href="/blog/seller-financing-questions-before-you-sign/">Seven Seller Financing Questions to Answer Before You Sign</a><a href="/blog/the-founder-bottleneck-audit/">The Founder Bottleneck Audit: A 30-Minute Exercise</a><a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a>
         </div>
         <div class="footer-col">
             <h4>Websites</h4>
@@ -124,5 +126,5 @@
     <div class="footer-bottom">
         &copy; 2026 Dr. Connor Robertson. All rights reserved.
     </div>
-</footer><section class="legacy-depth" style="max-width:780px;margin:3rem auto;padding:2rem;border:1px solid #d7ddda;background:#fff"><h2 style="font-family:Georgia,serif;font-size:2rem">A deeper decision framework for How Built to Run Changed My Approach to Business</h2><p>Use this subject as a decision process, not a slogan. Begin by writing the exact action under consideration, the person accountable for it, and the date a conclusion is required. Then separate confirmed facts from estimates and preferences. That simple separation prevents a persuasive narrative from being mistaken for evidence.</p><p>Build the working file from decision memos, underwriting models, operating reports, advisor notes, source documents, and post-decision reviews. Note who prepared each source, the period and entity it covers, and any limitation that could change the conclusion. When two records disagree, preserve the difference and assign a verification step rather than quietly choosing the more favorable number.</p><h3>Connect the answer to the operating model</h3><p>The conclusion about how built to run changed my approach to business should change a real term: price, structure, reserves, schedule, staffing, documentation, or the willingness to proceed. If it changes nothing, the team may be researching a topic instead of resolving a decision. Describe the base case, a less favorable case, and the trigger that would move the plan from one to the other.</p><p>Review the interaction among cash durability, operational control, downside protection, tax awareness, execution capacity, and long-term optionality. Avoid false precision. A score is useful only when the supporting evidence and judgment are recorded beside it. A weakness may call for a different price, a condition before closing, another specialist, or a capability that must exist before implementation.</p><h3>Questions that improve the review</h3><ul><li>What evidence would cause the team to change its current conclusion?</li><li>Which assumption has the largest effect on cash, timing, control, or reversibility?</li><li>Who owns the next verification step, and what is the deliverable?</li><li>What happens if cost is 10 percent higher or the benefit arrives one cycle later?</li><li>What must be preserved so another person can reproduce the reasoning?</li></ul><p>After the decision, convert every open item into an owner, deliverable, and date. Store the source material with the implementation record. Schedule a review after execution so the team can compare the assumption with the actual result and improve the next decision.</p><p>Educational only; each subject requires fact-specific legal, tax, financial, lending, and operating advice.</p></section><section class="legacy-addendum" style="max-width:780px;margin:2rem auto;padding:1.5rem 2rem;border-left:4px solid #90613d;background:#f7f8f6"><h3>Review discipline for How Built to Run Changed My Approach to Business</h3><p>Before closing the file, ask someone who did not prepare the original analysis to read the conclusion and identify the assumption with the weakest support. Record that challenge beside the response. Independent review is most valuable when it can still change a term, add a condition, or stop implementation—not after the team is already committed.</p><p>Set a review date tied to the first meaningful operating result. Compare the forecast with what actually happened, explain the difference, and update the checklist used for the next decision. The goal is not to prove the original decision was right. It is to make the next review of how built to run changed my approach to business faster, clearer, and more accurate.</p><p>Keep specialist advice scoped to a written question and preserve the assumptions the advisor received. Advice can be technically sound and still be misapplied when the underlying facts change. Reconfirm material facts before acting and document any change in the final decision record.</p></section></body>
+</footer></body>
 </html>

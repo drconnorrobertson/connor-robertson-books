@@ -3,9 +3,12 @@
 
 import os
 import json
+import re
+from html import escape
+from pathlib import Path
 from datetime import datetime
 
-SITE_URL = "https://connorrobertsonbooks.com"
+SITE_URL = "https://www.drconnorrobertsonbooks.com"
 AUTHOR_NAME = "Dr. Connor Robertson"
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -24,9 +27,8 @@ BOOKS = [
         "kobo_url": "",
         "google_play_url": "https://play.google.com/store/books/details/Dr_Connor_Robertson_Buying_Wealth?id=Dw2HEQAAQBAJ",
         "color": "#1a5276",
-        "cover_image": "/images/covers/buying-wealth-cover.jpg",
+        "cover_image": "/images/covers/buying-wealth-cover.svg",
         "accent": "#2e86c1",
-        "isbn": "9780000000001",
         "publisher": "Independent",
         "chapters": [
             {"num": 1, "title": "The Ownership Mindset", "summary": "Why building wealth starts with a fundamental shift in how you think about money, income, and assets. The difference between earning and owning is the foundation of every strategy in this book."},
@@ -57,16 +59,11 @@ BOOKS = [
                 {"name": "Anyone tired of conventional financial advice", "reason": "who recognizes that saving and budgeting alone will not build generational wealth"}
             ]
         },
-        "review_quotes": [
-            {"text": "A refreshingly practical approach to wealth building that cuts through the noise.", "reviewer": "Amazon Reader"},
-            {"text": "Finally, a book that explains how real people build real wealth through ownership.", "reviewer": "Google Play Review"},
-            {"text": "Robertson's framework for evaluating acquisitions is worth the price of the book alone.", "reviewer": "Verified Purchaser"}
-        ]
     },
     {
         "slug": "creative-acquisitions",
         "title": "Creative Acquisitions",
-        "subtitle": "Unconventional Strategies for Buying Businesses",
+        "subtitle": "The Playbook for Modern Dealmakers",
         "description": "A guide to creative approaches for business acquisitions, covering non-traditional deal structures, seller financing, earn-outs, and strategies that allow entrepreneurs to acquire businesses with less capital and more creativity.",
         "long_description": "Creative Acquisitions is the playbook for entrepreneurs who want to buy businesses but do not have deep pockets or private equity backing. Dr. Connor Robertson draws on real-world deal experience to show how creative structuring, seller financing, earn-outs, and partnership arrangements can make acquisitions accessible to a much wider range of buyers. This book is about thinking differently about deals and finding paths to ownership that conventional wisdom overlooks.",
         "amazon_url": "",
@@ -74,9 +71,8 @@ BOOKS = [
         "kobo_url": "https://www.kobo.com/us/en/ebook/creative-acquisitions-by-dr-connor-robertson",
         "google_play_url": "",
         "color": "#1a4731",
-        "cover_image": "/images/covers/creative-acquisitions-cover.png",
+        "cover_image": "/images/covers/creative-acquisitions-cover.jpg",
         "accent": "#27ae60",
-        "isbn": "9780000000002",
         "publisher": "Independent",
         "chapters": [
             {"num": 1, "title": "Why Creative Deals Win", "summary": "Traditional acquisition paths are crowded, expensive, and often inaccessible. Learn why creative deal structures are not just alternatives but often superior approaches to buying businesses."},
@@ -105,11 +101,6 @@ BOOKS = [
                 {"name": "Anyone interested in entrepreneurship through acquisition", "reason": "as a path to business ownership without starting from scratch"}
             ]
         },
-        "review_quotes": [
-            {"text": "Robertson turns complex deal structures into clear, actionable strategies.", "reviewer": "Barnes & Noble Reader"},
-            {"text": "This is the book I wish I had before my first acquisition.", "reviewer": "Verified Purchaser"},
-            {"text": "Practical, no-nonsense advice for anyone serious about buying a business.", "reviewer": "Amazon Review"}
-        ]
     },
     {
         "slug": "the-7-minute-phone-call",
@@ -122,9 +113,8 @@ BOOKS = [
         "kobo_url": "",
         "google_play_url": "https://play.google.com/store/books/details/Dr_Connor_Robertson_The_7_Minute_Phone_Call?id=9QyHEQAAQBAJ",
         "color": "#6c3483",
-        "cover_image": "/images/covers/the-7-minute-phone-call-cover.jpg",
+        "cover_image": "/images/covers/the-7-minute-phone-call-cover.svg",
         "accent": "#8e44ad",
-        "isbn": "9780000000003",
         "publisher": "Independent",
         "chapters": [
             {"num": 1, "title": "Why the Phone Still Wins", "summary": "In a world drowning in digital communication, the phone call is the most direct and effective tool for moving deals forward. Understand why and when to pick up the phone."},
@@ -151,11 +141,6 @@ BOOKS = [
                 {"name": "Anyone who dreads making phone calls", "reason": "and wants a framework that reduces anxiety and increases results"}
             ]
         },
-        "review_quotes": [
-            {"text": "Simple framework, massive results. I closed two deals the week I started using this.", "reviewer": "Amazon Reader"},
-            {"text": "Robertson takes the fear out of cold calling and replaces it with a system.", "reviewer": "Yahoo Finance Feature"},
-            {"text": "This book should be required reading for anyone in sales or business development.", "reviewer": "Verified Purchaser"}
-        ]
     },
     {
         "slug": "built-to-run",
@@ -170,7 +155,6 @@ BOOKS = [
         "color": "#7b241c",
         "cover_image": "/images/covers/built-to-run-cover.jpg",
         "accent": "#c0392b",
-        "isbn": "9780000000004",
         "publisher": "Independent",
         "chapters": [
             {"num": 1, "title": "The Founder's Trap", "summary": "Why most businesses cannot survive without their founder, and why that is both the biggest risk and the biggest opportunity for growth."},
@@ -199,11 +183,6 @@ BOOKS = [
                 {"name": "Anyone building a team", "reason": "who wants a practical framework for delegation, documentation, and accountability"}
             ]
         },
-        "review_quotes": [
-            {"text": "I implemented three systems from this book and took my first real vacation in five years.", "reviewer": "Amazon Reader"},
-            {"text": "Robertson understands the founder's dilemma and provides real solutions, not platitudes.", "reviewer": "Verified Purchaser"},
-            {"text": "This book changed how I think about my role as a business owner.", "reviewer": "Google Play Review"}
-        ]
     }
 ]
 
@@ -379,6 +358,39 @@ BLOG_POSTS = [
 ]
 
 # ── Social / Cross-linking Data ────────────────────────────────────────────────
+
+BLOG_POSTS.insert(0, {
+    "slug": "seller-financing-questions-before-you-sign",
+    "title": "Seven Seller Financing Questions to Answer Before You Sign",
+    "date": "2026-09-25",
+    "related_book": "creative-acquisitions",
+    "content": """
+    <p>Seller financing can make an acquisition possible when a conventional loan does not cover the entire price. It can also hide a mismatch between what the business earns and what the buyer must pay. Before you negotiate a rate or term, answer these seven questions in writing.</p>
+    <h2>1. What cash is actually available for debt service?</h2><p>Start with normalized cash flow, then subtract realistic owner compensation, taxes, working capital needs, maintenance spending, and the payments on every other loan. The remainder is the amount that could support a seller note. Test it against a weaker year, not just the most recent year.</p>
+    <h2>2. Why is the seller willing to finance?</h2><p>A seller who wants steady income and trusts the handoff may be a strong partner. A seller who cannot find a cash buyer may be signaling that the price, quality of earnings, or transfer risk deserves another look. Ask directly and verify the answer through diligence.</p>
+    <h2>3. Which obligations have priority?</h2><p>Map the order of payment and security interests. If a bank loan is involved, its lender may require the seller note to be subordinated. Understand what that means if the business misses a payment or needs new capital.</p>
+    <h2>4. What happens if the handoff is slower than expected?</h2><p>Customer retention, employee turnover, and vendor terms can all change after closing. Model a 10 to 20 percent revenue drop and a delayed transition. If a short dip immediately triggers default, the structure may be too fragile.</p>
+    <h2>5. What support is the seller committing to provide?</h2><p>Spell out introductions, training, access to records, and the length of the transition. Make responsibilities measurable. A vague promise to “help as needed” leaves both parties with different expectations.</p>
+    <h2>6. Is the price being confused with the terms?</h2><p>A lower down payment can make an inflated purchase price feel affordable. Compare the present value of all payments, including fees, interest, balloon payments, and contingent obligations. Negotiate price and financing as separate questions.</p>
+    <h2>7. What does the exit from the note look like?</h2><p>Know the maturity date, prepayment rights, refinance assumptions, and balloon amount. A financing plan that only works if rates fall or valuation rises is a bet, not a plan.</p>
+    <p>A good seller note aligns buyer and seller around a healthy business after closing. Put the answers in a one-page deal memo and have qualified legal and financial advisers review the documents. For more on structuring acquisitions, explore <a href="/books/creative-acquisitions/">Creative Acquisitions</a>.</p>
+    """
+})
+BLOG_POSTS.insert(1, {
+    "slug": "the-founder-bottleneck-audit",
+    "title": "The Founder Bottleneck Audit: A 30-Minute Exercise",
+    "date": "2026-09-25",
+    "related_book": "built-to-run",
+    "content": """
+    <p>If work stops whenever the founder is away, the problem rarely starts with a missing software tool. It starts with decisions and knowledge that have never been made visible. This short audit shows where to begin.</p>
+    <h2>Map the interruptions</h2><p>For one week, capture every request that needs your approval, explanation, or intervention. Note who asked, what decision was needed, how long it waited, and the consequence of waiting. Do not judge the team or solve the problem yet. The goal is to see the pattern.</p>
+    <h2>Sort by decision type</h2><p>Group requests into three categories: routine decisions with a known rule, judgment calls within a safe range, and high-consequence decisions that genuinely require you. Most founders discover that routine questions consume a surprising share of their attention.</p>
+    <h2>Write one decision rule</h2><p>Choose the most frequent routine request. Document the trigger, the information needed, the person who decides, the acceptable range, and when to escalate. Keep the rule to one page. A useful process should help someone act without interpreting a long manual.</p>
+    <h2>Test it for two weeks</h2><p>Let the team use the rule, then review exceptions in a scheduled meeting. Track how many requests still reached you and whether quality changed. If exceptions are frequent, improve the rule or the training. If the decisions are sound, move to the next bottleneck.</p>
+    <h2>Protect the owner’s time</h2><p>The purpose is not to disappear from the business. It is to spend your attention where it changes the outcome: strategy, people, capital, and relationships. A founder who approves every small step has less time for those responsibilities.</p>
+    <p>Run this audit each quarter as the company grows. The work that depends on you will change, and your decision rules should change with it. Explore the <a href="/books/built-to-run/">Built to Run</a> guide for more on documentation and delegation.</p>
+    """
+})
 
 SOCIAL_PROFILES = [
     {"name": "LinkedIn", "url": "https://www.linkedin.com/in/drconnorrobertson/"},
@@ -1099,7 +1111,7 @@ def header(active=""):
     return f"""<header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">Dr. Connor <span>Robertson</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
             <a href="/" {"class='active'" if active == "home" else ""}>Home</a>
             <a href="/books/buying-wealth/" {"class='active'" if active == "buying-wealth" else ""}>Buying Wealth</a>
             <a href="/books/creative-acquisitions/" {"class='active'" if active == "creative-acquisitions" else ""}>Creative Acquisitions</a>
@@ -1108,7 +1120,7 @@ def header(active=""):
             <a href="/about" {"class='active'" if active == "about" else ""}>About</a>
             <a href="/blog/" {"class='active'" if active == "blog" else ""}>Blog</a>
         </nav>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav').style.display=document.querySelector('.main-nav').style.display==='flex'?'none':'flex'" aria-label="Menu">&#9776;</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
     </div>
 </header>"""
 
@@ -1187,10 +1199,9 @@ def book_schema(book):
             "@type": "Organization",
             "name": book["publisher"]
         },
-        "isbn": book["isbn"],
         "bookFormat": "https://schema.org/EBook",
         "url": f"{SITE_URL}/books/{book['slug']}/",
-        "image": f"{SITE_URL}/images/{book['slug']}-cover.png"
+        "image": f"{SITE_URL}{book['cover_image']}"
     }
 
 
@@ -1260,6 +1271,8 @@ def head(title, description, url, schemas=None, og_image=None):
     <meta name="twitter:image" content="{og_image}">
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/refresh.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
     {schema_tags}
 </head>
 <body>"""
@@ -1285,7 +1298,9 @@ def book_sidebar(book, active_page=""):
     cls_blog = "class='active'" if active_page == "blog" else ""
     links += f'<a href="/books/{slug}/key-lessons/" {cls_lessons}>Key Lessons</a>\n'
     links += f'<a href="/books/{slug}/who-should-read/" {cls_who}>Who Should Read</a>\n'
-    links += f'<a href="/blog/{slug}-blog/" {cls_blog}>Related Post</a>\n'
+    related = next((p for p in BLOG_POSTS if p["related_book"] == slug), None)
+    if related:
+        links += f'<a href="/blog/{related["slug"]}/" {cls_blog}>Related Post</a>\n'
 
     return f"""<aside class="sidebar">
     <h3>{title}</h3>
@@ -1316,7 +1331,7 @@ def generate_homepage():
             <div class="book-card-body">
                 <h3><a href="/books/{b['slug']}/">{b['title']}</a></h3>
                 <div class="book-subtitle">{b['subtitle']}</div>
-                <p>{b['description'][:150]}...</p>
+                <p>{b['description'].split('. ')[0].rstrip('.')}.</p>
                 <div class="book-links">
                     <a href="/books/{b['slug']}/">Learn More</a>
                     {'<a href="' + b['google_play_url'] + '" target="_blank" rel="noopener">Google Play</a>' if b.get('google_play_url') else ''}
@@ -1329,10 +1344,11 @@ def generate_homepage():
     blog_cards = ""
     for p in BLOG_POSTS[:4]:
         blog_cards += f"""
-        <div class="blog-card">
-            <div class="blog-date">{datetime.strptime(p['date'], '%Y-%m-%d').strftime('%B %d, %Y')}</div>
-            <h3><a href="/blog/{p['slug']}/">{p['title']}</a></h3>
-        </div>"""
+        <article class="blog-card">
+            <a class="blog-card__image" href="/blog/{p['slug']}/"><img src="{next((b['cover_image'] for b in BOOKS if b['slug'] == p['related_book']), '/images/connor-book.jpg')}" alt="" loading="lazy"></a>
+            <div class="blog-card__body"><div class="blog-date">{datetime.strptime(p['date'], '%Y-%m-%d').strftime('%B %d, %Y')}</div>
+            <h3><a href="/blog/{p['slug']}/">{p['title']}</a></h3></div>
+        </article>"""
 
     schemas = [
         {
@@ -1355,25 +1371,29 @@ def generate_homepage():
     content += header("home")
     content += f"""
 <section class="hero">
-    <h1>Books by <span>Dr. Connor Robertson</span></h1>
-    <p>Practical frameworks for building wealth through ownership, acquiring businesses creatively, closing deals with confidence, and building organizations that run without you.</p>
-    <a href="#books" class="hero-cta">Explore the Books</a>
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <div class="eyebrow">THE AUTHOR COLLECTION <span>•</span> FOUR FIELD GUIDES</div>
+            <h1>Build what <em>lasts.</em></h1>
+            <p>Clear thinking for people who want to own more, make better deals, have stronger conversations, and build businesses that can thrive beyond the founder.</p>
+            <div class="hero-actions"><a href="#books" class="hero-cta">Explore the books <span aria-hidden="true">↗</span></a><a href="/about" class="hero-secondary">Meet the author <span aria-hidden="true">→</span></a></div>
+            <div class="hero-note">WRITTEN BY DR. CONNOR ROBERTSON</div>
+        </div>
+        <div class="hero-portrait"><img src="/images/connor-blazer.jpg" alt="Dr. Connor Robertson" fetchpriority="high"><span>IDEAS FOR OWNERS &amp; OPERATORS</span></div>
+    </div>
 </section>
 
 <section class="books-section" id="books">
-    <h2>The Collection</h2>
+    <div class="section-heading"><div><span class="eyebrow">THE BOOKS</span><h2>A shelf built for action.</h2></div><p>Four starting points. One common thread: make ownership more intentional.</p></div>
     <div class="books-grid">{book_cards}</div>
 </section>
 
 <section class="author-section">
     <div class="author-inner">
-        <div class="author-photo-placeholder">
-            CR
-            <span>Author</span>
-        </div>
+        <div class="author-photo"><img src="/images/connor-about.jpg" alt="Portrait of Dr. Connor Robertson" loading="lazy"></div>
         <div class="author-bio">
             <h2>About Dr. Connor Robertson</h2>
-            <p>Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose work sits at the intersection of acquisitions, tax strategy, and business systems. His books have helped thousands of readers rethink how they build wealth, structure deals, and run their organizations.</p>
+            <p>Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose work sits at the intersection of acquisitions, tax strategy, and business systems. His books explore how to build wealth, structure deals, and run organizations with more intention.</p>
             <p>Through <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>, Connor advises business owners on growth, acquisition strategy, and operational excellence. He is the host of <a href="https://prospectingshow.com" target="_blank" rel="noopener">The Prospecting Show</a> and founder of <a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a> and <a href="https://thegrantfinder.org" target="_blank" rel="noopener">The Grant Finder</a>.</p>
             <div class="author-links">
                 <a href="/about">Full Bio</a>
@@ -1385,7 +1405,7 @@ def generate_homepage():
 </section>
 
 <section class="blog-section">
-    <h2>From the Blog</h2>
+    <div class="section-heading"><div><span class="eyebrow">THE JOURNAL</span><h2>Read the working notes.</h2></div><p>Practical ideas to take into your next deal, meeting, or decision.</p></div>
     <div class="blog-grid">{blog_cards}</div>
 </section>
 """
@@ -1412,10 +1432,7 @@ def generate_about():
     content += """
 <section class="author-section" style="padding-top:40px;">
     <div class="author-inner">
-        <div class="author-photo-placeholder">
-            CR
-            <span>Author</span>
-        </div>
+        <div class="author-photo"><img src="/images/connor-about.jpg" alt="Portrait of Dr. Connor Robertson" loading="lazy"></div>
         <div class="author-bio">
             <h2>Dr. Connor Robertson</h2>
             <p>Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose career spans acquisitions, tax strategy, business systems, and media. With a background that combines academic rigor with real-world deal-making experience, Connor has built a reputation for turning complex financial and operational concepts into practical, actionable frameworks.</p>
@@ -1445,10 +1462,6 @@ def generate_about():
 
 def generate_book_landing(book):
     bc = [("Home", "/"), ("Books", "/"), (book["title"], f"/books/{book['slug']}/")]
-    reviews_html = ""
-    for r in book["review_quotes"]:
-        reviews_html += f"""<div class="review"><p>"{r['text']}"</p><div class="reviewer">-- {r['reviewer']}</div></div>"""
-
     chapters_html = ""
     for ch in book["chapters"]:
         chapters_html += f"""<a href="/books/{book['slug']}/chapters/{ch['num']}/" class="chapter-item">
@@ -1488,9 +1501,7 @@ def generate_book_landing(book):
 <div class="content-with-sidebar">
     {book_sidebar(book, "landing")}
     <div class="page-content" style="padding-top:0;">
-        <h2>What Readers Are Saying</h2>
-        <div class="reviews">{reviews_html}</div>
-
+        <div class="book-intro"><span class="eyebrow">INSIDE THE BOOK</span><h2>Start with a chapter.</h2><p>Explore the key ideas and choose the section most relevant to the decision in front of you.</p></div>
         <h2>Chapter by Chapter</h2>
         <div class="chapter-list">{chapters_html}</div>
 
@@ -1736,10 +1747,11 @@ def generate_blog_index():
         book = next((b for b in BOOKS if b["slug"] == p["related_book"]), None)
         book_label = f' <span style="background:{book["color"]}15;color:{book["color"]};padding:3px 10px;border-radius:3px;font-size:0.75rem;">{book["title"]}</span>' if book else ""
         posts_html += f"""
-        <div class="blog-card">
-            <div class="blog-date">{datetime.strptime(p['date'], '%Y-%m-%d').strftime('%B %d, %Y')}{book_label}</div>
-            <h3><a href="/blog/{p['slug']}/">{p['title']}</a></h3>
-        </div>"""
+        <article class="blog-card">
+            <a class="blog-card__image" href="/blog/{p['slug']}/"><img src="{book['cover_image'] if book else '/images/connor-book.jpg'}" alt="" loading="lazy"></a>
+            <div class="blog-card__body"><div class="blog-date">{datetime.strptime(p['date'], '%Y-%m-%d').strftime('%B %d, %Y')}{book_label}</div>
+            <h3><a href="/blog/{p['slug']}/">{p['title']}</a></h3></div>
+        </article>"""
 
     page = head(
         "Blog - Dr. Connor Robertson",
@@ -1750,8 +1762,9 @@ def generate_blog_index():
     page += header("blog")
     page += """
 <div class="page-hero" style="background: linear-gradient(135deg, var(--primary), var(--accent)); padding: 50px 20px;">
-    <h1>Blog</h1>
-    <p>Insights on wealth building, acquisitions, sales, and business systems</p>
+    <span class="eyebrow">THE JOURNAL</span>
+    <h1>Ideas worth putting to work.</h1>
+    <p>Field notes on ownership, acquisitions, conversations, and business systems.</p>
 </div>
 """
     page += breadcrumb_html(bc)
@@ -1792,22 +1805,39 @@ def generate_standalone_blog(post):
     return write_file(f"blog/{post['slug']}/index.html", page)
 
 
-def generate_sitemap():
-    urls = ["/"]
-    urls.append("/about")
-    urls.append("/blog/")
-    for b in BOOKS:
-        urls.append(f"/books/{b['slug']}/")
-        urls.append(f"/books/{b['slug']}/key-lessons/")
-        urls.append(f"/books/{b['slug']}/who-should-read/")
-        for ch in b["chapters"]:
-            urls.append(f"/books/{b['slug']}/chapters/{ch['num']}/")
-    for p in BLOG_POSTS:
-        urls.append(f"/blog/{p['slug']}/")
+def populate_blog_archive():
+    """Keep the full existing article library discoverable after regeneration."""
+    known = {p["slug"] for p in BLOG_POSTS}
+    cards = []
+    for page in sorted(Path(OUTPUT_DIR, "blog").glob("*/index.html")):
+        slug = page.parent.name
+        if slug in known:
+            continue
+        html = page.read_text()
+        match = re.search(r"<title>(.*?)</title>", html, re.S)
+        if not match:
+            continue
+        title = re.split(r"\s[-|]\s(?:Dr\.? Connor Robertson|Robertson Books)", match.group(1))[0].strip()
+        cards.append(f'<a class="archive-link" href="/blog/{slug}/">{escape(title)} <span aria-hidden="true">→</span></a>')
+    page = Path(OUTPUT_DIR, "blog/index.html")
+    html = page.read_text()
+    archive = f'<section class="archive-section"><div class="archive-inner"><span class="eyebrow">EXPLORE MORE</span><h2>The article library</h2><div class="archive-grid">{"".join(cards)}</div></div></section>'
+    page.write_text(html.replace('<footer class="site-footer">', archive + '<footer class="site-footer">'))
 
+
+def generate_sitemap():
+    urls = {"/"}
+    for page in Path(OUTPUT_DIR).rglob("*.html"):
+        rel = page.relative_to(OUTPUT_DIR).as_posix()
+        if rel in {"index.html", "404.html"} or rel.startswith("google"):
+            continue
+        if rel == "about.html":
+            urls.add("/about")
+        elif rel.endswith("/index.html"):
+            urls.add("/" + rel[:-10] + "/")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for u in urls:
+    for u in sorted(urls):
         xml += f'  <url><loc>{SITE_URL}{u}</loc><changefreq>weekly</changefreq></url>\n'
     xml += '</urlset>'
     return write_file("sitemap.xml", xml), len(urls)
@@ -1865,8 +1895,9 @@ def main():
     files = []
 
     # CSS
-    files.append(write_file("css/style.css", css()))
-    print(f"  [CSS] style.css")
+    if not os.path.exists(os.path.join(OUTPUT_DIR, "css/style.css")):
+        files.append(write_file("css/style.css", css()))
+        print(f"  [CSS] style.css")
 
     # Homepage
     files.append(generate_homepage())
@@ -1907,6 +1938,8 @@ def main():
     for post in BLOG_POSTS:
         files.append(generate_standalone_blog(post))
         print(f"  [BLOG] blog/{post['slug']}/index.html")
+
+    populate_blog_archive()
 
     # Sitemap
     sm, url_count = generate_sitemap()

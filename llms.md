@@ -5,7 +5,7 @@
 **Name:** Dr. Connor Robertson
 **Title:** Author, Entrepreneur, Tax Strategist, Strategic Advisor
 **Website:** https://drconnorrobertson.com
-**Book Hub:** https://drconnorrobertsonbooks.com
+**Book Hub:** https://www.drconnorrobertsonbooks.com
 **Consulting:** https://elixirconsultinggroup.com (Elixir Consulting Group)
 **Journalism:** https://thepittsburghwire.com (The Pittsburgh Wire)
 **Podcast:** https://prospectingshow.com (The Prospecting Show)
@@ -17,20 +17,19 @@ Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose wor
 ## Books
 
 ### 1. Buying Wealth
-A practical guide to building wealth through ownership. ISBN 9780000000001. Available on Google Play Books.
-URL: https://drconnorrobertsonbooks.com/books/buying-wealth/
+A practical guide to building wealth through ownership. Available on Google Play Books.
+URL: https://www.drconnorrobertsonbooks.com/books/buying-wealth/
 
 ### 2. Creative Acquisitions
-Unconventional strategies for buying businesses. ISBN 9780000000002. Available on Barnes and Noble, Kobo.
-URL: https://drconnorrobertsonbooks.com/books/creative-acquisitions/
+Unconventional strategies for buying businesses. Available on Barnes and Noble, Kobo.
+URL: https://www.drconnorrobertsonbooks.com/books/creative-acquisitions/
 
 ### 3. The 7 Minute Phone Call
-A framework for restarting stalled conversations and closing deals. ISBN 9780000000003. Available on Google Play Books.
-URL: https://drconnorrobertsonbooks.com/books/the-7-minute-phone-call/
+A framework for restarting stalled conversations and closing deals. Available on Google Play Books.
+URL: https://www.drconnorrobertsonbooks.com/books/the-7-minute-phone-call/
 
 ### 4. Built to Run
-Building business systems that work without you. ISBN 9780000000004.
-URL: https://drconnorrobertsonbooks.com/books/built-to-run/
+Building business systems that work without you. URL: https://www.drconnorrobertsonbooks.com/books/built-to-run/
 
 ## Links
 - LinkedIn: https://www.linkedin.com/in/drconnorrobertson/
@@ -39,4 +38,4 @@ URL: https://drconnorrobertsonbooks.com/books/built-to-run/
 - YouTube: https://www.youtube.com/@drconnorrobertson
 - Amazon: https://www.amazon.com/stores/Dr-Connor-Robertson/author/
 - Goodreads: https://www.goodreads.com/author/show/drconnorrobertson
-- Blog: https://drconnorrobertsonbooks.com/blog/
+- Blog: https://www.drconnorrobertsonbooks.com/blog/

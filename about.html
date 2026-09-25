@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dr. Connor Robertson - Author, Entrepreneur, Strategic Advisor</title>
     <meta name="description" content="Learn about Dr. Connor Robertson, author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.">
-    <link rel="canonical" href="https://drconnorrobertsonbooks.com/about">
+    <link rel="canonical" href="https://www.drconnorrobertsonbooks.com/about">
 
     <!-- Open Graph -->
     <meta property="og:title" content="About Dr. Connor Robertson - Author, Entrepreneur, Strategic Advisor">
     <meta property="og:description" content="Learn about Dr. Connor Robertson, author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.">
-    <meta property="og:url" content="https://drconnorrobertsonbooks.com/about">
-    <meta property="og:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta property="og:url" content="https://www.drconnorrobertsonbooks.com/about">
+    <meta property="og:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Dr. Connor Robertson - Author">
 
@@ -19,15 +19,17 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Dr. Connor Robertson - Author, Entrepreneur, Strategic Advisor">
     <meta name="twitter:description" content="Learn about Dr. Connor Robertson, author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.">
-    <meta name="twitter:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta name="twitter:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
 
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/refresh.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
     <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dr. Connor Robertson",
-  "url": "https://drconnorrobertsonbooks.com/about",
+  "url": "https://www.drconnorrobertsonbooks.com/about",
   "jobTitle": "Author, Entrepreneur, Tax Strategist",
   "description": "Dr. Connor Robertson is an author, entrepreneur, and strategic advisor specializing in acquisitions, tax strategy, and business systems.",
   "sameAs": [
@@ -55,7 +57,7 @@
     "https://prospectingshow.com",
     "https://thegrantfinder.org"
   ],
-  "image": "https://drconnorrobertsonbooks.com/images/connor-robertson.png"
+  "image": "https://www.drconnorrobertsonbooks.com/images/connor-robertson.png"
 }</script>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -65,43 +67,13 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://drconnorrobertsonbooks.com/"
+      "item": "https://www.drconnorrobertsonbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "About",
-      "item": "https://drconnorrobertsonbooks.com/about"
-    }
-  ]
-}</script>
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Dr. Connor Robertson's background?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose work sits at the intersection of acquisitions, tax strategy, and business systems."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Elixir Consulting Group?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Elixir Consulting Group is Dr. Connor Robertson's consulting practice where he advises business owners on growth, acquisition strategy, and operational excellence. Learn more at elixirconsultinggroup.com."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is The Pittsburgh Wire?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Pittsburgh Wire is a business journalism outlet founded by Dr. Connor Robertson covering positive Pittsburgh business, real estate, and development news at thepittsburghwire.com."
-      }
+      "item": "https://www.drconnorrobertsonbooks.com/about"
     }
   ]
 }</script>
@@ -109,7 +81,7 @@
 <body><header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">Dr. Connor <span>Robertson</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
             <a href="/" >Home</a>
             <a href="/books/buying-wealth/" >Buying Wealth</a>
             <a href="/books/creative-acquisitions/" >Creative Acquisitions</a>
@@ -118,15 +90,12 @@
             <a href="/about" class='active'>About</a>
             <a href="/blog/" >Blog</a>
         </nav>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav').style.display=document.querySelector('.main-nav').style.display==='flex'?'none':'flex'" aria-label="Menu">&#9776;</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
     </div>
 </header><div class="breadcrumb"><a href="/">Home</a> <span>/</span> About</div>
 <section class="author-section" style="padding-top:40px;">
     <div class="author-inner">
-        <div class="author-photo-placeholder">
-            CR
-            <span>Author</span>
-        </div>
+        <div class="author-photo"><img src="/images/connor-about.jpg" alt="Portrait of Dr. Connor Robertson" loading="lazy"></div>
         <div class="author-bio">
             <h2>Dr. Connor Robertson</h2>
             <p>Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose career spans acquisitions, tax strategy, business systems, and media. With a background that combines academic rigor with real-world deal-making experience, Connor has built a reputation for turning complex financial and operational concepts into practical, actionable frameworks.</p>
@@ -155,7 +124,7 @@
         </div>
         <div class="footer-col">
             <h4>Blog</h4>
-            <a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a><a href="/blog/the-story-behind-the-7-minute-phone-call/">The Story Behind The 7 Minute Phone Call</a><a href="/blog/how-built-to-run-changed-my-approach/">How Built to Run Changed My Approach to Business</a>
+            <a href="/blog/seller-financing-questions-before-you-sign/">Seven Seller Financing Questions to Answer Before You Sign</a><a href="/blog/the-founder-bottleneck-audit/">The Founder Bottleneck Audit: A 30-Minute Exercise</a><a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a>
         </div>
         <div class="footer-col">
             <h4>Websites</h4>

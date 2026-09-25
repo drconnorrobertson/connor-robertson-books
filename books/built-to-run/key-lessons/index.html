@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key Lessons from Built to Run by Dr. Connor Robertson</title>
     <meta name="description" content="The most important lessons and takeaways from Built to Run by Dr. Connor Robertson.">
-    <link rel="canonical" href="https://drconnorrobertsonbooks.com/books/built-to-run/key-lessons/">
+    <link rel="canonical" href="https://www.drconnorrobertsonbooks.com/books/built-to-run/key-lessons/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Key Lessons from Built to Run by Dr. Connor Robertson">
     <meta property="og:description" content="The most important lessons and takeaways from Built to Run by Dr. Connor Robertson.">
-    <meta property="og:url" content="https://drconnorrobertsonbooks.com/books/built-to-run/key-lessons/">
-    <meta property="og:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta property="og:url" content="https://www.drconnorrobertsonbooks.com/books/built-to-run/key-lessons/">
+    <meta property="og:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Dr. Connor Robertson - Author">
 
@@ -19,10 +19,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Key Lessons from Built to Run by Dr. Connor Robertson">
     <meta name="twitter:description" content="The most important lessons and takeaways from Built to Run by Dr. Connor Robertson.">
-    <meta name="twitter:image" content="https://drconnorrobertsonbooks.com/images/og-default.png">
+    <meta name="twitter:image" content="https://www.drconnorrobertsonbooks.com/images/og-default.png">
 
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/refresh.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+
     <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Book",
@@ -31,16 +33,15 @@
   "author": {
     "@type": "Person",
     "name": "Dr. Connor Robertson",
-    "url": "https://drconnorrobertsonbooks.com/about"
+    "url": "https://www.drconnorrobertsonbooks.com/about"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Independent"
   },
-  "isbn": "9780000000004",
   "bookFormat": "https://schema.org/EBook",
-  "url": "https://drconnorrobertsonbooks.com/books/built-to-run/",
-  "image": "https://drconnorrobertsonbooks.com/images/built-to-run-cover.png"
+  "url": "https://www.drconnorrobertsonbooks.com/books/built-to-run/",
+  "image": "https://www.drconnorrobertsonbooks.com/images/covers/built-to-run-cover.jpg"
 }</script>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -50,19 +51,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://drconnorrobertsonbooks.com/"
+      "item": "https://www.drconnorrobertsonbooks.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Built to Run",
-      "item": "https://drconnorrobertsonbooks.com/books/built-to-run/"
+      "item": "https://www.drconnorrobertsonbooks.com/books/built-to-run/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Key Lessons",
-      "item": "https://drconnorrobertsonbooks.com/books/built-to-run/key-lessons/"
+      "item": "https://www.drconnorrobertsonbooks.com/books/built-to-run/key-lessons/"
     }
   ]
 }</script>
@@ -70,7 +71,7 @@
 <body><header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">Dr. Connor <span>Robertson</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
             <a href="/" >Home</a>
             <a href="/books/buying-wealth/" >Buying Wealth</a>
             <a href="/books/creative-acquisitions/" >Creative Acquisitions</a>
@@ -79,7 +80,7 @@
             <a href="/about" >About</a>
             <a href="/blog/" >Blog</a>
         </nav>
-        <button class="mobile-menu-btn" onclick="document.querySelector('.main-nav').style.display=document.querySelector('.main-nav').style.display==='flex'?'none':'flex'" aria-label="Menu">&#9776;</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
     </div>
 </header>
 <div class="page-hero" style="background: linear-gradient(135deg, #7b241c, #c0392b); padding: 40px 20px;">
@@ -100,12 +101,12 @@
 <a href="/books/built-to-run/chapters/7/" >Ch. 7: The Owner's Exit</a>
 <a href="/books/built-to-run/key-lessons/" class='active'>Key Lessons</a>
 <a href="/books/built-to-run/who-should-read/" >Who Should Read</a>
-<a href="/blog/built-to-run-blog/" >Related Post</a>
+<a href="/blog/the-founder-bottleneck-audit/" >Related Post</a>
 
 </aside>
     <div class="page-content" style="padding-top:0;">
         <p>These are the core lessons from <em>Built to Run</em> that readers tell us have had the biggest impact on their thinking and their results.</p>
-        
+
         <div style="background:var(--bg-light);padding:25px;border-radius:6px;margin-bottom:15px;border-left:3px solid var(--gold);">
             <div style="font-size:0.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">Lesson 1</div>
             <p style="font-size:1.05rem;color:var(--primary);font-weight:500;">If your business cannot run without you, you do not own a business; you own a job</p>
@@ -141,9 +142,9 @@
             <div class="buy-buttons" style="justify-content:center;">
                 <a href="" class="buy-btn primary-btn" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--primary);">Amazon</a>
                 <a href="" class="buy-btn" style="border-color:var(--border);color:var(--text);" target="_blank" rel="noopener">Barnes &amp; Noble</a>
-                
-                
-                
+
+
+
             </div>
         </div>
     </div>
@@ -156,7 +157,7 @@
         </div>
         <div class="footer-col">
             <h4>Blog</h4>
-            <a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a><a href="/blog/the-story-behind-the-7-minute-phone-call/">The Story Behind The 7 Minute Phone Call</a><a href="/blog/how-built-to-run-changed-my-approach/">How Built to Run Changed My Approach to Business</a>
+            <a href="/blog/seller-financing-questions-before-you-sign/">Seven Seller Financing Questions to Answer Before You Sign</a><a href="/blog/the-founder-bottleneck-audit/">The Founder Bottleneck Audit: A 30-Minute Exercise</a><a href="/blog/5-lessons-from-buying-wealth/">5 Lessons from Buying Wealth</a><a href="/blog/why-i-wrote-creative-acquisitions/">Why I Wrote Creative Acquisitions</a>
         </div>
         <div class="footer-col">
             <h4>Websites</h4>

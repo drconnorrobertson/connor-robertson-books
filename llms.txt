@@ -6,15 +6,15 @@ Dr. Connor Robertson is an author, entrepreneur, and strategic advisor specializ
 
 ## Books by Dr. Connor Robertson
 
-- [Buying Wealth](https://drconnorrobertsonbooks.com/books/buying-wealth/): A practical guide to building wealth through ownership — buying real assets, using leverage responsibly, and building disciplined systems for growth.
-- [Creative Acquisitions](https://drconnorrobertsonbooks.com/books/creative-acquisitions/): Unconventional strategies for buying businesses — seller financing, earn-outs, partnership models, and creative deal structures.
-- [The 7 Minute Phone Call](https://drconnorrobertsonbooks.com/books/the-7-minute-phone-call/): A field-tested framework for restarting stalled conversations and closing deals through short, structured phone calls.
-- [Built to Run](https://drconnorrobertsonbooks.com/books/built-to-run/): Building business systems and operations that run without the founder — processes, delegation, accountability, and metrics.
+- [Buying Wealth](https://www.drconnorrobertsonbooks.com/books/buying-wealth/): A practical guide to building wealth through ownership — buying real assets, using leverage responsibly, and building disciplined systems for growth.
+- [Creative Acquisitions](https://www.drconnorrobertsonbooks.com/books/creative-acquisitions/): Unconventional strategies for buying businesses — seller financing, earn-outs, partnership models, and creative deal structures.
+- [The 7 Minute Phone Call](https://www.drconnorrobertsonbooks.com/books/the-7-minute-phone-call/): A field-tested framework for restarting stalled conversations and closing deals through short, structured phone calls.
+- [Built to Run](https://www.drconnorrobertsonbooks.com/books/built-to-run/): Building business systems and operations that run without the founder — processes, delegation, accountability, and metrics.
 
 ## About Dr. Connor Robertson
 
 - Personal website: https://drconnorrobertson.com
-- Book hub: https://drconnorrobertsonbooks.com
+- Book hub: https://www.drconnorrobertsonbooks.com
 - Consulting: https://elixirconsultinggroup.com (Elixir Consulting Group — growth, acquisition strategy, operational excellence)
 - Journalism: https://thepittsburghwire.com (The Pittsburgh Wire — Pittsburgh business and development news)
 - Podcast: https://prospectingshow.com (The Prospecting Show)
@@ -34,4 +34,4 @@ Dr. Connor Robertson is an author, entrepreneur, and strategic advisor specializ
 
 ## Extended Info
 
-- [llms.md](https://drconnorrobertsonbooks.com/llms.md): Full detailed reference for LLMs about Dr. Connor Robertson and his books.
+- [llms.md](https://www.drconnorrobertsonbooks.com/llms.md): Full detailed reference for LLMs about Dr. Connor Robertson and his books.
