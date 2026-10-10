@@ -15,5 +15,6 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "node scripts/optimize-media.mjs ."
 }
