@@ -1,0 +1,20 @@
+[
+  {
+    "file": "books/built-to-run/chapters/2/index.html",
+    "heading": "Turn documentation into a working operating process",
+    "before": "For implementation support from the author’s consulting firm, review ",
+    "anchor": "Elixir’s operations consulting scope",
+    "url": "https://www.elixirconsultinggroup.com/services/operations/",
+    "after": ". Bring one recurring workflow, its owner and the errors or delays you want to reduce; agree what needs to be documented and how the team will maintain it.",
+    "insertBefore": "<div style=\"display:flex;justify-content:space-between;margin-top:40px"
+  },
+  {
+    "file": "books/the-7-minute-phone-call/chapters/3/index.html",
+    "heading": "Connect the conversation with the follow-up process",
+    "before": "If stalled conversations reveal a wider pipeline problem, review ",
+    "anchor": "Elixir’s sales strategy and revenue systems service",
+    "url": "https://www.elixirconsultinggroup.com/services/sales-strategy/",
+    "after": ". Elixir is the author’s consulting firm. Prepare your current pipeline stages, follow-up responsibilities and a few examples of where opportunities stop moving.",
+    "insertBefore": "<div style=\"display:flex;justify-content:space-between;margin-top:40px"
+  }
+]
