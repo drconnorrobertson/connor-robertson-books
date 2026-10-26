@@ -1,0 +1,7 @@
+fictional_row,source_feature,target_feature,authored_judgment,limitation
+A1,Ingredients,Authorized report inputs,Potential structural parallel,Actual inputs still need verification
+A2,Dish description,Defined draft-report output,Potential structural parallel,Format does not establish correctness
+A3,Check before serving,Review before release,Potential structural parallel,Actual reviewer authority still required
+A4,Fixed sequence,Return path for conflicting sources,Difference requiring qualification,One-way sequence may be insufficient
+A5,Possession of recipe card,Permission to publish report,Reject transfer,Instructions do not establish authority
+A6,Repeatable dish description,Uncertain report conclusion,Difference requiring qualification,Repeatable format does not determine truth
