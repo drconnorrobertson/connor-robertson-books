@@ -1,0 +1,5 @@
+example_id,source_or_statement,stated_role_or_status,limit_or_question
+FICTIONAL-CLAIM,Regular review may surface unresolved handoffs,Invented argument; not a real book quote,No measured business result
+FICTIONAL-SUPPORT,Invented team found unacknowledged handoffs,Illustrative account,No controlled comparison
+FICTIONAL-ASSUMPTION,Review can access current task information,Connecting condition,Check scope before application
+FICTIONAL-CHALLENGE,Another process already makes handoffs visible,Counterexample candidate,Not a reported company outcome
