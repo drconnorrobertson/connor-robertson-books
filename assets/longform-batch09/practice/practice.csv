@@ -1,0 +1,4 @@
+question_id,kind,question,essential_answer,source_type
+Q001,recall,Which two decisions does the fictional responsibility example separate?,Task execution and approval of exceptions,invented example; not a book quotation
+Q002,explanation,Why might a task owner need an approval path?,Assigned work does not define authority for every exception,invented example; not a book quotation
+Q003,application,A promised deadline must change. What information matters?,Affected promise; documented authority; designated approver,invented example; not a book quotation
