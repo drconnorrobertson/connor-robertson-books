@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""title"": ""Harbor Work Notes"", ""readerEdition"": ""EX-E2"", ""correctionEdition"": ""EX-E1"", ""readerPage"": 27, ""correctionPage"": 27, ""applies"": ""unresolved""}",Samepage27differenteditionlabels EX-E2/EX-E1 applicabilityunresolved NOTrealversionfinding
+B,"{""report"": ""EX-R7"", ""status"": ""submitted"", ""proposedReplacement"": true, ""decision"": null, ""actualSubmission"": false}",Submittedproposalwithoutdecision NOTacceptedcorrection/actualsubmission
+C,"{""originalCount"": 3, ""correctedCount"": 4, ""denominator"": 12, ""expectedOriginal"": ""1/4"", ""expectedCorrected"": ""1/3"", ""expectedDifference"": ""1/12""}",3/12=1/4→4/12=1/3 difference1/12 NOTactualbusinessresult/modeltest
+D,"{""original"": ""include approved requests"", ""replacement"": ""include only approved requests"", ""addedWord"": ""only"", ""scope"": ""original teaching sentences not a real procedure""}",Addedonlyrestrictssuppliedsentence NOTrealrecordselection/authority
+E,"{""edition"": ""EX-E3"", ""originalLocator"": 41, ""correctedLocator"": 47, ""expectedLabelDifference"": 6, ""targetInspected"": false}",41→47labelsixdifference NOTnewcontent/evidenceinspection/PDFmapping
+F,"{""affectedNotes"": [""EX-N1"", ""EX-N2"", ""EX-N3""], ""revisitedNotes"": [""EX-N1"", ""EX-N3""], ""openNotes"": [""EX-N2""], ""expectedFraction"": ""2/3"", ""scope"": ""note-selection count not understanding/semanticcoverage""}",Tworevisitedofthreesuppliednotes2/3 EX-N2open NOTcompleteupdate/semanticcoverage
