@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""startEntry"":""handoffs"",""relation"":""See"",""targetEntry"":""transfers"",""startLocators"":[],""targetLocators"":[12,48]}",Seepointsfromhandoffstotransfers;two suppliedtargetlocators NOTdefinition/passagecontent
+B,"{""mainEntry"":""queues"",""subentries"":[{""label"":""waiting"",""locators"":[14]},{""label"":""capacity"",""locators"":[39]}]}",queues parent retained with waiting14/capacity39 NOTcausalrelationship
+C,"{""topic"":""buffer review"",""rangeEndpoints"":[40,43],""declaredRange"":""inclusive integer page labels"",""separateLocators"":[40,43],""expectedRangeLabels"":[40,41,42,43]}",Inclusive40–43fourlabels versus40and43twolabels NOTargument/paragraphcoverage
+D,"{""fictionalTitle"":""Harbor Work Notes"",""editions"":{""EX-E1"":{""lead time"":27},""EX-E2"":{""lead time"":35,""another topic"":27}},""scope"":""invented mappings only""}",EX-E1leadtime27 versusEX-E2leadtime35/page27othertopic NOTrealrevisionfinding
+E,"{""indexHeading"":""buffers"",""locator"":18,""authoredDescription"":""A waiting reserve is discussed."",""searchLiteral"":""buffer"",""searchScope"":""supplied teaching description only""}",No literalbuffer in supplieddescription despiteauthoredindexlead18 NOTrealindexerror/conceptabsence
+F,"{""entry"":""delegation"",""listedLocators"":[21,99],""inspectedLocators"":[21],""notSuppliedOrInspected"":[99],""fractionScope"":""locator-selection count only, not semantic coverage""}",Two listed/one inspected locator fraction1/2 NOTsemanticcoverage/fulltopicverification
