@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Original fictional baseline comparison: values forty and sixty</title>
+<desc id="desc">Left: zero to one hundred scale, A forty and B sixty, visible heights eighty and one hundred twenty drawing units. Right: deliberately truncated thirty-five to sixty-five scale, same values, visible heights thirty and one hundred fifty. Visible height ratios differ; the actual value ratio is one point five in both. The right panel is a counterexample, not recommended design.</desc>
+<rect width="900" height="380" fill="#faf9f6"/>
+<g font-family="Arial,sans-serif" fill="#202830" font-size="16">
+<text x="450" y="26" text-anchor="middle" font-size="21">Same authored values; different displayed baselines</text>
+<text x="245" y="52" text-anchor="middle">Zero baseline: range 0–100</text>
+<text x="685" y="52" text-anchor="middle">Truncated counterexample: range 35–65</text>
+<g stroke="#bbb" stroke-width="1"><path d="M100 60H390M100 160H390M540 80H850M540 170H850"/></g>
+<g stroke="#202830" stroke-width="2"><path d="M100 60V260H390M540 80V260H850"/></g>
+<text x="90" y="66" text-anchor="end">100</text><text x="90" y="166" text-anchor="end">50</text><text x="90" y="266" text-anchor="end">0</text>
+<text x="530" y="86" text-anchor="end">65</text><text x="530" y="176" text-anchor="end">50</text><text x="530" y="266" text-anchor="end">35</text>
+<rect id="full-A" x="150" y="180" width="60" height="80" fill="#234f72"/><rect id="full-B" x="260" y="140" width="60" height="120" fill="#234f72"/>
+<rect id="cut-A" x="600" y="230" width="60" height="30" fill="#234f72"/><rect id="cut-B" x="710" y="110" width="60" height="150" fill="#234f72"/>
+<text x="180" y="170" text-anchor="middle">40</text><text x="290" y="130" text-anchor="middle">60</text><text x="630" y="220" text-anchor="middle">40</text><text x="740" y="100" text-anchor="middle">60</text>
+<text x="180" y="284" text-anchor="middle">A</text><text x="290" y="284" text-anchor="middle">B</text><text x="630" y="284" text-anchor="middle">A</text><text x="740" y="284" text-anchor="middle">B</text>
+<text x="245" y="314" text-anchor="middle">Visible height ratio: 120/80 = 1.5</text><text x="685" y="314" text-anchor="middle">Visible height ratio: 150/30 = 5</text>
+<text x="450" y="343" text-anchor="middle">Values remain 40 and 60: difference 20; value ratio 1.5; increase 50%.</text>
+<text x="450" y="368" text-anchor="middle" font-size="14">Original fictional teaching figure. Right panel deliberately shows a problematic bar baseline.</text>
+</g></svg>
