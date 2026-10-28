@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""parts"": {""EX-P1"": [""EX-C1"", ""EX-C2""], ""EX-P2"": [""EX-C3""]}}","Two parts, three chapters, five total nodes; not five chapters or dependencies"
+B,"{""starts"": [1, 11, 25], ""end"": null, ""convention"": ""consecutive integer labels, exclusive next start""}","First intervals ten and fourteen labels; final end unknown, not word counts or reading time"
+C,"{""headings"": [""EX-C1"", ""EX-C2"", ""EX-C3""], ""inspected"": [""EX-C1""]}",One of three selected chapter texts; not understanding or semantic coverage
+D,"{""edition1"": ""EX-E1"", ""edition2"": ""EX-E2"", ""chapter"": ""EX-C2"", ""firstStart"": 11, ""secondStart"": 17, ""contentRelation"": null}","Six-label numerical difference; not revision, added pages or passage correspondence"
+E,"{""headings"": [""Queues"", ""Capacity""], ""dependency"": null}","Two supplied headings in order; no causal, chronological or prerequisite finding"
+F,"{""chapters"": [{""id"": ""EX-C1"", ""title"": ""Change"", ""parent"": ""EX-P1""}, {""id"": ""EX-C3"", ""title"": ""Change"", ""parent"": ""EX-P2""}]}",Two chapter IDs and parents share one title string; not duplicate content

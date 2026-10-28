@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""review"": ""EX-REVIEW-1"", ""reviewer"": ""Mira Vale"", ""book"": ""EX-BOOK-1"", ""title"": ""Harbor Work Notes"", ""bookAuthor"": ""Nora Vale"", ""bookYear"": 2025, ""reviewYear"": 2030}","Distinct supplied writer roles; five year-label difference, not actual publication or endorsement"
+B,"{""reviewerTeachingSentence"": ""The plan is useful only for small teams."", ""proposedTeachingNote"": ""The plan is useful for all teams."", ""sourceSpeaker"": ""reviewer"", ""proposedSpeaker"": ""book author"", ""scope"": ""original teaching prose, not actual quotations or model outputs""}",Speaker and literal qualifiers differ; not semantic equivalence or an actual error finding
+C,"{""reviewPage"": 7, ""referencedBookPage"": 41, ""bookPassageInspected"": false}",Two source locators differ numerically by thirty-four; no PDF mapping or passage verification
+D,"{""appearances"": [""EX-REVIEW-4"", ""EX-REVIEW-4"", ""EX-REVIEW-4""]}","Three appearances, one supplied review ID; not independent reviews or corroboration"
+E,"{""review"": ""EX-REVIEW-5"", ""targetEdition"": ""EX-E1"", ""readerEdition"": ""EX-E2"", ""relation"": null}",Different supplied edition IDs; applicability and revision unresolved
+F,"{""sources"": [{""id"": ""EX-REVIEW-6"", ""inspected"": true}, {""id"": ""EX-BOOK-PASSAGE-2"", ""inspected"": false}], ""bookClaim"": ""unresolved""}","One of two source objects inspected; not understanding, semantic coverage or book verification"
