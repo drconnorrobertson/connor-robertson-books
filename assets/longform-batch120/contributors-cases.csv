@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""title"": ""Harbor Work Notes"", ""bookAuthor"": ""Nora Vale"", ""forewordAuthor"": ""Mira Vale"", ""editor"": ""Owen Reed"", ""scope"": ""fictional role mapping not real relationships/endorsement""}","Three supplied role/name fields, not every statement the cover author’s voice"
+B,"{""heading"": ""Preface"", ""writer"": null, ""proposedWriter"": ""book author"", ""attribution"": ""unresolved""}",Heading not supplied byline; unknown not contrary attribution
+C,"{""prefaceYear"": 2030, ""discussedEventYear"": 2010, ""expectedGap"": 20, ""scope"": ""authored year labels not publication/exact chronology""}","Twenty year-label difference, not actual book dating"
+D,"{""firstSection"": ""foreword"", ""firstLocator"": ""ix"", ""declaredRomanValue"": 9, ""secondSection"": ""chapter"", ""secondLocator"": ""9""}","Numeric value9 but different section/numbering locators, not same page/PDF mapping"
+E,"{""notes"": [{""id"": ""N1"", ""source"": ""introduction""}, {""id"": ""N2"", ""source"": ""chapter""}, {""id"": ""N3"", ""source"": ""publisher description""}], ""expectedAppearances"": 3, ""independence"": ""unresolved""}",Three labeled source appearances not independent corroboration/content finding
+F,"{""suppliedExcerpt"": ""EX-INTRO-4"", ""suppliedSection"": ""introduction"", ""chapterSupplied"": false, ""chapterClaim"": ""unresolved""}",Introduction-only packet does not establish unread chapter argument/method
