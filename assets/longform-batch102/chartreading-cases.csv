@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,authored values40/60;full baseline0;truncated baseline35;SVG full heights80/120 versus cut heights30/150,actualratio3/2/difference20/relativeincrease1/2;cut visible ratio5 NOT fivefold data values
+B,authored positive values2/4/8 on declared log base2,logpositions1/2/3/equalsteps1;additiveincrements2/4 versusmultipliers2/2 NOTactualgrowth/forecast
+C,2030-01-01value10;2030-01-02value20;2030-01-10value30,gaps1/8days;endpointchanges10/10;segmentrates10 and5/4 units/day NOTactualprocess/causaltrend
+D,panelA range0-100point50;panelB range0-1000point500,bothrelativeheight1/2;value ratio10 NOTequal quantities or real groups
+E,axis labelthousands of illustrative units;values2/3,2000/3000units;difference1000 versusliteral1;factor1000 NOTactualmoney/bookfigure
+F,four intended positions;values10/20/missing/40,3knownof4/availability3/4/knownsum70;fulltotalunknown;missingNOTzero/interpolatedpath
