@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""sentence"": ""If a card is sealed, it is marked"", ""rows"": [[true, true], [true, false], [false, true], [false, false]]}","Declared material implication T,F,T,T; converse T,T,F,T; no real card finding"
+B,"{""sentence"": ""A card is filed only if it is marked"", ""roles"": [""filed"", ""marked""], ""rows"": [[false, true], [true, false]]}","F implies M; first compatible,second violates; not reverse guarantee"
+C,"{""P"": true, ""Q"": false, ""R"": false}","(P and Q)impliesR true; P impliesR false, not equivalent"
+D,"{""rows"": [[true, true], [true, false], [false, true], [false, false]]}","Original equals contrapositive all4; converse equals inverse, not general prose equivalence"
+E,"{""emptyFrame"": [], ""exampleFrame"": [{""sealed"": true, ""marked"": true}]}",Emptyframe0sealed and allconditional holds; suppliedexample1sealed; neither universal empirical proof
+F,"{""P"": true, ""Q"": null, ""hypotheticalQ"": [true, false]}",Unknown actual evaluation unresolved; hypotheticals T/F; unknown not false
