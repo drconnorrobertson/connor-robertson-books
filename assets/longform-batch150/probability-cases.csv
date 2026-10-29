@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""cells"":[16,4,8,72]}",100records: flag|priority4/5; priority|flag2/3; joint4/25; no real label or model validation
+B,"{""cells"":[16,4,98,882]}",1000records: within-group4/5and1/10; priority|flag8/57; changed starting mix only
+C,"{""cells"":[16,4,8,72]}",unflag|priority1/5 versus priority|unflag1/19; complement retains condition
+D,"{""priority"":4,""other"":3,""unknown"":3}","resolved4/7 availability7/10; fullhypothetical4/10or7/10, not inference bounds"
+E,"{""sentences"":[""Of priority records, four in five are flagged."",""Of flagged records, four in five are priority.""],""conditions"":[""priority"",""flagged""],""shares"":[""4/5"",""2/3""]}",authored prose swaps conditioning roles; tablefractionsdifferent; no actual book/modeloutput
+F,"{""balanced"":[25,25,25,25],""exclusive"":[0,50,50,0]}",same marginals1/2; joint1/4versus0; finiteequal-recordtable only not realindependencetest
