@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""earlier"":10,""later"":15,""introducedBetween"":true,""causalAllocationKnown"":false}",difference5/relative1/2; sequence not effect
+B,"{""users"":[12,20],""nonusers"":[8,20],""assignment"":""unknown""}","3/5versus2/5,difference1/5,ratio3/2; no assignment finding"
+C,"{""simple"":[8,10,8,10],""complex"":[2,10,2,10],""userMix"":[20,10],""nonuserMix"":[10,20]}",within proportions equal; pooled18/30versus12/30; constructed mix not causal finding
+D,"{""links"":[""visibility"",""noticing"",""rework""],""noticingObserved"":false,""introduced"":true,""causalEffect"":null}",three named links not three observed links; effect unknown
+E,"{""increase"":""2030-06-10"",""introduction"":""2030-06-12"",""note"":""2030-06-15""}",increase2daysbeforeintroduction/note3afterintro5afterincrease; no repaired chronology
+F,"{""outcomes"":[""success"",""failure"",""success"",null]}","availability3/4,resolved2/3,fullunknown,scenarios1/2or3/4 not effects"
