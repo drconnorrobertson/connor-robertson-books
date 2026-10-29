@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""nodes"": [""EX-A"", ""EX-B"", ""EX-C""], ""labels"": [""collect"", ""review"", ""record""], ""edges"": [[""EX-A"", ""EX-B""], [""EX-B"", ""EX-C""]], ""orders"": [[""EX-A"", ""EX-B"", ""EX-C""], [""EX-C"", ""EX-B"", ""EX-A""]]}","Three nodes/two directed edges; ABC follows declared sequence, CBA does not"
+B,"{""question"": ""approved?"", ""branches"": {""yes"": ""send"", ""no"": ""revise""}}","Two conditional mappings, not authorization"
+C,"{""nodes"": [""A"", ""B"", ""C""], ""edges"": [[""A"", ""B""], [""A"", ""C""]], ""orders"": [[""A"", ""B"", ""C""], [""A"", ""C"", ""B""]]}",Both supplied orders respect arrows; no B-C edge or actual concurrency
+D,"{""edges"": [[""A"", ""B""], [""B"", ""A""]], ""exit"": null, ""iterations"": null}",Two-edge cycle; no supplied exit or repeat count
+E,"{""edges"": [{""from"": ""A"", ""to"": ""B"", ""type"": ""sequence"", ""style"": ""solid""}, {""from"": ""C"", ""to"": ""B"", ""type"": ""information"", ""style"": ""dashed""}]}",Two arrow roles under invented legend; not universal ordering
+F,"{""inventory"": [""A"", ""B"", ""C""], ""selected"": [""A"", ""B""], ""outboundInspected"": false, ""destination"": null}","Selected2/3; continuation unresolved, not complete coverage or final B"
