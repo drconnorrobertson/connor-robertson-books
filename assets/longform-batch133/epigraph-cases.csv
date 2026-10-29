@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""book"": ""Harbor Work Notes"", ""bookAuthor"": ""Nora Vale"", ""quotedWriter"": ""Mira Reed"", ""source"": ""Small Windows""}",Two people/two works; different roles not endorsement
+B,"{""sourceYear"": 1870, ""bookYear"": 2030}",160 year-label gap not composition or exact interval
+C,"{""first"": ""A team may pause"", ""second"": ""A team must pause"", ""role"": ""original teaching prose""}",Four words each; third may/must changes; not actual quotation/model output
+D,"{""bookLocator"": ""ix"", ""sourceLocator"": ""27"", ""book"": ""Harbor Work Notes"", ""source"": ""Small Windows""}",Different object locators; no PDF mapping/source inspection
+E,"{""objects"": {""epigraph"": ""inspected"", ""chapter"": ""absent and unread""}}",One of two objects inspected1/2; not argument/understanding coverage
+F,"{""appearances"": [""EX-SOURCE-4"", ""EX-SOURCE-4"", ""EX-SOURCE-4""]}",Three appearances/one supplied source object; not independent endorsements
