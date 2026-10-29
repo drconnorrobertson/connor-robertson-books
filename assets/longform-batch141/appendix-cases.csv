@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""pointer"": {""label"": ""Appendix B"", ""title"": ""Queue Assumptions""}, ""supplied"": {""label"": ""Appendix A"", ""title"": ""Practice Questions""}}",Different labels andtitles;namedtargetunprovided notgloballyunavailable
+B,"{""chapter"": {""section"": ""Chapter 3"", ""page"": 20}, ""appendix"": {""section"": ""Appendix B"", ""page"": 20, ""table"": ""Table B1""}}",Equalnumericlabels/differentsectionlocators notsamepassage/PDFmapping
+C,"{""condition"": ""teams with one queue"", ""allocations"": [5, 10, 15, 20]}","4authoredallocations,total50,mean25/2 notobservedduration/capacity"
+D,"{""examples"": [""EX-A1"", ""EX-A2"", ""EX-A3""], ""provided"": [""EX-A1"", ""EX-A3""]}",2/3objectselection;EX-A2unprovided notsemanticcoverage
+E,"{""mainYear"": 2015, ""supplementYear"": 2020, ""relationship"": null, ""contributor"": null}",5year-labelgap;relationship/contributorunresolved notactualrevision
+F,"{""original"": ""The appendix example applies to teams with one queue."", ""proposed"": ""The appendix example applies to all teams."", ""condition"": ""teams with one queue""}",Originalconditionremoved/proposedallteamsbroadens authoredclaim;notactualquote/modeloutput
