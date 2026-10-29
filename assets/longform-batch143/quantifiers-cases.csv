@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""ids"": [""EX-Q1"", ""EX-Q2"", ""EX-Q3""], ""values"": [true, false, true]}",2/3positive;some true/all false/none false/notall true/somenot true
+B,"{""ids"": [""EX-Q4"", ""EX-Q5""], ""values"": [true, true]}",All true/some true/somebutnotall false under at-least-one convention
+C,"{""groups"": [""Cedar"", ""Cedar"", ""Maple"", ""Maple""], ""values"": [true, true, false, false]}",All two Cedar true; allfourfalse; domainrestriction not dropped
+D,"{""tasks"": [""EX-T1"", ""EX-T2""], ""reviewers"": [""EX-R1"", ""EX-R2""], ""edges"": [[""EX-R1"", ""EX-T1""], [""EX-R2"", ""EX-T2""]]}",Everytaskhasreviewer true; onecommonreviewerforall false; no actual review
+E,"{""values"": [true, true, null]}",2/3available; existential supported; universal unresolved; hypothetical trueorfalse
+F,"{""Ash"": [], ""frameComplete"": true}",Declaredformalemptydomain alltrue/somefalse not completedwork/existencefinding
