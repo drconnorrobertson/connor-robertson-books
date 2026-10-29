@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""columns"": [[""2030"", ""planned""], [""2030"", ""actual""], [""2031"", ""planned""], [""2031"", ""actual""]], ""values"": [10, 8, 12, 9]}",Actual values8/9 gap1; mixed selected12/8 gap4 answers another question
+B,"{""amount"": 20, ""amountUnit"": ""invented units"", ""percentage"": 20, ""percentageUnit"": ""percent"", ""base"": null}",Same numeral/different quantities; percentage1/5; base unresolved
+C,"{""rows"": [[""East"", ""support"", 5], [""West"", ""support"", 7]]}",Repeated support label distinct paths; difference2 sum12 not actual additivity finding
+D,"{""labels"": [""Cedar"", ""Maple"", ""Birch""], ""values"": [4, null, 6]}",Two of three available2/3; known sum10; full total unresolved
+E,"{""heading"": ""requests"", ""note"": ""approved requests only"", ""approved"": 6, ""other"": 4}",Selected6 versus all10; authored ratio3/5; no actual approval-rate finding
+F,"{""rows"": [""Cedar"", ""Maple""], ""columns"": [""planned"", ""actual""], ""values"": [[10, 8], [20, 22]]}",Two selected actual cells of four1/2 sum30; differences-2/+2 offset0; not goal attainment
