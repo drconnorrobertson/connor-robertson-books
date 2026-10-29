@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""roles"": {""Nora Vale"": ""author"", ""Mira Reed"": ""outline commenter"", ""Owen Birch"": ""catalog helper""}}",Three supplied roles; no coauthorship or endorsement finding
+B,"{""discussed"": ""early outline"", ""not_discussed"": ""final chapter""}",Different objects/stages; proposed final review unsupported
+C,"{""event_ids"": [""EX-W7"", ""EX-W7"", ""EX-W7""]}",Three thanks appearances one supplied event; no independent validation
+D,"{""roman"": ""ix"", ""declared_value"": 9, ""chapter_number"": 9, ""sections"": [""acknowledgment"", ""chapter""]}",Equal declared numeric value; different locator/section roles
+E,"{""reader_edition"": ""EX-E2"", ""source_edition"": ""EX-E1"", ""years"": [2012, 2018], ""later_text_inspected"": false}","Six year labels; applicability unresolved, no revision/approval finding"
+F,"{""objects"": [""EX-ACK"", ""EX-CHAPTER"", ""EX-REF""], ""inspected"": [""EX-ACK"", ""EX-CHAPTER""]}",Two of three source objects inspected; not understanding or full verification
