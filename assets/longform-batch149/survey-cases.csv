@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""target"":1000,""listed"":600,""invited"":200,""completed"":80}",listed3/5target/completed2/5invited/gaps400and120 not AAPOR rate or representativeness
+B,"{""completed"":80,""answered"":60,""yes"":45}",yes3/4itemanswers versus9/16completed/availability3/4/unknown20 notno
+C,"{""organizations"":[""Cedar"",""Cedar"",""Maple"",""Maple"",""Birch"",""Ash""]}",sixrows/fourlabels not independent organizations or duplicates
+D,"{""questions"":[""Did you try the checklist?"",""Did the checklist help you finish sooner?""]}",five/sevenwords/differentquestions/noresponses or causal finding
+E,"{""answers"":[1,1,1,0],""weights"":[1,1,1,3]}",unweighted3/4/weighted1/2/difference1/4 not population accuracy
+F,"{""start"":""2030-06-01"",""end"":""2030-06-10"",""published"":""2030-07-01""}",teninclusivecalendarlabels/21dayendpointgap not behaviorperiod or processingtime
