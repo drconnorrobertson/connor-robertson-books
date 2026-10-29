@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""source"": ""I waited ... then I answered."", ""excerpt"": ""I ... answered"", ""sourceMarkRole"": ""source punctuation"", ""addedMarkRole"": ""excerpting omission""}",differentstrings/distinctoriginsnotinferredfromdots
+B,"{""source"": ""The team may pause only after review."", ""excerpt"": ""The team may pause ... review"", ""omitted"": ""only after""}",restrictionliteralpresentinfullnotexcerpt/noactualpolicy
+C,"{""speakers"": {""Mira"": ""I proposed a trial."", ""Owen"": ""I approved no change.""}, ""proposedSingleSpeaker"": ""Mira""}",2speakersnotsingleattribution/actualidentityunknown
+D,"{""objects"": [""EX-REVIEW-1"", ""EX-BOOK-2""], ""pages"": [7, 41], ""bookPassageInspected"": false}",34numericlabels/differentobjectsnotPDFmapping
+E,"{""source"": ""They paused"", ""rewrite"": ""The Cedar team paused"", ""referentConfirmed"": false}",addedCedarunconfirmednotfalsefinding
+F,"{""objects"": [""excerpt"", ""surrounding paragraph"", ""supporting source""], ""inspected"": [""excerpt"", ""surrounding paragraph""]}",2of3selectionnotsourceverification
