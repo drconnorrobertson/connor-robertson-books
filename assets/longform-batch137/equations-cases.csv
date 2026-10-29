@@ -1,0 +1,7 @@
+fictional_case,authored_inputs,bounded_result
+A,"{""expression"": ""(A+B)/C"", ""alternative"": ""A+B/C"", ""A"": 12, ""B"": 8, ""C"": 4}",Grouped5 versus ungrouped14; no business meaning supplied
+B,"{""values"": {""R_2030"": 12, ""R_2031"": 18}, ""observed"": null, ""forecast"": null}",Two indexed values/difference6; no observed growth or forecast
+C,"{""rate"": 120, ""rateUnit"": ""invented items per hour"", ""durationHours"": ""1/2"", ""durationMinutes"": 30}",Compatible60items; mixed3600factor60 not actual production
+D,"{""A"": 5, ""B"": 0, ""expression"": ""A/B""}","Raw division undefined, not zero or missing input"
+E,"{""count"": 3, ""exact"": ""1/3"", ""rounded"": ""0.33"", ""unit"": ""invented abstract units""}",Exactproduct1 versus decimalproduct99/100difference1/100; no invoice finding
+F,"{""expression"": ""(A+B)/C"", ""A"": 12, ""B"": null, ""C"": 4, ""hypotheticalB"": [8, 4]}",Twoofthreeknown2/3; fullunresolved; hypothetical5or4 not estimates
