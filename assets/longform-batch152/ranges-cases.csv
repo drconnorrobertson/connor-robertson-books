@@ -1,0 +1,7 @@
+case,topic,supplied,definition,expected
+A,endpoint membership,6|10|6;7;9;10,real x:6<=x<10,true;true;true;false;midpoint8 not expected value
+B,integer domain,6|10,closed versus upper excluded,closed6;7;8;9;10 count5;half-open6;7;8;9 count4;span4
+C,gap in union,0|2|5|7|1;3;4;6,real closed bands,true;false;false;true;band length4;enclosing span7
+D,intersection versus union,2|8|5|11|3;6;10,real closed intervals,intersection5..8;union2..11;intersection false;true;false;union true;true;true
+E,dependent pairs,0;1;2;3;4|4,integer x;y=4-x,five pairs;all sums4;independent rectangle sums0..8 different set
+F,unknown entry,4|9|unknown|1|12,known subset versus hypothetical full,known min4 max9;full unresolved;hyp1 min1 max9;hyp12 min4 max12
