@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""S"": {""A"": 90, ""B"": 89, ""C"": 10}, ""T"": {""A"": 90, ""B"": 50, ""C"": 49}}"
+B,"{""scores"": [9, 9, 4]}"
+C,"{""before"": {""A"": 90, ""B"": 80}, ""after"": {""A"": 90, ""B"": 80, ""C"": 100}}"
+D,"{""A"": [""lower"", ""higher""], ""B"": [""middle"", ""middle""], ""coding1"": {""lower"": 0, ""middle"": 1, ""higher"": 2}, ""coding2"": {""lower"": 0, ""middle"": 1, ""higher"": 5}}"
+E,"{""A"": [6, 2], ""B"": [4, 5], ""weights"": [""1/2"", ""3/4""]}"
+F,"{""known"": {""A"": 90, ""B"": 80}, ""unknown"": ""C"", ""hypotheticalScores"": [95, 70]}"
