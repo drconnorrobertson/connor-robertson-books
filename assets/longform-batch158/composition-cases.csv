@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""input"":4,""innerAdd"":5,""outerMultiply"":3}"
+B,"{""input"":3,""fAdd"":4,""gMultiply"":2}"
+C,"{""allowedInput"":10,""excludedInput"":8,""innerSubtract"":8}"
+D,"{""inner"":{""amber"":""K2"",""birch"":""K1"",""cedar"":""K3""},""outer"":{""K1"":40,""K2"":70}}"
+E,"{""inputs"":[9,5,6],""innerSubtract"":6}"
+F,"{""input"":5,""innerAdd"":2,""outerRule"":null,""hypotheticalMultiply"":2,""hypotheticalAdd"":10}"
