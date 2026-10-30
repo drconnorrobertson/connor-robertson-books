@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""input"": 4, ""multiply"": 5, ""add"": 7, ""output"": 27}"
+B,"{""input"": 2, ""multiply"": 4, ""add"": 3, ""output"": 11}"
+C,"{""inputs"": [1, 5], ""subtract"": 3, ""squareOutput"": 4, ""nonnegativeBranchMinimum"": 3}"
+D,"{""forward"": {""amber"": ""K4"", ""birch"": ""K9"", ""cedar"": ""K4""}, ""restricted"": [""amber"", ""birch""], ""missing"": ""K7""}"
+E,"{""inputs"": [6, 0], ""numeratorAdd"": 2, ""denominatorSubtract"": 5, ""excludedForward"": 5, ""excludedInverse"": 1}"
+F,"{""input"": 2, ""output"": 9, ""originalRule"": null, ""hypotheticalLinear"": [3, 3], ""hypotheticalSquareAdd"": 5, ""singletonScopeDeclared"": false}"
