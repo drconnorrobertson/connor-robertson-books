@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""reports"":[""4.2"",""4.20""],""increments"":[""1/10"",""1/100""],""declaredConvention"":""final decimal place is reporting increment"",""accuracy"":null}"
+B,"{""report"":""0.00630"",""scientificCoefficient"":""6.30"",""exponent"":-3,""shortCoefficient"":""6.3"",""declaredSignificantFigures"":[3,3,2]}"
+C,"{""exactCount"":3,""reportedLength"":""2.40"",""increment"":""1/100"",""identicalSegmentsAssumed"":true}"
+D,"{""display"":""8.3"",""increment"":""1/10"",""domain"":""nonnegative"",""tie"":""half upward"",""lower"":""8.25"",""upper"":""8.35"",""interior"":[""8.26"",""8.34""]}"
+E,"{""reportedMeters"":""1.25"",""meterIncrement"":""1/100"",""exactCentimetersPerMeter"":100,""proposedDisplay"":""125.000""}"
+F,"{""report"":""2400"",""basis"":null,""originalIncrement"":null,""hypotheticalIncrements"":[""100"",""1""],""tie"":""half upward nonnegative""}"
