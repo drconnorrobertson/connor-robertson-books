@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""inputs"": [-13, 13, 0]}"
+B,"{""reference"": 6, ""inputs"": [-2, 14]}"
+C,"{""reference"": 6, ""distance"": 8, ""candidates"": [-2, 14, 8]}"
+D,"{""x"": -5}"
+E,"{""inputs"": [-9, 4]}"
+F,"{""magnitude"": 17, ""input"": null, ""hypothetical"": [-17, 17]}"
