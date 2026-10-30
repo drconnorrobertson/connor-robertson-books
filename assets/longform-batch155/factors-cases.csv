@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""start"":200,""rate"":""1/10"",""steps"":2}"
+B,"{""start"":200,""increase"":""1/4"",""inverseDecrease"":""1/5"",""sameDecrease"":""1/4""}"
+C,"{""start"":100,""rates"":[""1/2"",""-1/2""]}"
+D,"{""start"":80,""factor"":""5/4"",""steps"":3}"
+E,"{""start"":100,""factors"":[""2"",""1/2""],""betweenAddition"":10}"
+F,"{""start"":120,""firstFactor"":""11/10"",""secondFactor"":null,""hypotheticalSecond"":[""9/10"",""6/5""]}"
