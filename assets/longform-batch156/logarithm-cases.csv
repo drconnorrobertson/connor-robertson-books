@@ -1,0 +1,7 @@
+fictional_case,authored_inputs
+A,"{""argument"": 625, ""base"": 5, ""exponent"": 4}"
+B,"{""argument"": 81, ""bases"": [3, 9], ""exponents"": [4, 2], ""original_unspecified_base"": null}"
+C,"{""argument"": ""1/49"", ""base"": 7, ""exponent"": -2, ""outside_real_domain_arguments"": [0, -7], ""unit_argument"": 1, ""unit_exponent"": 0}"
+D,"{""argument"": ""1/125"", ""bases"": [""1/5"", ""5""], ""excluded_base"": 1, ""exponents"": [3, -3]}"
+E,"{""base"": 5, ""exponent"": 1, ""numerator"": 150, ""reference"": 30, ""scaled_numerator"": 15000, ""scaled_reference"": 3000}"
+F,"{""argument"": null, ""argument_constraint"": ""positive"", ""base"": 11, ""hypothetical_arguments"": [121, 1331], ""hypothetical_exponents"": [2, 3]}"
