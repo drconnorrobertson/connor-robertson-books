@@ -1117,7 +1117,7 @@ def header(active=""):
             <a href="/books/creative-acquisitions/" {"class='active'" if active == "creative-acquisitions" else ""}>Creative Acquisitions</a>
             <a href="/books/the-7-minute-phone-call/" {"class='active'" if active == "the-7-minute-phone-call" else ""}>7 Minute Phone Call</a>
             <a href="/books/built-to-run/" {"class='active'" if active == "built-to-run" else ""}>Built to Run</a>
-            <a href="/about" {"class='active'" if active == "about" else ""}>About</a>
+            <a href="/about/" {"class='active'" if active == "about" else ""}>About</a>
             <a href="/blog/" {"class='active'" if active == "blog" else ""}>Blog</a>
         </nav>
         <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" onclick="const open=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',open);this.setAttribute('aria-label',open?'Close menu':'Open menu');document.getElementById('primary-nav').classList.toggle('is-open',open)">&#9776;</button>
@@ -1376,7 +1376,7 @@ def generate_homepage():
             <div class="eyebrow">THE AUTHOR COLLECTION <span>•</span> FOUR FIELD GUIDES</div>
             <h1>Build what <em>lasts.</em></h1>
             <p>Clear thinking for people who want to own more, make better deals, have stronger conversations, and build businesses that can thrive beyond the founder.</p>
-            <div class="hero-actions"><a href="#books" class="hero-cta">Explore the books <span aria-hidden="true">↗</span></a><a href="/about" class="hero-secondary">Meet the author <span aria-hidden="true">→</span></a></div>
+            <div class="hero-actions"><a href="#books" class="hero-cta">Explore the books <span aria-hidden="true">↗</span></a><a href="/about/" class="hero-secondary">Meet the author <span aria-hidden="true">→</span></a></div>
             <div class="hero-note">WRITTEN BY DR. CONNOR ROBERTSON</div>
         </div>
         <div class="hero-portrait"><img src="/images/connor-blazer.jpg" alt="Dr. Connor Robertson" fetchpriority="high"><span>IDEAS FOR OWNERS &amp; OPERATORS</span></div>
@@ -1396,7 +1396,7 @@ def generate_homepage():
             <p>Dr. Connor Robertson is an entrepreneur, author, and strategic advisor whose work sits at the intersection of acquisitions, tax strategy, and business systems. His books explore how to build wealth, structure deals, and run organizations with more intention.</p>
             <p>Through <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>, Connor advises business owners on growth, acquisition strategy, and operational excellence. He is the host of <a href="https://prospectingshow.com" target="_blank" rel="noopener">The Prospecting Show</a> and founder of <a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a> and <a href="https://thegrantfinder.org" target="_blank" rel="noopener">The Grant Finder</a>.</p>
             <div class="author-links">
-                <a href="/about">Full Bio</a>
+                <a href="/about/">Full Bio</a>
                 <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">DrConnorRobertson.com</a>
                 <a href="https://www.linkedin.com/in/drconnorrobertson/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
@@ -1418,13 +1418,13 @@ def generate_about():
     social_list = "".join(f'<a href="{s["url"]}" target="_blank" rel="noopener">{s["name"]}</a>' for s in SOCIAL_PROFILES)
     website_list = "".join(f'<a href="{w["url"]}" target="_blank" rel="noopener">{w["name"]}</a>' for w in WEBSITES)
 
-    bc = [("Home", "/"), ("About", "/about")]
+    bc = [("Home", "/"), ("About", "/about/")]
     schemas = [person_schema(), breadcrumb_schema(bc)]
 
     content = head(
         "About Dr. Connor Robertson - Author, Entrepreneur, Strategic Advisor",
         "Learn about Dr. Connor Robertson, author of Buying Wealth, Creative Acquisitions, The 7 Minute Phone Call, and Built to Run.",
-        "/about",
+        "/about/",
         schemas
     )
     content += header("about")
@@ -1832,7 +1832,7 @@ def generate_sitemap():
         if rel in {"index.html", "404.html"} or rel.startswith("google"):
             continue
         if rel == "about.html":
-            urls.add("/about")
+            urls.add("/about/")
         elif rel.endswith("/index.html"):
             urls.add("/" + rel[:-10] + "/")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
