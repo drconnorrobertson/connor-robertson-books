@@ -145,7 +145,7 @@ def rebuild_sitemap():
         if rel == 'index.html':
             url = SITE_URL + '/'
         elif rel == 'about.html':
-            url = SITE_URL + '/about'
+            url = SITE_URL + '/about/'
         elif rel == '404.html':
             url = SITE_URL + '/404'
         elif rel.endswith('/index.html'):
@@ -157,7 +157,7 @@ def rebuild_sitemap():
     pages.append(SITE_URL + '/llms.md')
     lines = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for url in sorted(pages):
-        p = "1.0" if url in [SITE_URL+'/',SITE_URL+'/about'] else "0.9" if '/books/' in url and '/chapters/' not in url else "0.7" if '/blog/' in url else "0.5"
+        p = "1.0" if url in [SITE_URL+'/',SITE_URL+'/about/'] else "0.9" if '/books/' in url and '/chapters/' not in url else "0.7" if '/blog/' in url else "0.5"
         lines.append(f'  <url><loc>{url}</loc><lastmod>{TODAY}</lastmod><changefreq>weekly</changefreq><priority>{p}</priority></url>')
     lines.append('</urlset>')
     with open(os.path.join(SITE_DIR, 'sitemap.xml'), 'w') as f:
