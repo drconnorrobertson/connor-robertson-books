@@ -10,7 +10,7 @@ for(const [file,c] of Object.entries(config)){
  html=html.replace(/<!-- buyer-intent-release:start -->[\s\S]*?<!-- buyer-intent-release:end -->/g,'');
  const h=/<h1\b/i.test(html)?'h2':'h1';
  const section='<!-- buyer-intent-release:start --><section class="section buyer-intent-release" aria-labelledby="buyer-next-step"><div class="wrap container prose"><'+h+' id="buyer-next-step">'+escape(c.heading)+'</'+h+'>'+c.body+'</div></section><!-- buyer-intent-release:end -->';
- if(/<\/main>/i.test(html))html=html.replace(/<\/main>/i,section+'</main>');else if(/<footer\b/i.test(html))html=html.replace(/<footer\b/i,section+'<footer');else html=html.replace(/<\/body>/i,section+'</body>');
+ if(c.insertBefore){if(!html.includes(c.insertBefore))throw new Error('Missing buyer-intent insertion point: '+file);html=html.replace(c.insertBefore,section+c.insertBefore);}else if(/<\/main>/i.test(html))html=html.replace(/<\/main>/i,section+'</main>');else if(/<footer\b/i.test(html))html=html.replace(/<footer\b/i,section+'<footer');else html=html.replace(/<\/body>/i,section+'</body>');
  fs.writeFileSync(p,html);
  console.log('Buyer intent updated: '+p);
 }
