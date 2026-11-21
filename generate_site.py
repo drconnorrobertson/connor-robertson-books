@@ -5,6 +5,9 @@ import os
 import json
 import re
 from html import escape
+from html.parser import HTMLParser
+from urllib.parse import urlsplit
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from datetime import datetime
 
@@ -1831,21 +1834,52 @@ def populate_blog_archive():
 
 
 def generate_sitemap():
-    urls = {"/"}
-    for page in Path(OUTPUT_DIR).rglob("*.html"):
+    """Use declared canonical owners and retain actual editorial dates."""
+    class Metadata(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.canonicals = []
+            self.noindex = False
+
+        def handle_starttag(self, tag, attrs):
+            attrs = dict(attrs)
+            if tag == 'link' and attrs.get('rel') == 'canonical':
+                self.canonicals.append(attrs.get('href', ''))
+            if tag == 'meta' and attrs.get('name', '').lower() == 'robots':
+                self.noindex |= 'noindex' in attrs.get('content', '').lower()
+
+    existing_dates = {}
+    sitemap = Path(OUTPUT_DIR) / 'sitemap.xml'
+    if sitemap.exists():
+        for entry in ET.parse(sitemap).getroot():
+            loc, modified = entry.find('{*}loc'), entry.find('{*}lastmod')
+            if loc is not None and modified is not None and modified.text:
+                existing_dates[loc.text] = modified.text
+    urls = set()
+    for page in Path(OUTPUT_DIR).rglob('*.html'):
         rel = page.relative_to(OUTPUT_DIR).as_posix()
-        if rel in {"index.html", "404.html"} or rel.startswith("google"):
+        if rel == '404.html' or rel.startswith('google'):
             continue
-        if rel == "about.html":
-            urls.add("/about/")
-        elif rel.endswith("/index.html"):
-            urls.add("/" + rel[:-10] + "/")
+        metadata = Metadata()
+        metadata.feed(page.read_text())
+        if metadata.noindex or not metadata.canonicals:
+            continue  # Exclude source fragments and intentionally excluded pages.
+        if len(metadata.canonicals) != 1:
+            raise ValueError(f'Expected one canonical in {rel}')
+        canonical = metadata.canonicals[0]
+        parsed = urlsplit(canonical)
+        if parsed.scheme != 'https' or parsed.netloc != urlsplit(SITE_URL).netloc:
+            continue
+        if parsed.query or parsed.fragment or '//' in parsed.path:
+            raise ValueError(f'Invalid sitemap canonical in {rel}: {canonical}')
+        urls.add(canonical)
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for u in sorted(urls):
-        xml += f'  <url><loc>{SITE_URL}{u}</loc><changefreq>weekly</changefreq></url>\n'
+    for url in sorted(urls):
+        date_tag = ('<lastmod>' + escape(existing_dates[url]) + '</lastmod>') if url in existing_dates else ''
+        xml += f'  <url><loc>{escape(url)}</loc>{date_tag}<changefreq>weekly</changefreq></url>\n'
     xml += '</urlset>'
-    return write_file("sitemap.xml", xml), len(urls)
+    return write_file('sitemap.xml', xml), len(urls)
 
 
 def generate_robots():
@@ -1858,7 +1892,7 @@ Sitemap: {SITE_URL}/sitemap.xml
 
 
 def generate_vercel_json():
-    config = {
+    defaults = {
         "cleanUrls": True,
         "trailingSlash": True,
         "headers": [
@@ -1871,6 +1905,10 @@ def generate_vercel_json():
             }
         ]
     }
+    config_path = Path(OUTPUT_DIR) / 'vercel.json'
+    config = json.loads(config_path.read_text()) if config_path.exists() else {}
+    for key, value in defaults.items():
+        config.setdefault(key, value)
     return write_file("vercel.json", json.dumps(config, indent=2))
 
 
