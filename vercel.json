@@ -17,5 +17,47 @@
     }
   ],
   "buildCommand": "node scripts/optimize-media.mjs . && node scripts/buyer-intent-release.cjs . && node scripts/contextual-crosslinks.cjs .",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/blog/built-to-run-blog",
+      "destination": "/books/built-to-run/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/built-to-run-blog/",
+      "destination": "/books/built-to-run/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-7-minute-phone-call-blog",
+      "destination": "/books/the-7-minute-phone-call/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-7-minute-phone-call-blog/",
+      "destination": "/books/the-7-minute-phone-call/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creative-acquisitions-blog",
+      "destination": "/books/creative-acquisitions/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creative-acquisitions-blog/",
+      "destination": "/books/creative-acquisitions/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/buying-wealth-blog",
+      "destination": "/books/buying-wealth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/buying-wealth-blog/",
+      "destination": "/books/buying-wealth/",
+      "permanent": true
+    }
+  ]
 }
