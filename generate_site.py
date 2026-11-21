@@ -1545,6 +1545,11 @@ def generate_chapter_page(book, chapter):
         <blockquote>{ch['summary']}</blockquote>
     """
 
+    # Reviewed companion material is authored separately from the generic
+    # chapter summaries; do not turn it into an invented book excerpt.
+    if book['slug'] == 'built-to-run' and ch['num'] == 2:
+        content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / 'built-to-run-2.html').read_text()
+
     # Nav links
     prev_ch = None
     next_ch = None
