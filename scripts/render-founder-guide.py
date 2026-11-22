@@ -25,7 +25,12 @@ def render():
  s=re.sub(r'<h1>.*?</h1>','<h1>'+escape(d['title'])+'</h1>',s,count=1,flags=re.S)
  pattern=r'(<div class="page-content" style="padding-top:0;">)[\s\S]*?(<div style="display:flex;justify-content:space-between;margin-top:40px;)'
  s,n=re.subn(pattern,lambda m:m[1]+'\n'+body+'\n'+m[2],s,count=1);assert n==1
- s=s.replace(' / Chapter 1',' / Decision queue companion')
+ s=s.replace('<span>/</span> Chapter 1</div>','<span>/</span> '+escape(d['title'])+'</div>')
+ def breadcrumb(match):
+  obj=json.loads(match.group(1))
+  if obj.get('@type')=='BreadcrumbList':obj['itemListElement'][-1]['name']=d['title']
+  return '<script type="application/ld+json">'+json.dumps(obj,indent=2)+'</script>'
+ s=re.sub(r'<script type="application/ld\+json">([\s\S]*?)</script>',breadcrumb,s)
  p.write_text(s)
  p=ROOT/'sitemap.xml';tree=ET.parse(p);ns='{http://www.sitemaps.org/schemas/sitemap/0.9}';ET.register_namespace('',ns[1:-1]);hits=0
  for entry in tree.getroot():
