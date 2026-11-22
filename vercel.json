@@ -998,11 +998,6 @@
       "permanent": true
     },
     {
-      "source": "/books/the-7-minute-phone-call/chapters/10",
-      "destination": "/books/the-7-minute-phone-call/chapters/10/",
-      "permanent": true
-    },
-    {
       "source": "/books/the-7-minute-phone-call/chapters/2",
       "destination": "/books/the-7-minute-phone-call/chapters/2/",
       "permanent": true
@@ -1025,21 +1020,6 @@
     {
       "source": "/books/the-7-minute-phone-call/chapters/6",
       "destination": "/books/the-7-minute-phone-call/chapters/6/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/7",
-      "destination": "/books/the-7-minute-phone-call/chapters/7/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/8",
-      "destination": "/books/the-7-minute-phone-call/chapters/8/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/9",
-      "destination": "/books/the-7-minute-phone-call/chapters/9/",
       "permanent": true
     },
     {
@@ -2345,6 +2325,51 @@
     {
       "source": "/books/built-to-run/chapters/10",
       "destination": "/books/built-to-run/operations-review/#absence",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/7/",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#voicemail",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/7",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#voicemail",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/8/",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#review",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/8",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#review",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/9/",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#referrals",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/9",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#referrals",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/10/",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#handoffs",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/10",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/#handoffs",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/follow-up-review",
+      "destination": "/books/the-7-minute-phone-call/follow-up-review/",
       "permanent": true
     }
   ]

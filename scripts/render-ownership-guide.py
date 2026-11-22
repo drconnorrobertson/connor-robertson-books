@@ -56,7 +56,7 @@ def render():
   if html!=p.read_text():p.write_text(html)
  # Existing additional pages have distinct topic bodies; expose them as reading
  # companions without presenting their content as verified manuscript excerpts.
- for book,numbers in [('buying-wealth',[9,10]),('the-7-minute-phone-call',[7,8,9,10])]:
+ for book,numbers in [('buying-wealth',[9,10])]:
   overview=ROOT/'books'/book/'index.html';html=overview.read_text();start='<!-- ownership-review:companion-nav:start -->';end='<!-- ownership-review:companion-nav:end -->'
   html=re.sub(re.escape(start)+r'[\s\S]*?'+re.escape(end),'',html)
   items=[]

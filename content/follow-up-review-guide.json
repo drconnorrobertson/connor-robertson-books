@@ -1,0 +1,54 @@
+{
+  "title":"Follow-Up Record Review: Voicemail, Referrals and Handoffs",
+  "description":"Review voicemail, referral and team handoff records with four fictional examples, a review worksheet and a call-count log. Keep activity separate from outcomes.",
+  "reviewed":"2026-11-22",
+  "canonical":"https://www.drconnorrobertsonbooks.com/books/the-7-minute-phone-call/follow-up-review/",
+  "sections":[
+    {"id":"voicemail","heading":"Distinguish a voicemail draft from a recorded contact attempt","paragraphs":[
+      "A useful follow-up record says what actually happened, what remains unknown and which next action belongs to a named role. A draft message, a recorded attempt, a conversation and a confirmed appointment are different events. Keeping those events separate helps a team review a conversation without upgrading an intention into a result.",
+      "In fictional packet V01, the only supplied record is a draft voicemail. Its wording has been prepared, but there is no call log or delivery record. The supported interpretation is that a draft exists. The packet does not establish that anyone called, that the voicemail reached the intended recipient or that the recipient responded.",
+      "The review question is which record would establish the next event, not how to make the status sound more complete. If someone later records an attempt, retain its date and source reference separately from the draft. A saved script alone cannot answer whether a conversation occurred. This exercise supplies no callback-rate estimate or tested voicemail technique."
+    ]},
+    {"id":"referrals","heading":"Keep an offered introduction separate from a completed introduction","paragraphs":[
+      "Fictional packet R01 contains a referrer's statement that they could introduce a colleague. It contains no introduction message and no response from that colleague. Record the offer as pending rather than labeling the colleague an introduced contact. A relationship described by one person does not establish what another person has received or agreed to do.",
+      "Ask which next step the referrer intended and what record will show that step occurred. Do not write a conversation history that implies an introduction has already happened. If an introduction later takes place, retain the actual context instead of transferring assumptions from a different relationship.",
+      "This packet does not establish permission for an outreach campaign, predict a connection rate or prove that a referral changes a person's preferences. A real team must apply its own applicable outreach requirements and recorded contact preferences. The narrow lesson is to preserve the difference between an offer, an introduction and a subsequent response."
+    ]},
+    {"id":"handoffs","heading":"Make the next responsible role visible in a team handoff","paragraphs":[
+      "Fictional packet H01 contains a prior conversation note and a proposed follow-up task, but the next-action owner field is blank. The handoff is unassigned. The existence of a task in a shared queue does not establish that a specific person accepted responsibility, reviewed the source or has the authority needed for the proposed action.",
+      "Identify the responsible role, the source note to review and the unresolved question before treating the handoff as accepted. Keep a proposed date distinct from a confirmed appointment. If the source contains a contact preference or an instruction to stop, preserve that information in the handoff rather than treating a new team member as a fresh start.",
+      "For coaching, compare the source note with the next-action record. Can another person explain what happened without inventing a commitment? Is the requested action clear enough to review? This is a record-quality exercise, not an instruction to increase contact volume or evidence that a particular meeting cadence improves sales."
+    ]},
+    {"id":"review","heading":"Review activity counts without turning them into sales outcomes","paragraphs":[
+      "Fictional packet M01 supplies a log of twelve contact attempts. Four are marked answered; their recipient aliases are A, A, B and C. The remaining eight are marked not answered. The attempt-level answer fraction is 4/12, or approximately 33.3%. There are three distinct aliases among the answered attempts. Neither number measures booked appointments or closed sales.",
+      "The log does not identify the recipients of the eight unanswered attempts. It therefore does not establish how many distinct people were attempted overall, so a person-level reach percentage cannot be calculated from it. Dividing three distinct answered recipients by twelve attempts would mix units and answer a different question from a reach rate for distinct people.",
+      "Every appointment-outcome field is blank because that evidence was not supplied. A blank is not a measured zero and is not proof of a booked meeting. Keep the missing outcome visible instead of using an answered-call count as a substitute. The aliases, attempts and statuses are authored teaching data, not observed calls, client results or a benchmark for a real team's performance.",
+      "A real review should keep its period, event definition and source records alongside each count. If a later record confirms an appointment, connect it to the relevant conversation and retain the change history. Comparing periods requires consistent definitions; the fictional log does not demonstrate a trend or justify a claim that increasing attempts will improve outcomes."
+    ]},
+    {"id":"worksheet","heading":"Use the worksheets to separate evidence from interpretation","paragraphs":[
+      "The four review packets below provide expected interpretations for practice. The observed-review fields in their CSV are intentionally blank. They are not test results and should not be filled with an assumed success merely because the expected interpretation is supplied. The separate attempt log contains only the fictional M01 records.",
+      "For an actual handoff, retain an appropriate source reference, the event supported by that source, the remaining uncertainty and the next responsible role. Use aliases in a discussion copy and keep personal contact details in the team's agreed record system. Resolve conflicting records through that process rather than overwriting one to make a dashboard total agree.",
+      "The practical next step can be a clarified status, an assigned review or a decision to stop. The purpose is to make that decision traceable to the conversation record. Completing a worksheet does not establish that contact occurred, that outreach is authorized or that a sales outcome was achieved."
+    ]}
+  ],
+  "cases":[
+    {"id":"V01","topic":"Voicemail record","source":"A voicemail draft exists; no call log or delivery record is supplied.","interpretation":"Draft prepared; contact attempt and response not established.","question":"Which source record would establish the next event?"},
+    {"id":"R01","topic":"Referral record","source":"A referrer offers an introduction; no introduction message or recipient response is supplied.","interpretation":"Introduction offered and pending; no completed introduction established.","question":"What next step did the referrer intend, and what record will establish it?"},
+    {"id":"H01","topic":"Team handoff","source":"A prior conversation note and proposed task exist; next-action owner is blank.","interpretation":"Unassigned handoff; acceptance of responsibility not established.","question":"Which role will review the source and own the next action?"},
+    {"id":"M01","topic":"Activity review","source":"Twelve attempts; four answered aliases A,A,B,C; eight unanswered aliases and all appointment outcomes are blank.","interpretation":"4/12 answered attempts; three distinct answered aliases; distinct people attempted and appointment count unknown.","question":"Which event and population does each proposed percentage measure?"}
+  ],
+  "attempts":[
+    {"id":"A01","status":"answered","recipientAlias":"A"},
+    {"id":"A02","status":"not_answered","recipientAlias":""},
+    {"id":"A03","status":"answered","recipientAlias":"A"},
+    {"id":"A04","status":"not_answered","recipientAlias":""},
+    {"id":"A05","status":"answered","recipientAlias":"B"},
+    {"id":"A06","status":"not_answered","recipientAlias":""},
+    {"id":"A07","status":"not_answered","recipientAlias":""},
+    {"id":"A08","status":"not_answered","recipientAlias":""},
+    {"id":"A09","status":"answered","recipientAlias":"C"},
+    {"id":"A10","status":"not_answered","recipientAlias":""},
+    {"id":"A11","status":"not_answered","recipientAlias":""},
+    {"id":"A12","status":"not_answered","recipientAlias":""}
+  ]
+}

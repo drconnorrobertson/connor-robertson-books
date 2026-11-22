@@ -1,0 +1,13 @@
+attempt_id,status,recipient_alias,appointment_outcome,fictional
+A01,answered,A,,true
+A02,not_answered,,,true
+A03,answered,A,,true
+A04,not_answered,,,true
+A05,answered,B,,true
+A06,not_answered,,,true
+A07,not_answered,,,true
+A08,not_answered,,,true
+A09,answered,C,,true
+A10,not_answered,,,true
+A11,not_answered,,,true
+A12,not_answered,,,true
