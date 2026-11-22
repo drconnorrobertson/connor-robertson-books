@@ -28,4 +28,4 @@ with tempfile.TemporaryDirectory(prefix='books-regeneration-') as name:
  try:env['generate_sitemap']()
  except ValueError as error:assert 'Invalid sitemap canonical' in str(error)
  else:raise AssertionError('Invalid canonical accepted')
- print(f'PASS:{len(before)}canonicalowners and editorial dates preserved; config and8redirects preserved; repeated sitemap build stable; fragments/noindex excluded; double-slash canonical rejected.')
+ print(f'PASS:{len(before)}canonicalowners and editorial dates preserved; config and{len(cfg.get("redirects",[]))}redirects preserved; repeated sitemap build stable; fragments/noindex excluded; double-slash canonical rejected.')
