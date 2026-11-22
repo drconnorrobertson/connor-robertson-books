@@ -1293,8 +1293,8 @@ def website_reading_links(book):
 
 
 def website_reading_section(book):
-    links = ''.join('<li><a href="' + escape(route, quote=True) + '">' + escape(label) + '</a></li>' for label, route in website_reading_links(book))
-    return '<section id="website-companions"><h2>Original website reading companions</h2><p>These are original website exercises to use alongside your reading, not verified chapter summaries, manuscript quotations or a table of contents. Use the published edition to verify its contents and chapter sequence. Book purchase options are above.</p><ul>' + links + '</ul></section>'
+    links = ''.join('<li><a href="' + escape(route, quote=True) + '" style="display:inline-flex;min-height:44px;align-items:center">' + escape(label) + '</a></li>' for label, route in website_reading_links(book))
+    return '<section id="website-companions"><h2>Original website reading companions</h2><p>These are original website exercises to use alongside your reading, not verified chapter summaries, manuscript quotations or a table of contents. Use the published edition to verify its contents and chapter sequence.</p><ul>' + links + '</ul></section>'
 
 
 def book_sidebar(book, active_page=""):
