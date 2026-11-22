@@ -26,7 +26,11 @@ for book,links in d['readingLinks'].items():
  html=(ROOT/f'books/{book}/index.html').read_text();s=Scan();s.feed(html);assert s.ids.count('website-companions')==1 and s.canonicals==[origin+f'/books/{book}/'] and not s.noindex
  assert 'not verified chapter summaries' in html and 'Chapter by Chapter' not in html and 'Start with a chapter' not in html
  for label,href in links:assert href in s.links
- for purchase in re.findall(r'<a href="(https:[^"]+)" class="buy-btn',html):assert purchase in subprocess.check_output(['git','show','HEAD:'+f'books/{book}/index.html'],cwd=ROOT,text=True)
+ beforeHTML=subprocess.check_output(['git','show','HEAD:'+f'books/{book}/index.html'],cwd=ROOT,text=True)
+ retailers=lambda value:{url for url in re.findall(r'<a\b[^>]*href="(https:[^"]+)"',value) if urlsplit(url).netloc in ['play.google.com','www.barnesandnoble.com','www.kobo.com']}
+ assert retailers(html)==retailers(beforeHTML)
+ assert len(retailers(html))=={'buying-wealth':1,'creative-acquisitions':2,'the-7-minute-phone-call':1,'built-to-run':0}[book]
+ assert 'Book purchase options are above.' not in html
 for n in [1,2,6]:
  route=f'books/built-to-run/chapters/{n}/index.html';before=subprocess.check_output(['git','show','HEAD:'+route],cwd=ROOT,text=True);after=(ROOT/route).read_text();fragment=(ROOT/f'chapter-guides/built-to-run-{n}.html').read_text().strip();assert fragment in before and fragment in after
  assert '<blockquote' not in after and 'Original website reading companions' in after
