@@ -423,28 +423,8 @@
       "permanent": true
     },
     {
-      "source": "/books/built-to-run/chapters/3",
-      "destination": "/books/built-to-run/chapters/3/",
-      "permanent": true
-    },
-    {
-      "source": "/books/built-to-run/chapters/4",
-      "destination": "/books/built-to-run/chapters/4/",
-      "permanent": true
-    },
-    {
-      "source": "/books/built-to-run/chapters/5",
-      "destination": "/books/built-to-run/chapters/5/",
-      "permanent": true
-    },
-    {
       "source": "/books/built-to-run/chapters/6",
       "destination": "/books/built-to-run/chapters/6/",
-      "permanent": true
-    },
-    {
-      "source": "/books/built-to-run/chapters/7",
-      "destination": "/books/built-to-run/chapters/7/",
       "permanent": true
     },
     {
@@ -463,46 +443,6 @@
       "permanent": true
     },
     {
-      "source": "/books/buying-wealth/chapters/1",
-      "destination": "/books/buying-wealth/chapters/1/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/2",
-      "destination": "/books/buying-wealth/chapters/2/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/3",
-      "destination": "/books/buying-wealth/chapters/3/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/4",
-      "destination": "/books/buying-wealth/chapters/4/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/5",
-      "destination": "/books/buying-wealth/chapters/5/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/6",
-      "destination": "/books/buying-wealth/chapters/6/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/7",
-      "destination": "/books/buying-wealth/chapters/7/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/8",
-      "destination": "/books/buying-wealth/chapters/8/",
-      "permanent": true
-    },
-    {
       "source": "/books/buying-wealth/key-lessons",
       "destination": "/books/buying-wealth/key-lessons/",
       "permanent": true
@@ -518,41 +458,6 @@
       "permanent": true
     },
     {
-      "source": "/books/creative-acquisitions/chapters/1",
-      "destination": "/books/creative-acquisitions/chapters/1/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/2",
-      "destination": "/books/creative-acquisitions/chapters/2/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/3",
-      "destination": "/books/creative-acquisitions/chapters/3/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/4",
-      "destination": "/books/creative-acquisitions/chapters/4/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/5",
-      "destination": "/books/creative-acquisitions/chapters/5/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/6",
-      "destination": "/books/creative-acquisitions/chapters/6/",
-      "permanent": true
-    },
-    {
-      "source": "/books/creative-acquisitions/chapters/7",
-      "destination": "/books/creative-acquisitions/chapters/7/",
-      "permanent": true
-    },
-    {
       "source": "/books/creative-acquisitions/key-lessons",
       "destination": "/books/creative-acquisitions/key-lessons/",
       "permanent": true
@@ -565,36 +470,6 @@
     {
       "source": "/books/the-7-minute-phone-call",
       "destination": "/books/the-7-minute-phone-call/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/1",
-      "destination": "/books/the-7-minute-phone-call/chapters/1/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/2",
-      "destination": "/books/the-7-minute-phone-call/chapters/2/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/3",
-      "destination": "/books/the-7-minute-phone-call/chapters/3/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/4",
-      "destination": "/books/the-7-minute-phone-call/chapters/4/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/5",
-      "destination": "/books/the-7-minute-phone-call/chapters/5/",
-      "permanent": true
-    },
-    {
-      "source": "/books/the-7-minute-phone-call/chapters/6",
-      "destination": "/books/the-7-minute-phone-call/chapters/6/",
       "permanent": true
     },
     {
@@ -2810,6 +2685,256 @@
     {
       "source": "/resources/decision-evidence-review",
       "destination": "/resources/decision-evidence-review/",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/3/",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/3",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/4/",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/4",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/5/",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/5",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/7/",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/built-to-run/chapters/7",
+      "destination": "/books/built-to-run/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/1/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/1",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/2/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/2",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/3/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/3",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/4/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/4",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/5/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/5",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/6/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/6",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/7/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/7",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/8/",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/8",
+      "destination": "/books/buying-wealth/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/1/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/1",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/2/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/2",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/3/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/3",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/4/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/4",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/5/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/5",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/6/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/6",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/7/",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/creative-acquisitions/chapters/7",
+      "destination": "/books/creative-acquisitions/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/1/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/1",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/2/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/2",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/3/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/3",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/4/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/4",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/5/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/5",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/6/",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-7-minute-phone-call/chapters/6",
+      "destination": "/books/the-7-minute-phone-call/#website-companions",
       "permanent": true
     }
   ]

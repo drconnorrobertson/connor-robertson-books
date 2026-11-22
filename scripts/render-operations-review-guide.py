@@ -18,7 +18,7 @@ def render():
  (ROOT/'workflow-assets/fictional-operations-review.csv').write_text(out.getvalue())
  card='<section id="operations-companion"><h2>Original website operations exercise</h2><p><a href="/books/built-to-run/operations-review/">Review automation, exception packets and owner-absence decisions</a> using three fictional handoff tests. This is a website companion, not verified chapter content.</p></section>'
  p=ROOT/'books/built-to-run/index.html';s=p.read_text();s=re.sub(r'<!-- ownership-review:companion-nav:start -->[\s\S]*?<!-- ownership-review:companion-nav:end -->','',s)
- if card not in s:
+ if card not in s and 'id="website-companions"' not in s:
   marker='<h2 style="margin-top:40px;">More from This Book</h2>';assert marker in s;s=s.replace(marker,card+'\n'+marker,1)
  p.write_text(s)
  cfgpath=ROOT/'vercel.json';cfg=json.loads(cfgpath.read_text());routes={str(n):'/books/built-to-run/chapters/'+str(n)+'/' for n in [8,9,10]};retired=set(routes.values());anchors={'8':'automation','9':'review','10':'absence'}

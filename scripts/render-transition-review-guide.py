@@ -18,7 +18,7 @@ def render():
  (ROOT/'workflow-assets/fictional-transition-review.csv').write_text(out.getvalue())
  card='<section id="transition-companion"><h2>Original website transition exercise</h2><p><a href="'+route+'">Review sale cash, exchange timing and authority records</a> using three independent fictional packets. This is a website companion, not verified chapter content.</p></section>'
  p=ROOT/(overview.strip('/')+'/index.html');s=p.read_text();s=re.sub(r'<!-- ownership-review:companion-nav:start -->[\s\S]*?<!-- ownership-review:companion-nav:end -->','',s)
- if card not in s:
+ if card not in s and 'id="website-companions"' not in s:
   marker='<h2 style="margin-top:40px;">More from This Book</h2>';assert marker in s;s=s.replace(marker,card+'\n'+marker,1)
  p.write_text(s)
  # Route resource references directly to the current owner, preserving their label.

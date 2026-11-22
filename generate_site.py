@@ -1286,16 +1286,27 @@ def page_end():
 </html>"""
 
 
+def website_reading_links(book):
+    """Return original website exercises, not an asserted book table of contents."""
+    data = json.loads((Path(__file__).resolve().parent / 'content' / 'website-reading-navigation.json').read_text())
+    return data['readingLinks'][book['slug']]
+
+
+def website_reading_section(book):
+    links = ''.join('<li><a href="' + escape(route, quote=True) + '">' + escape(label) + '</a></li>' for label, route in website_reading_links(book))
+    return '<section id="website-companions"><h2>Original website reading companions</h2><p>These are original website exercises to use alongside your reading, not verified chapter summaries, manuscript quotations or a table of contents. Use the published edition to verify its contents and chapter sequence. Book purchase options are above.</p><ul>' + links + '</ul></section>'
+
+
 def book_sidebar(book, active_page=""):
     slug = book["slug"]
     title = book["title"]
     cls_landing = "class='active'" if active_page == "landing" else ""
     links = f'<a href="/books/{slug}/" {cls_landing}>Overview</a>\n'
-    for ch in book["chapters"]:
-        ch_num = ch["num"]
-        ch_title = ch["title"]
-        cls_ch = "class='active'" if active_page == f"ch{ch_num}" else ""
-        links += f'<a href="/books/{slug}/chapters/{ch_num}/" {cls_ch}>Ch. {ch_num}: {ch_title}</a>\n'
+    links += '<p>Original website reading</p>\n'
+    active_route = f'/books/{slug}/chapters/{active_page[2:]}/' if active_page.startswith('ch') else None
+    for label, route in website_reading_links(book):
+        current = " class='active'" if route == active_route else ''
+        links += '<a href="' + escape(route, quote=True) + '"' + current + '>' + escape(label) + '</a>\n'
     cls_lessons = "class='active'" if active_page == "lessons" else ""
     cls_who = "class='active'" if active_page == "who" else ""
     cls_blog = "class='active'" if active_page == "blog" else ""
@@ -1465,14 +1476,6 @@ def generate_about():
 
 def generate_book_landing(book):
     bc = [("Home", "/"), ("Books", "/"), (book["title"], f"/books/{book['slug']}/")]
-    chapters_html = ""
-    for ch in book["chapters"]:
-        chapters_html += f"""<a href="/books/{book['slug']}/chapters/{ch['num']}/" class="chapter-item">
-            <div class="chapter-num">Chapter {ch['num']}</div>
-            <h3>{ch['title']}</h3>
-            <p>{ch['summary'][:120]}...</p>
-        </a>"""
-
     schemas = [book_schema(book), breadcrumb_schema(bc)]
 
     content = head(
@@ -1504,11 +1507,8 @@ def generate_book_landing(book):
 <div class="content-with-sidebar">
     {book_sidebar(book, "landing")}
     <div class="page-content" style="padding-top:0;">
-        <div class="book-intro"><span class="eyebrow">INSIDE THE BOOK</span><h2>Start with a chapter.</h2><p>Explore the key ideas and choose the section most relevant to the decision in front of you.</p></div>
-        <h2>Chapter by Chapter</h2>
-        <div class="chapter-list">{chapters_html}</div>
-
-{'<section id="operations-companion"><h2>Original website operations exercise</h2><p><a href="/books/built-to-run/operations-review/">Review automation, exception packets and owner-absence decisions</a> using three fictional handoff tests. This is a website companion, not verified chapter content.</p></section>' if book['slug'] == 'built-to-run' else ''}        {'<section id="follow-up-companion"><h2>Original website follow-up exercise</h2><p><a href="/books/the-7-minute-phone-call/follow-up-review/">Review voicemail, referral and team handoff records</a> using fictional packets and an attempt log. This is a website companion, not verified chapter content.</p></section>' if book['slug'] == 'the-7-minute-phone-call' else ''}{'<section id="acquisition-companion"><h2>Original website acquisition exercise</h2><p><a href="/books/creative-acquisitions/decision-review/">Review proposed offers, adviser assignments and integration evidence</a> using three independent fictional packets. This is a website companion, not verified chapter content.</p></section>' if book['slug'] == 'creative-acquisitions' else ''}{'<section id="transition-companion"><h2>Original website transition exercise</h2><p><a href="/books/buying-wealth/transition-review/">Review sale cash, exchange timing and authority records</a> using three independent fictional packets. This is a website companion, not verified chapter content.</p></section>' if book['slug'] == 'buying-wealth' else ''}<h2 style="margin-top:40px;">More from This Book</h2>
+        {website_reading_section(book)}
+        <h2 style="margin-top:40px;">More from This Book</h2>
         <div style="display:flex;gap:15px;flex-wrap:wrap;margin-top:15px;">
             <a href="/books/{book['slug']}/key-lessons/" class="buy-btn" style="border-color:var(--border);color:var(--text);">Key Lessons</a>
             <a href="/books/{book['slug']}/who-should-read/" class="buy-btn" style="border-color:var(--border);color:var(--text);">Who Should Read This</a>
@@ -1523,58 +1523,19 @@ def generate_book_landing(book):
 
 def generate_chapter_page(book, chapter):
     ch = chapter
+    if book['slug'] != 'built-to-run' or ch['num'] not in (1, 2, 6):
+        return None
+
     companion_file = {1: 'founder-decision-guide.json', 6: 'weekly-metrics-guide.json'}.get(ch['num']) if book['slug'] == 'built-to-run' else None
     companion = json.loads((Path(OUTPUT_DIR) / 'content' / companion_file).read_text()) if companion_file else None
+    if ch['num'] == 2:
+        companion = json.loads((Path(__file__).resolve().parent / 'content' / 'website-reading-navigation.json').read_text())['documentationCompanion']
     bc = [("Home", "/"), (book["title"], f"/books/{book['slug']}/"), (companion["title"] if companion else f"Chapter {ch['num']}", f"/books/{book['slug']}/chapters/{ch['num']}/")]
     schemas = [book_schema(book), breadcrumb_schema(bc)]
 
-    # Generate extended chapter content
-    content_body = f"""
-        <p>{ch['summary']}</p>
-
-        <p>In Chapter {ch['num']} of <em>{book['title']}</em>, Dr. Connor Robertson builds on the foundation laid in earlier chapters to address one of the most critical topics in the book: {ch['title'].lower()}. This chapter is designed to be both conceptual and practical, providing frameworks you can apply immediately alongside the deeper thinking required for long-term success.</p>
-
-        <p>The ideas in this chapter emerged from years of real-world experience working with entrepreneurs, investors, and business owners who were navigating exactly these challenges. Rather than offering abstract theory, Robertson provides specific, tested approaches grounded in actual outcomes.</p>
-
-        <h2>Core Concepts</h2>
-        <p>The central argument of this chapter is that {ch['title'].lower()} is not something that happens by accident. It requires intentional effort, clear thinking, and a willingness to challenge conventional assumptions. Robertson walks through the reasoning step by step, using examples that illustrate both the right approach and the common mistakes that derail progress.</p>
-
-        <p>One of the most compelling sections deals with the practical implementation of these ideas. Too many business books stop at the conceptual level. This chapter goes further, providing specific action steps, decision frameworks, and evaluation criteria that you can use in your own work starting today.</p>
-
-        <h2>Practical Application</h2>
-        <p>Robertson provides several frameworks in this chapter that readers consistently cite as among the most valuable in the entire book. The emphasis is on repeatable processes, not one-time insights. The goal is to build a system for approaching {ch['title'].lower()} that works regardless of market conditions, deal size, or personal circumstances.</p>
-
-        <p>Whether you are early in your journey or well-established, the principles in Chapter {ch['num']} provide a foundation for making better decisions and building more sustainable outcomes.</p>
-
-        <h2>Key Takeaway</h2>
-        <blockquote>{ch['summary']}</blockquote>
-    """
-
-    # Reviewed companion material is authored separately from the generic
-    # chapter summaries; do not turn it into an invented book excerpt.
-    if book['slug'] == 'built-to-run' and ch['num'] in (1, 2, 6):
-        content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / f'built-to-run-{ch["num"]}.html').read_text()
-
-    # Nav links
-    prev_ch = None
-    next_ch = None
-    for i, c in enumerate(book["chapters"]):
-        if c["num"] == ch["num"]:
-            if i > 0:
-                prev_ch = book["chapters"][i-1]
-            if i < len(book["chapters"]) - 1:
-                next_ch = book["chapters"][i+1]
-
-    nav = '<div style="display:flex;justify-content:space-between;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);">'
-    if prev_ch:
-        nav += f'<a href="/books/{book["slug"]}/chapters/{prev_ch["num"]}/">&larr; Ch. {prev_ch["num"]}: {prev_ch["title"]}</a>'
-    else:
-        nav += '<span></span>'
-    if next_ch:
-        nav += f'<a href="/books/{book["slug"]}/chapters/{next_ch["num"]}/">Ch. {next_ch["num"]}: {next_ch["title"]} &rarr;</a>'
-    else:
-        nav += f'<a href="/books/{book["slug"]}/key-lessons/">Key Lessons &rarr;</a>'
-    nav += '</div>'
+    # Only separately authored website exercises may render at retained legacy paths.
+    content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / f'built-to-run-{ch["num"]}.html').read_text()
+    nav = '<div style="display:flex;justify-content:space-between;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);"><a href="/books/built-to-run/#website-companions">Original website reading companions</a></div>'
 
     page = head(
         escape(companion["title"]) + " | Robertson Books" if companion else f"Chapter {ch['num']}: {ch['title']} - {book['title']} by Dr. Connor Robertson",

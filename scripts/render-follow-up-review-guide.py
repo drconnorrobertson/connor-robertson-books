@@ -20,7 +20,7 @@ def render():
  (ROOT/'workflow-assets/fictional-follow-up-attempt-log.csv').write_text(out.getvalue())
  card='<section id="follow-up-companion"><h2>Original website follow-up exercise</h2><p><a href="'+route+'">Review voicemail, referral and team handoff records</a> using fictional packets and an attempt log. This is a website companion, not verified chapter content.</p></section>'
  p=ROOT/(overview.strip('/')+'/index.html');s=p.read_text();s=re.sub(r'<!-- ownership-review:companion-nav:start -->[\s\S]*?<!-- ownership-review:companion-nav:end -->','',s)
- if card not in s:
+ if card not in s and 'id="website-companions"' not in s:
   marker='<h2 style="margin-top:40px;">More from This Book</h2>';assert marker in s;s=s.replace(marker,card+'\n'+marker,1)
  p.write_text(s)
  cfgpath=ROOT/'vercel.json';cfg=json.loads(cfgpath.read_text());retired={f'{overview}chapters/{n}/' for n in [7,8,9,10]};anchors={7:'voicemail',8:'review',9:'referrals',10:'handoffs'}
