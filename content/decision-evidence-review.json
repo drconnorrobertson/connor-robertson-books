@@ -1,0 +1,301 @@
+{
+  "title": "Decision Evidence Review: Eight Worked Record Checks",
+  "description": "Work through eight original fictional decision packets, distinguish records from assumptions and use two downloadable CSVs to record your own review.",
+  "canonical": "https://www.drconnorrobertsonbooks.com/resources/decision-evidence-review/",
+  "reviewed": "2026-11-22",
+  "introduction": [
+    "A decision file should answer a specific question, not merely look complete. This guide uses eight independent fictional packets to show how a proposed term, a file count, an estimated benefit or a growing balance can support a narrower conclusion than its label suggests. Each example has a different record problem and a concrete next request.",
+    "These are original website teaching exercises by Robertson Books, not manuscript excerpts, verified book summaries, client cases or professional conclusions about real transactions. A01 through W01 are separate scenarios. Do not combine their figures into one business or portfolio. The linked sources provide limited background; the examples and arithmetic are original to this guide.",
+    "For each packet, write down the question, the supplied record, what the record establishes, the missing evidence and who would review the next response. The download has an empty observed_review field for your own reading notes. A blank records no outcome; it does not mean zero cost, no response or a completed review."
+  ],
+  "cases": [
+    {
+      "id": "business-acquisitions",
+      "packet": "A01",
+      "topic": "Business acquisitions",
+      "heading": "A01: A proposed price is not an accepted price",
+      "paragraphs": [
+        "The fictional buyer memo proposes $650,000 for a business. A retained seller email asks for $680,000. Neither record contains the other party\u2019s acceptance, and no executed agreement is supplied. The $30,000 difference can be calculated, but the packet does not show whether either side changed its position or whether there is an agreed transaction.",
+        "A useful finding quotes neither party as having accepted the other\u2019s number. It identifies the two records separately and requests the current agreed terms, if any, together with the relevant version and parties. Do not fill missing conditions with assumed customary provisions or treat a draft filename containing \u201cfinal\u201d as proof of agreement.",
+        "The SBA\u2019s buying-a-business guidance discusses investigation and review of documents such as contracts, financial statements and tax returns with appropriate professional help. That background explains why the underlying documents matter. It does not value this invented business or determine the effect of a particular agreement."
+      ],
+      "source": "Independent fictional buyer proposal $650,000 and seller request $680,000; no acceptance or executed agreement.",
+      "interpretation": "A $30,000 difference exists between proposed numbers; agreed price and transaction status are unestablished.",
+      "question": "Which current terms and acceptance records would address the proposed commitment?"
+    },
+    {
+      "id": "due-diligence",
+      "packet": "D01",
+      "topic": "Due diligence",
+      "heading": "D01: Twelve filenames do not establish twelve usable records",
+      "paragraphs": [
+        "The fictional folder index contains twelve named files. F01 is unreadable. F02 and F03 are readable but identify a different entity. F04 through F12 are readable and identify the intended entity. These groups do not overlap. None has a completed content-review entry.",
+        "Nine files pass the two supplied metadata checks: readable and matching entity. That is twelve minus one minus two. It does not mean nine reviews were completed or that the file covers every necessary issue. The twelve-row inventory CSV preserves the individual flags so you can reproduce the count without treating a folder total as evidence of completeness.",
+        "The next request distinguishes three problems: obtain a usable F01, resolve the subject mismatch in F02 and F03, and assign content review for the remaining records. The inventory cannot determine whether a document is accurate, current or sufficient for a real transaction. Its blank content_review fields are deliberately unknown, not failed reviews."
+      ],
+      "source": "Twelve fictional files: F01 unreadable; F02\u2013F03 different entity; F04\u2013F12 readable and matching entity; all content-review fields blank.",
+      "interpretation": "Nine files pass supplied metadata checks; completed content reviews and packet completeness are unknown.",
+      "question": "Which usability, subject and content-review gaps require separate follow-up?"
+    },
+    {
+      "id": "tax-planning",
+      "packet": "T01",
+      "topic": "Tax planning",
+      "heading": "T01: An estimated benefit is not a filed result",
+      "paragraphs": [
+        "The invented proposal headline estimates an $18,000 prospective tax reduction. The packet contains no calculation, source transaction records, preparer review or filing evidence. A planning label on the cover does not establish an allowable deduction, a refund, a completed election or an amount recovered from a prior return.",
+        "A precise review records the figure as an unsupported proposal estimate within this exercise. It asks which entity and period the estimate concerns, which calculation and supporting records produced it, and what action is actually proposed. Keep a prospective planning question separate from a claim that a return was filed or an earlier payment was recovered.",
+        "The IRS explains that supporting business documents underpin entries in the books and tax return. That recordkeeping background supports the request for source documents; it does not substantiate the invented $18,000 figure. No tax rate, eligibility finding, filing deadline or recommended tax treatment is supplied here."
+      ],
+      "source": "Fictional proposal estimates $18,000 prospective reduction; no calculation, source records, preparer review or filing evidence.",
+      "interpretation": "Only a proposal estimate is present; tax treatment, filing and recovery are not established.",
+      "question": "Which entity, period, calculations and underlying records support the exact proposed action?"
+    },
+    {
+      "id": "entrepreneurship",
+      "packet": "E01",
+      "topic": "Entrepreneurship",
+      "heading": "E01: Interest responses are not purchase records",
+      "paragraphs": [
+        "The fictional research log has fourteen responses: ten say interested and four say later. There are no checkout, payment or order records in the packet. Ten divided by fourteen is about 71.4% of responses expressing interest under the supplied labels. That fraction describes this small invented response set.",
+        "It is not a purchase-conversion rate, a count of paying customers or a forecast of demand. The absence of order records in this packet also does not prove there were zero orders elsewhere. A useful finding keeps response categories separate from transaction evidence and names the missing bridge.",
+        "Before drawing a sales conclusion, the review question would ask whether orders can be matched to the relevant response population and period. The exercise supplies neither selection method nor respondent identities. Do not treat fourteen responses as a representative market study, and do not add personal contact information to the public worksheet."
+      ],
+      "source": "Fourteen fictional responses: ten interested, four later; no order or payment records supplied.",
+      "interpretation": "Interest share is 10/14, about 71.4%; purchases, conversion and representativeness are unknown.",
+      "question": "Which transaction records and population definition would support a sales conclusion?"
+    },
+    {
+      "id": "leadership",
+      "packet": "L01",
+      "topic": "Leadership",
+      "heading": "L01: Assignment and acknowledgement are different states",
+      "paragraphs": [
+        "The invented handoff lists four tasks. Three have a named owner and one owner field is blank. Only two assigned tasks have acknowledgements attached. There are no completion records. The packet therefore shows three named assignments, two acknowledgements and one unassigned task, without proving any finished work.",
+        "Calling the whole handoff accepted would skip the third assigned person\u2019s missing acknowledgement and the fourth task\u2019s missing owner. Calling it complete would require another unsupported step. A review should preserve these states separately instead of turning a mostly populated table into a single green score.",
+        "The next request is specific: identify the missing owner, obtain the outstanding acknowledgement where needed, and define the evidence that would show each deliverable was completed. These are reading questions for the fictional packet, not messages already sent to real staff or a judgement about anyone\u2019s performance."
+      ],
+      "source": "Four fictional tasks; three named owners; two acknowledgements; one owner blank; no completion records.",
+      "interpretation": "Three named assignments and two acknowledgements are distinct; task completion is not established.",
+      "question": "Which owner, acknowledgement and completion-evidence gaps remain?"
+    },
+    {
+      "id": "risk-management",
+      "packet": "R01",
+      "topic": "Risk management",
+      "heading": "R01: A backup checklist does not prove a restoration test",
+      "paragraphs": [
+        "The fictional checklist contains a row labeled restore complete, but the test date, result and reviewer fields are blank. The packet has no restoration log or retained output from a test. The label describes a step to be checked; it does not supply the missing test result.",
+        "A useful finding states that restoration evidence is absent from the packet. It does not conclude that a backup failed, that a real system is insecure or that someone skipped a test. Those would be additional claims. The open question concerns what evidence supports recovery of the intended data and functions.",
+        "The next request would identify the intended scope, a suitable test record and the person responsible for reviewing it. This exercise does not instruct anyone to restore or overwrite a production system. Keep confidential operational logs and credentials outside the teaching CSV; a non-sensitive reference is enough for your reading notes."
+      ],
+      "source": "Fictional backup checklist has restore-complete label but blank test date, result and reviewer; no restoration log.",
+      "interpretation": "A checklist step is present; a successful or failed restoration test is not established.",
+      "question": "Which scoped test record and reviewer finding would address the recovery claim?"
+    },
+    {
+      "id": "capital-allocation",
+      "packet": "C01",
+      "topic": "Capital allocation",
+      "heading": "C01: A reserved amount is part of the cash balance",
+      "paragraphs": [
+        "The independent fictional allocation has $140,000 of starting cash, a $70,000 commitment and $25,000 of setup spending. Subtracting the two commitments leaves $45,000. Of that remaining balance, the worksheet designates $30,000 as reserved, leaving $15,000 unallocated.",
+        "A further proposed $20,000 commitment would exceed the unallocated amount by $5,000 if the reserve designation and all stated commitments stay in place. The reserve is part of the $45,000, not another account to add to it. The numbers do not establish what a real business should reserve or whether any proposed purchase is advisable.",
+        "The review asks whether the commitments, timing and reserve designation are still the intended inputs. No future revenue or alternative funding is supplied. If a later record changes an input, retain that change explicitly and recalculate; do not quietly use reserved cash while keeping the original reserve label."
+      ],
+      "source": "Fictional cash $140,000; commitment $70,000; setup $25,000; reserve designation $30,000 within remaining cash; further proposal $20,000.",
+      "interpretation": "Remaining cash is $45,000 and unallocated cash is $15,000; the further proposal exceeds that unallocated amount by $5,000 if inputs stay fixed.",
+      "question": "Which commitments, timing and reserve designation would need documented review before changing the allocation?"
+    },
+    {
+      "id": "wealth-building",
+      "packet": "W01",
+      "topic": "Wealth building",
+      "heading": "W01: Balance growth is not a measured investment return",
+      "paragraphs": [
+        "The fictional opening balance is $250,000 and closing balance is $280,000. The packet also supplies $40,000 of contributions and explicitly no withdrawals. It does not supply contribution dates or a reconciliation of fees, taxes and investment activity. The balance increased by $30,000, or 12% of its opening amount.",
+        "After subtracting the supplied contributions, the unreconciled residual is negative $10,000: $280,000 minus $250,000 minus $40,000. Neither the 12% balance change nor that residual is a supported investment-return rate. The residual still needs attribution, and the timing needed for an appropriate return calculation is absent.",
+        "A useful next request asks for dated cash movements and a reconciliation of the balance changes. This packet does not show who caused a result, what future returns will be or whether a particular investment is suitable. Keep a reported balance, outside contributions and any calculated performance measure in separate fields."
+      ],
+      "source": "Fictional opening balance $250,000; closing $280,000; contributions $40,000; no withdrawals; contribution dates and activity reconciliation absent.",
+      "interpretation": "Balance growth of $30,000 is 12% of opening balance; the negative $10,000 residual after contributions remains unreconciled, and a return rate is unestablished.",
+      "question": "Which dated cash movements and activity reconciliation would support a performance calculation?"
+    }
+  ],
+  "closing": [
+    "Compare your notes with the stated interpretation, then identify the smallest next record that would change the conclusion. A useful request names the subject, period or version and the exact gap. It does not ask for every available file, and it does not assume that requesting a record means it has been received or reviewed.",
+    "For a deeper worked example, use the existing ownership-cash guide, operating-handoff guide and transition-record companion linked below. Each covers a narrower question in more detail. The common method is to preserve a traceable chain from the available record to the supported conclusion and the next unresolved decision."
+  ],
+  "sources": [
+    {
+      "title": "IRS: What kind of records should I keep?",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep",
+      "scope": "Supporting business documents and the entries they support; not a determination of the fictional tax proposal."
+    },
+    {
+      "title": "SBA: Plan your business \u2014 buying a business",
+      "url": "https://www.sba.gov/counseling/plan-your-business/",
+      "scope": "The buying-a-business sections discuss investigation, professional help and transaction documents; not an assessment of a fictional offer."
+    }
+  ],
+  "retired": {
+    "business-acquisitions": [
+      "/blog/business-acquisitions-advanced/",
+      "/blog/business-acquisitions-checklist/",
+      "/blog/business-acquisitions-examples/",
+      "/blog/business-acquisitions-faq/",
+      "/blog/business-acquisitions-field-guide/",
+      "/blog/business-acquisitions-implementation/",
+      "/blog/business-acquisitions-mistakes/",
+      "/blog/business-acquisitions-questions/",
+      "/blog/business-acquisitions-red-flags/",
+      "/blog/business-acquisitions-scorecard/"
+    ],
+    "tax-planning": [
+      "/blog/tax-planning-advanced/",
+      "/blog/tax-planning-checklist/",
+      "/blog/tax-planning-examples/",
+      "/blog/tax-planning-faq/",
+      "/blog/tax-planning-field-guide/",
+      "/blog/tax-planning-implementation/",
+      "/blog/tax-planning-mistakes/",
+      "/blog/tax-planning-questions/",
+      "/blog/tax-planning-red-flags/",
+      "/blog/tax-planning-scorecard/"
+    ],
+    "due-diligence": [
+      "/blog/due-diligence-advanced/",
+      "/blog/due-diligence-checklist/",
+      "/blog/due-diligence-examples/",
+      "/blog/due-diligence-faq/",
+      "/blog/due-diligence-field-guide/",
+      "/blog/due-diligence-implementation/",
+      "/blog/due-diligence-mistakes/",
+      "/blog/due-diligence-questions/",
+      "/blog/due-diligence-red-flags/",
+      "/blog/due-diligence-scorecard/"
+    ],
+    "entrepreneurship": [
+      "/blog/entrepreneurship-advanced/",
+      "/blog/entrepreneurship-checklist/",
+      "/blog/entrepreneurship-examples/",
+      "/blog/entrepreneurship-faq/",
+      "/blog/entrepreneurship-field-guide/",
+      "/blog/entrepreneurship-implementation/",
+      "/blog/entrepreneurship-mistakes/",
+      "/blog/entrepreneurship-questions/",
+      "/blog/entrepreneurship-red-flags/",
+      "/blog/entrepreneurship-scorecard/"
+    ],
+    "leadership": [
+      "/blog/leadership-advanced/",
+      "/blog/leadership-checklist/",
+      "/blog/leadership-examples/",
+      "/blog/leadership-faq/",
+      "/blog/leadership-field-guide/",
+      "/blog/leadership-implementation/",
+      "/blog/leadership-mistakes/",
+      "/blog/leadership-questions/",
+      "/blog/leadership-red-flags/",
+      "/blog/leadership-scorecard/"
+    ],
+    "risk-management": [
+      "/blog/risk-management-advanced/",
+      "/blog/risk-management-checklist/",
+      "/blog/risk-management-examples/",
+      "/blog/risk-management-faq/",
+      "/blog/risk-management-field-guide/",
+      "/blog/risk-management-implementation/",
+      "/blog/risk-management-mistakes/",
+      "/blog/risk-management-questions/",
+      "/blog/risk-management-red-flags/",
+      "/blog/risk-management-scorecard/"
+    ],
+    "capital-allocation": [
+      "/blog/capital-allocation-advanced/",
+      "/blog/capital-allocation-checklist/",
+      "/blog/capital-allocation-examples/",
+      "/blog/capital-allocation-faq/",
+      "/blog/capital-allocation-field-guide/",
+      "/blog/capital-allocation-implementation/",
+      "/blog/capital-allocation-mistakes/",
+      "/blog/capital-allocation-questions/",
+      "/blog/capital-allocation-red-flags/",
+      "/blog/capital-allocation-scorecard/"
+    ],
+    "wealth-building": [
+      "/blog/wealth-building-advanced/",
+      "/blog/wealth-building-checklist/",
+      "/blog/wealth-building-examples/",
+      "/blog/wealth-building-faq/",
+      "/blog/wealth-building-field-guide/",
+      "/blog/wealth-building-implementation/",
+      "/blog/wealth-building-mistakes/",
+      "/blog/wealth-building-questions/",
+      "/blog/wealth-building-red-flags/",
+      "/blog/wealth-building-scorecard/"
+    ]
+  },
+  "files": [
+    {
+      "id": "F01",
+      "readable": false,
+      "matchingEntity": true
+    },
+    {
+      "id": "F02",
+      "readable": true,
+      "matchingEntity": false
+    },
+    {
+      "id": "F03",
+      "readable": true,
+      "matchingEntity": false
+    },
+    {
+      "id": "F04",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F05",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F06",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F07",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F08",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F09",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F10",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F11",
+      "readable": true,
+      "matchingEntity": true
+    },
+    {
+      "id": "F12",
+      "readable": true,
+      "matchingEntity": true
+    }
+  ]
+}

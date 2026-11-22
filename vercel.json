@@ -278,106 +278,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/business-acquisitions-advanced",
-      "destination": "/blog/business-acquisitions-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-checklist",
-      "destination": "/blog/business-acquisitions-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-examples",
-      "destination": "/blog/business-acquisitions-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-faq",
-      "destination": "/blog/business-acquisitions-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-field-guide",
-      "destination": "/blog/business-acquisitions-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-implementation",
-      "destination": "/blog/business-acquisitions-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-mistakes",
-      "destination": "/blog/business-acquisitions-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-questions",
-      "destination": "/blog/business-acquisitions-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-red-flags",
-      "destination": "/blog/business-acquisitions-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/business-acquisitions-scorecard",
-      "destination": "/blog/business-acquisitions-scorecard/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-advanced",
-      "destination": "/blog/capital-allocation-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-checklist",
-      "destination": "/blog/capital-allocation-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-examples",
-      "destination": "/blog/capital-allocation-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-faq",
-      "destination": "/blog/capital-allocation-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-field-guide",
-      "destination": "/blog/capital-allocation-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-implementation",
-      "destination": "/blog/capital-allocation-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-mistakes",
-      "destination": "/blog/capital-allocation-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-questions",
-      "destination": "/blog/capital-allocation-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-red-flags",
-      "destination": "/blog/capital-allocation-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/capital-allocation-scorecard",
-      "destination": "/blog/capital-allocation-scorecard/",
-      "permanent": true
-    },
-    {
       "source": "/blog/cash-flow-first-buying-wealth-principle",
       "destination": "/blog/cash-flow-first-buying-wealth-principle/",
       "permanent": true
@@ -385,106 +285,6 @@
     {
       "source": "/blog/creative-acquisition-strategies",
       "destination": "/blog/creative-acquisition-strategies/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-advanced",
-      "destination": "/blog/due-diligence-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-checklist",
-      "destination": "/blog/due-diligence-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-examples",
-      "destination": "/blog/due-diligence-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-faq",
-      "destination": "/blog/due-diligence-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-field-guide",
-      "destination": "/blog/due-diligence-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-implementation",
-      "destination": "/blog/due-diligence-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-mistakes",
-      "destination": "/blog/due-diligence-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-questions",
-      "destination": "/blog/due-diligence-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-red-flags",
-      "destination": "/blog/due-diligence-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/due-diligence-scorecard",
-      "destination": "/blog/due-diligence-scorecard/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-advanced",
-      "destination": "/blog/entrepreneurship-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-checklist",
-      "destination": "/blog/entrepreneurship-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-examples",
-      "destination": "/blog/entrepreneurship-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-faq",
-      "destination": "/blog/entrepreneurship-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-field-guide",
-      "destination": "/blog/entrepreneurship-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-implementation",
-      "destination": "/blog/entrepreneurship-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-mistakes",
-      "destination": "/blog/entrepreneurship-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-questions",
-      "destination": "/blog/entrepreneurship-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-red-flags",
-      "destination": "/blog/entrepreneurship-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/entrepreneurship-scorecard",
-      "destination": "/blog/entrepreneurship-scorecard/",
       "permanent": true
     },
     {
@@ -505,56 +305,6 @@
     {
       "source": "/blog/how-to-evaluate-any-real-estate-deal",
       "destination": "/blog/how-to-evaluate-any-real-estate-deal/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-advanced",
-      "destination": "/blog/leadership-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-checklist",
-      "destination": "/blog/leadership-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-examples",
-      "destination": "/blog/leadership-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-faq",
-      "destination": "/blog/leadership-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-field-guide",
-      "destination": "/blog/leadership-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-implementation",
-      "destination": "/blog/leadership-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-mistakes",
-      "destination": "/blog/leadership-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-questions",
-      "destination": "/blog/leadership-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-red-flags",
-      "destination": "/blog/leadership-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/leadership-scorecard",
-      "destination": "/blog/leadership-scorecard/",
       "permanent": true
     },
     {
@@ -588,56 +338,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/risk-management-advanced",
-      "destination": "/blog/risk-management-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-checklist",
-      "destination": "/blog/risk-management-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-examples",
-      "destination": "/blog/risk-management-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-faq",
-      "destination": "/blog/risk-management-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-field-guide",
-      "destination": "/blog/risk-management-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-implementation",
-      "destination": "/blog/risk-management-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-mistakes",
-      "destination": "/blog/risk-management-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-questions",
-      "destination": "/blog/risk-management-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-red-flags",
-      "destination": "/blog/risk-management-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/risk-management-scorecard",
-      "destination": "/blog/risk-management-scorecard/",
-      "permanent": true
-    },
-    {
       "source": "/blog/run-a-business-that-doesnt-need-you",
       "destination": "/blog/run-a-business-that-doesnt-need-you/",
       "permanent": true
@@ -650,56 +350,6 @@
     {
       "source": "/blog/seller-financing-secret",
       "destination": "/blog/seller-financing-secret/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-advanced",
-      "destination": "/blog/tax-planning-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-checklist",
-      "destination": "/blog/tax-planning-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-examples",
-      "destination": "/blog/tax-planning-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-faq",
-      "destination": "/blog/tax-planning-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-field-guide",
-      "destination": "/blog/tax-planning-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-implementation",
-      "destination": "/blog/tax-planning-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-mistakes",
-      "destination": "/blog/tax-planning-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-questions",
-      "destination": "/blog/tax-planning-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-red-flags",
-      "destination": "/blog/tax-planning-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/tax-planning-scorecard",
-      "destination": "/blog/tax-planning-scorecard/",
       "permanent": true
     },
     {
@@ -725,56 +375,6 @@
     {
       "source": "/blog/the-story-behind-the-7-minute-phone-call",
       "destination": "/blog/the-story-behind-the-7-minute-phone-call/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-advanced",
-      "destination": "/blog/wealth-building-advanced/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-checklist",
-      "destination": "/blog/wealth-building-checklist/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-examples",
-      "destination": "/blog/wealth-building-examples/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-faq",
-      "destination": "/blog/wealth-building-faq/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-field-guide",
-      "destination": "/blog/wealth-building-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-implementation",
-      "destination": "/blog/wealth-building-implementation/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-mistakes",
-      "destination": "/blog/wealth-building-mistakes/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-questions",
-      "destination": "/blog/wealth-building-questions/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-red-flags",
-      "destination": "/blog/wealth-building-red-flags/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/wealth-building-scorecard",
-      "destination": "/blog/wealth-building-scorecard/",
       "permanent": true
     },
     {
@@ -2405,6 +2005,811 @@
     {
       "source": "/books/buying-wealth/transition-review",
       "destination": "/books/buying-wealth/transition-review/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-advanced/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-advanced",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-checklist/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-checklist",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-examples/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-examples",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-faq/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-faq",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-field-guide/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-field-guide",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-implementation/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-implementation",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-mistakes/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-mistakes",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-questions/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-questions",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-red-flags/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-red-flags",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-scorecard/",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/business-acquisitions-scorecard",
+      "destination": "/resources/decision-evidence-review/#business-acquisitions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-advanced/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-advanced",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-checklist/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-checklist",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-examples/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-examples",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-faq/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-faq",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-field-guide/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-field-guide",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-implementation/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-implementation",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-mistakes/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-mistakes",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-questions/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-questions",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-red-flags/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-red-flags",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-scorecard/",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-planning-scorecard",
+      "destination": "/resources/decision-evidence-review/#tax-planning",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-advanced/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-advanced",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-checklist/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-checklist",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-examples/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-examples",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-faq/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-faq",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-field-guide/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-field-guide",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-implementation/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-implementation",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-mistakes/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-mistakes",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-questions/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-questions",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-red-flags/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-red-flags",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-scorecard/",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/due-diligence-scorecard",
+      "destination": "/resources/decision-evidence-review/#due-diligence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-advanced/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-advanced",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-checklist/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-checklist",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-examples/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-examples",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-faq/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-faq",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-field-guide/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-field-guide",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-implementation/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-implementation",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-mistakes/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-mistakes",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-questions/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-questions",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-red-flags/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-red-flags",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-scorecard/",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/entrepreneurship-scorecard",
+      "destination": "/resources/decision-evidence-review/#entrepreneurship",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-advanced/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-advanced",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-checklist/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-checklist",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-examples/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-examples",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-faq/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-faq",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-field-guide/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-field-guide",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-implementation/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-implementation",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-mistakes/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-mistakes",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-questions/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-questions",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-red-flags/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-red-flags",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-scorecard/",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leadership-scorecard",
+      "destination": "/resources/decision-evidence-review/#leadership",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-advanced/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-advanced",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-checklist/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-checklist",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-examples/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-examples",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-faq/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-faq",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-field-guide/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-field-guide",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-implementation/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-implementation",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-mistakes/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-mistakes",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-questions/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-questions",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-red-flags/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-red-flags",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-scorecard/",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/risk-management-scorecard",
+      "destination": "/resources/decision-evidence-review/#risk-management",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-advanced/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-advanced",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-checklist/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-checklist",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-examples/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-examples",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-faq/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-faq",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-field-guide/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-field-guide",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-implementation/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-implementation",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-mistakes/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-mistakes",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-questions/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-questions",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-red-flags/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-red-flags",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-scorecard/",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/capital-allocation-scorecard",
+      "destination": "/resources/decision-evidence-review/#capital-allocation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-advanced/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-advanced",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-checklist/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-checklist",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-examples/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-examples",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-faq/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-faq",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-field-guide/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-field-guide",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-implementation/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-implementation",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-mistakes/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-mistakes",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-questions/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-questions",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-red-flags/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-red-flags",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-scorecard/",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wealth-building-scorecard",
+      "destination": "/resources/decision-evidence-review/#wealth-building",
+      "permanent": true
+    },
+    {
+      "source": "/resources/decision-evidence-review",
+      "destination": "/resources/decision-evidence-review/",
       "permanent": true
     }
   ]
