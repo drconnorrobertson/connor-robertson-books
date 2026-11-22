@@ -1,0 +1,96 @@
+{
+  "title": "Exit and Succession Record Review: Cash, Timing and Authority",
+  "description": "Review three fictional ownership-transition packets: sale cash versus gain, a deferred-exchange timeline and missing authority records. Includes source links and a blank-review CSV.",
+  "canonical": "https://www.drconnorrobertsonbooks.com/books/buying-wealth/transition-review/",
+  "reviewed": "2026-11-22",
+  "sections": [
+    {
+      "id": "start",
+      "heading": "Read the transition packet before drawing the conclusion",
+      "paragraphs": [
+        "An ownership transition can produce three different questions: how much cash a sale releases, whether a proposed exchange fits a timeline, and who can make a decision for someone else. A packet that answers one question does not automatically answer the others. This exercise gives each question a separate fictional record so you can see where the evidence stops.",
+        "These are original website exercises, not verified book chapters, manuscript quotations or actual transactions. E01, X01 and L01 are independent scenarios. No person owns all three fictional situations, and the numbers are not an investment forecast. Read the supplied record, write a short finding in the CSV, and compare your reasoning with the supported interpretation.",
+        "A useful finding identifies both the calculation you can make and the decision you cannot yet make. \u201cThere is cash after a payoff\u201d and \u201cthere is no taxable gain\u201d are different statements. \u201cA person is listed as a contact\u201d and \u201cthat person can sign\u201d are different statements. Preserve those distinctions when handing a packet to a reviewer."
+      ]
+    },
+    {
+      "id": "sale",
+      "heading": "E01: Cash released by a sale is not the same as taxable gain",
+      "paragraphs": [
+        "The fictional cash-sale worksheet has a $900,000 gross price, $45,000 of assumed selling costs and a $420,000 loan-principal payoff. For this simplified exercise, all $900,000 is cash consideration; there is no seller note, buyer assumption of debt, other consideration or additional closing adjustment. The stated payoff is principal only. These are supplied assumptions, not a description of typical closing costs.",
+        "The cash arithmetic is $900,000 minus $45,000 minus $420,000, leaving $435,000 before income taxes and any omitted adjustments. A separate price-less-assumed-selling-cost subtotal is $855,000. The $435,000 cash figure subtracts the debt payoff; it does not calculate tax basis or establish the character of a gain.",
+        "The packet has no acquisition-basis schedule, improvement records, depreciation history or allocation among assets. Therefore it cannot produce a supported taxable-gain figure or an after-tax distribution. Do not substitute the $420,000 debt balance for adjusted basis. Even if debt and basis happen to match in a particular transaction, that relationship must come from records rather than an assumption.",
+        "IRS Publication 544 (2025) explains gain in relation to amount realized and adjusted basis, including basis adjustments and relevant liabilities. It is the source for the distinction, not an endorsement of this fictional worksheet. A complete review would reconcile the actual closing statement and basis records before calculating reportable gain, recapture, exclusions or applicable tax."
+      ]
+    },
+    {
+      "id": "exchange",
+      "heading": "X01: Check both exchange clocks and the missing conditions",
+      "paragraphs": [
+        "The separate fictional deferred-exchange timeline supplies a relinquished-property transfer date of November 20, 2026. It also supplies April 15, 2027 as the assumed applicable return due date, with no extension. That due date is an exercise input, not a determination of a real taxpayer\u2019s filing deadline. The packet contains no identification notice, receipt evidence, exchange agreement or replacement-property records.",
+        "Counting from the supplied transfer date gives January 4, 2027 at 45 days and May 19, 2027 at 180 days. Comparing the assumed return due date with May 19 yields April 15 as the earlier receipt-date limit in this exercise. Writing only \u201c180 days\u201d on the worksheet would miss that earlier assumed date. An actual extension or different applicable deadline would require a new review.",
+        "The IRS Form 8824 instructions (2026) explain that the replacement property must be identified within 45 days, and received by the earlier of 180 days or the applicable return due date, including extensions. They also limit section 1031 treatment to qualifying real property held for business or investment, excluding property held primarily for sale. Timing alone does not establish qualification.",
+        "This packet therefore supports a date comparison only. It does not prove a valid identification, timely receipt, eligible property or a completed exchange. It does not establish that receiving sale cash and later buying property creates an exchange. Before any real transfer, the transaction structure and documents need review; this worksheet cannot create or repair an exchange arrangement."
+      ]
+    },
+    {
+      "id": "authority",
+      "heading": "L01: A family contact is not an authority document",
+      "paragraphs": [
+        "The third invented packet contains an account-contact list naming \u201cFamily Contact A\u201d and a folder index labeled \u201cfuture planning.\u201d There is no power of attorney, trust instrument, appointment record or account-specific authorization in the packet. A handwritten note says the contact knows the owner\u2019s preferences. Nothing in the supplied records says the contact accepted a formal role.",
+        "The supported conclusion is narrow: a contact and a planning-folder label exist, but the packet does not establish signing or decision-making authority. This is not a finding that no authority exists anywhere. The missing document may exist elsewhere; its location, current status and scope need to be checked. Do not treat a blank evidence field as proof of either permission or prohibition.",
+        "The Consumer Financial Protection Bureau explains that a power of attorney is a legal document through which someone can act on another person\u2019s behalf. Its guidance also discusses the risks of that authority. In this exercise, a family relationship and knowledge of preferences are not a substitute for reviewing the relevant document and its scope.",
+        "A useful follow-up request identifies the exact decision under review, the document said to authorize it, and who will assess that document. Do not put account numbers, passwords, signatures or personal records into this public teaching CSV. The CSV is a fictional reading exercise, not a place to collect a family\u2019s financial or estate-planning documents."
+      ]
+    },
+    {
+      "id": "review",
+      "heading": "Complete your own review without inventing missing outcomes",
+      "paragraphs": [
+        "Use the empty observed_review column to record what you concluded from the fictional packet. For E01, show the cash arithmetic and name the missing basis records. For X01, show both date calculations and the earlier-date comparison, then identify the absent transaction evidence. For L01, distinguish a contact record from authority evidence without asserting that a missing document does not exist.",
+        "The three blanks are intentional. They do not represent zero tax, a failed exchange or a completed authority review. Each row is marked fictional. The supplied interpretations are teaching answers under stated assumptions, not findings about a real sale or family. Keep any proposed request separate from confirmation that the record has been received and reviewed.",
+        "Return to the book overview for purchase options and other reading companions. Use the published book itself to verify its contents. For real transition decisions, take the actual records and the specific question to the qualified reviewer responsible for that issue; the purpose of this exercise is to make that handoff clearer."
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "E01",
+      "topic": "Sale-cash worksheet",
+      "source": "Fictional cash price $900,000; assumed selling costs $45,000; principal payoff $420,000; no other consideration or adjustments. Basis and depreciation records absent.",
+      "interpretation": "Cash before tax and omitted adjustments is $435,000; price less assumed selling costs is $855,000. Taxable gain and after-tax cash are not established.",
+      "question": "Which actual closing and adjusted-basis records are missing before a gain calculation can be reviewed?"
+    },
+    {
+      "id": "X01",
+      "topic": "Exchange timeline only",
+      "source": "Independent fictional transfer November 20, 2026; assumed applicable return due date April 15, 2027 with no extension. No identification, receipt or exchange documents supplied.",
+      "interpretation": "45 days gives January 4, 2027; 180 days gives May 19, 2027. April 15 is the earlier assumed receipt limit. No qualification or completed exchange is established.",
+      "question": "Which identification, receipt, property-use and transaction-structure records are absent?"
+    },
+    {
+      "id": "L01",
+      "topic": "Family-contact record",
+      "source": "Family Contact A appears on a contact list; a future-planning folder index and preference note exist. No authority instrument or role acceptance is supplied.",
+      "interpretation": "The packet establishes a contact only; authority is unverified, not disproved. Missing evidence is not permission to act.",
+      "question": "Which exact decision, authority document and scope review would be needed before relying on someone else\u2019s signature?"
+    }
+  ],
+  "sources": [
+    {
+      "title": "IRS Publication 544 (2025): Sales and Other Dispositions of Assets",
+      "url": "https://www.irs.gov/publications/p544",
+      "supports": "Amount realized, adjusted basis and gain distinctions. The linked edition is labeled 2025."
+    },
+    {
+      "title": "IRS Instructions for Form 8824 (2026)",
+      "url": "https://www.irs.gov/instructions/i8824",
+      "supports": "Qualifying real-property scope and deferred-exchange identification and receipt timing."
+    },
+    {
+      "title": "CFPB: What is a power of attorney?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-power-of-attorney-poa-en-1149/",
+      "supports": "The nature of a power of attorney and the risks associated with granting authority."
+    }
+  ]
+}
