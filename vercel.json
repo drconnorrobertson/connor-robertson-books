@@ -148,6 +148,96 @@
       "source": "/blog/real-estate-ownership-advanced/",
       "destination": "/blog/real-estate-ownership-mistakes/",
       "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-field-guide",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-field-guide/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-scorecard",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-scorecard/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-questions",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-questions/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-checklist",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-checklist/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-examples",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-examples/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-red-flags",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-red-flags/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-implementation",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-implementation/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-faq",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-faq/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-advanced",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/operating-systems-advanced/",
+      "destination": "/blog/operating-systems-mistakes/",
+      "permanent": true
     }
   ]
 }

@@ -1,0 +1,6 @@
+record,state,active_unique_request,next_action,fictional
+H-01,accepted,yes,Prepare quote,true
+H-02,blocked,yes,Obtain missing scope,true
+H-03,accepted,yes,Prepare quote,true
+H-04,duplicate,no,Link to H-01,true
+H-05,withdrawn,no,Retain withdrawal record,true

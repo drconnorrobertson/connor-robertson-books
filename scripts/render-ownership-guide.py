@@ -88,6 +88,7 @@ def render():
    if mod is None:mod=ET.SubElement(entry,ns+'lastmod')
    mod.text=data['revision']
  tree.write(p,encoding='utf-8',xml_declaration=True)
- assert len(root)==426,len(root)
- print('Rendered ownership guide;9retiredvariants;18newslash-specificredirects;426sitemapowners')
+ assert sum(e.find(ns+'loc').text==O+PATH for e in root)==1
+ assert not any(e.find(ns+'loc').text in {O+'/blog/'+x+'/'for x in RETIRED}for e in root)
+ print('Rendered ownership guide;9retiredvariants;18slash-specificredirects;'+str(len(root))+'sitemapowners')
 if __name__=='__main__':render()
