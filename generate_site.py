@@ -1815,6 +1815,11 @@ def generate_standalone_blog(post):
     return write_file(f"blog/{post['slug']}/index.html", page)
 
 
+def decision_evidence_navigation():
+    """Expose the original shared decision exercise after archive regeneration."""
+    return '<!-- decision-evidence-nav:start --><section class="archive-section" id="decision-evidence-guide"><div class="archive-inner"><h2>Original decision-review exercise</h2><p><a href="/resources/decision-evidence-review/">Decision Evidence Review: Eight Worked Record Checks</a> uses independent fictional packets and downloadable worksheets.</p><ul><li><a href="/resources/decision-evidence-review/#business-acquisitions">Business acquisitions: A01</a></li><li><a href="/resources/decision-evidence-review/#due-diligence">Due diligence: D01</a></li><li><a href="/resources/decision-evidence-review/#tax-planning">Tax planning: T01</a></li><li><a href="/resources/decision-evidence-review/#entrepreneurship">Entrepreneurship: E01</a></li><li><a href="/resources/decision-evidence-review/#leadership">Leadership: L01</a></li><li><a href="/resources/decision-evidence-review/#risk-management">Risk management: R01</a></li><li><a href="/resources/decision-evidence-review/#capital-allocation">Capital allocation: C01</a></li><li><a href="/resources/decision-evidence-review/#wealth-building">Wealth building: W01</a></li></ul></div></section><!-- decision-evidence-nav:end -->'
+
+
 def populate_blog_archive():
     """Keep the full existing article library discoverable after regeneration."""
     known = {p["slug"] for p in BLOG_POSTS}
@@ -1832,7 +1837,7 @@ def populate_blog_archive():
     page = Path(OUTPUT_DIR, "blog/index.html")
     html = page.read_text()
     archive = f'<section class="archive-section"><div class="archive-inner"><span class="eyebrow">EXPLORE MORE</span><h2>The article library</h2><div class="archive-grid">{"".join(cards)}</div></div></section>'
-    page.write_text(html.replace('<footer class="site-footer">', archive + '<footer class="site-footer">'))
+    page.write_text(html.replace('<footer class="site-footer">', archive + decision_evidence_navigation() + '<footer class="site-footer">'))
 
 
 def generate_sitemap():
