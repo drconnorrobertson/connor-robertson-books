@@ -1,0 +1,5 @@
+packet_id,topic,supplied_record,supported_interpretation,review_question,observed_review,fictional
+V01,Voicemail record,A voicemail draft exists; no call log or delivery record is supplied.,Draft prepared; contact attempt and response not established.,Which source record would establish the next event?,,true
+R01,Referral record,A referrer offers an introduction; no introduction message or recipient response is supplied.,Introduction offered and pending; no completed introduction established.,"What next step did the referrer intend, and what record will establish it?",,true
+H01,Team handoff,A prior conversation note and proposed task exist; next-action owner is blank.,Unassigned handoff; acceptance of responsibility not established.,Which role will review the source and own the next action?,,true
+M01,Activity review,"Twelve attempts; four answered aliases A,A,B,C; eight unanswered aliases and all appointment outcomes are blank.",4/12 answered attempts; three distinct answered aliases; distinct people attempted and appointment count unknown.,Which event and population does each proposed percentage measure?,,true
