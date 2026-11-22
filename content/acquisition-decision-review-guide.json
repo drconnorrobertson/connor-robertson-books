@@ -57,8 +57,8 @@
     {
       "id": "A01",
       "topic": "Unsigned offer counter",
-      "source": "Separate fictional proposals: initial total600000 = cash450000 + note150000; unsigned counter total580000 = cash400000 + note180000. No seller response or note schedule supplied.",
-      "interpretation": "Counter changes total by -20000, closing cash by -50000 and note principal by +30000. No acceptance, payment amount or financing approval established.",
+      "source": "Separate fictional proposals: initial total of $600,000 = $450,000 cash + $150,000 note; unsigned counter total of $580,000 = $400,000 cash + $180,000 note. No seller response or note schedule supplied.",
+      "interpretation": "The counter decreases the stated total by $20,000 and closing cash by $50,000, while increasing note principal by $30,000. No acceptance, payment amount or financing approval is established.",
       "question": "Which response and complete note terms are needed before comparing obligations?"
     },
     {
@@ -71,8 +71,8 @@
     {
       "id": "I01",
       "topic": "Unverified integration benefit",
-      "source": "Planning-only cost36000 and proposed monthly reduction3000; no invoices, cancellation evidence or accepted operational test. Separate hypothetical sensitivity2000 monthly.",
-      "interpretation": "Simplified assumed arithmetic gives12 months at3000 or18 at2000. Neither is observed recovery or a forecast; omitted costs and timing remain unknown.",
+      "source": "Planning-only cost of $36,000 and proposed monthly reduction of $3,000; no invoices, cancellation evidence or accepted operational test. A separate hypothetical sensitivity uses $2,000 per month.",
+      "interpretation": "Simplified assumed arithmetic gives 12 months at $3,000 per month or 18 months at $2,000. Neither is observed recovery or a forecast; omitted costs and timing remain unknown.",
       "question": "Which cost records and operational acceptance evidence are missing before any benefit can be recorded as realized?"
     }
   ]
