@@ -1894,7 +1894,6 @@ Sitemap: {SITE_URL}/sitemap.xml
 def generate_vercel_json():
     defaults = {
         "cleanUrls": True,
-        "trailingSlash": True,
         "headers": [
             {
                 "source": "/(.*)",

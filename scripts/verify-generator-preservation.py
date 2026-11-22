@@ -16,7 +16,13 @@ with tempfile.TemporaryDirectory(prefix='books-regeneration-') as name:
  exec(compile(ast.Module(body=nodes,type_ignores=[]),'actual-generator-functions','exec'),env)
  def records():
   return {e.find('{*}loc').text:(e.find('{*}lastmod').text if e.find('{*}lastmod') is not None else None) for e in ET.parse(out/'sitemap.xml').getroot()}
- before=records();cfg=json.loads((out/'vercel.json').read_text());env['generate_sitemap']();after=records();assert before==after,(len(before),len(after),set(after)-set(before),set(before)-set(after))
+ before=records();cfg=json.loads((out/'vercel.json').read_text());
+ assert 'trailingSlash' not in cfg
+ rules={r['source']:r for r in cfg.get('redirects',[])};assert len(rules)==len(cfg.get('redirects',[]))
+ for canonical in before:
+  route=urlsplit(canonical).path
+  if route!='/':assert rules[route[:-1]]=={'source':route[:-1],'destination':route,'permanent':True}
+ env['generate_sitemap']();after=records();assert before==after,(len(before),len(after),set(after)-set(before),set(before)-set(after))
  env['generate_vercel_json']();assert json.loads((out/'vercel.json').read_text())==cfg
  first=(out/'sitemap.xml').read_bytes();env['generate_sitemap']();assert (out/'sitemap.xml').read_bytes()==first
  # A new source fragment and noindex page cannot leak into the sitemap.
