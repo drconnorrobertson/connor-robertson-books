@@ -1,0 +1,86 @@
+{
+  "title": "Founder Decisions: Review a Blocked Work Queue",
+  "description": "A fictional six-request decision queue shows how to distinguish missing information, missing authority and deliberate owner decisions before delegating work.",
+  "sourceBoundary": "Original website reading companion, not a manuscript excerpt, verified chapter summary or account of customer outcomes. Existing book chapter titles and numbering are not verified by this exercise.",
+  "reviewed": "2026-11-21",
+  "sections": [
+    {
+      "heading": "An interruption is a symptom, not a diagnosis",
+      "paragraphs": [
+        "A request reaching the founder does not by itself show that the team lacks skill or that every approval should be delegated. The request may be missing a source record, a named decision owner or an agreed exception rule. Some decisions should remain with the owner. Begin by identifying what prevents the next authorized action.",
+        "This original website exercise follows a fictional service business with six requests in its review queue. It is a worked example for reading alongside the business-systems topic, not an excerpt from Built to Run or evidence of results achieved by its readers. The classifications below describe only the stated packet; a real team must apply its own authority and approval rules."
+      ]
+    },
+    {
+      "heading": "Read the six request packets",
+      "paragraphs": [
+        "Q01 asks whether to offer a delivery slot. The approved calendar and slot-selection rule are present, and the assigned coordinator has authority to choose an available slot. The packet can proceed through the existing rule; sending it to the founder again is not an additional approval requirement in this fictional example.",
+        "Q02 asks whether to promise a revised deadline. The customer request is present, but the current delivery capacity record is missing. The first action is to obtain that record. Granting someone wider authority would not supply the missing evidence.",
+        "Q03 asks for a discount above the written limit for the assigned role. The order and requested change are documented. The decision needs the designated exception reviewer; the person preparing the packet should not silently raise their own limit.",
+        "Q04 asks whether to begin an additional work item. The packet contains a request but no recorded scope decision. Preserve the request and route it to the authorized scope reviewer. Do not treat an informal request as proof that the additional work is already approved.",
+        "Q05 proposes changing a recurring supplier. The comparison is documented, but the fictional company reserves this decision to the owner because it changes a continuing commitment. Prepare the choice and its unresolved questions for that owner. Its presence in the queue is not proof of a failed delegation.",
+        "Q06 is a second message about Q02, with the same work identifier and decision. Keep the message as supporting history and link it to Q02. It does not create a sixth distinct decision merely because it arrived through another channel."
+      ]
+    },
+    {
+      "heading": "Count decisions separately from messages",
+      "paragraphs": [
+        "The queue contains six messages but five distinct decisions: Q01 through Q05. Q06 duplicates Q02. Of those five decisions, one can proceed under an existing authorized rule, one first needs a missing capacity record, one needs a discount exception review, one needs a scope decision and one is deliberately reserved to the owner. These are mutually exclusive next-action labels for this exercise, not permanent labels for the people involved.",
+        "Do not call all five decisions founder-dependent. Only Q05 is explicitly reserved to the owner in the stated rules. Q03 and Q04 need their designated reviewers, whose roles may be different. Q02 cannot be resolved from this packet because a record is missing. Count a referral as resolved only when the next responsible role has accepted a usable packet; simply forwarding a message does not demonstrate completion."
+      ]
+    },
+    {
+      "heading": "Choose one rule to test",
+      "paragraphs": [
+        "Begin with Q01 because its information, rule and authority are already present. Write a short test: given an approved calendar and a request within the written slot-selection rule, can the coordinator choose a slot and record the decision without another founder approval? Keep the existing stop condition for unavailable or conflicting slots.",
+        "Test the ordinary case and a conflicting-calendar case using safe examples. In the ordinary case, the coordinator should follow the documented rule and leave the required record. In the conflict case, the coordinator should stop and identify the discrepancy. A test that merely finishes faster cannot show that the decision rule was followed. Record the result and the clarification needed rather than reporting an assumed time saving."
+      ]
+    },
+    {
+      "heading": "Retain a decision trail",
+      "paragraphs": [
+        "For a real queue, retain a work identifier, the exact decision requested, source references, the next authorized role and the reason for escalation. Separate a missing record from a request to change a rule. Protect confidential customer and personnel information when selecting an example to discuss with the team.",
+        "Review what actually happened after the test. Did another person need to explain an undocumented step? Did the packet return because its evidence was unusable? Did the request remain in more than one queue? Use those observations to revise one procedure before expanding the exercise. The companion on documenting a recurring workflow can help turn the tested rule into a maintained instruction."
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "id": "Q01",
+      "distinctDecision": "Q01",
+      "nextAction": "Existing authorized rule",
+      "ownerReserved": false
+    },
+    {
+      "id": "Q02",
+      "distinctDecision": "Q02",
+      "nextAction": "Missing capacity record",
+      "ownerReserved": false
+    },
+    {
+      "id": "Q03",
+      "distinctDecision": "Q03",
+      "nextAction": "Discount exception review",
+      "ownerReserved": false
+    },
+    {
+      "id": "Q04",
+      "distinctDecision": "Q04",
+      "nextAction": "Scope review",
+      "ownerReserved": false
+    },
+    {
+      "id": "Q05",
+      "distinctDecision": "Q05",
+      "nextAction": "Reserved owner decision",
+      "ownerReserved": true
+    },
+    {
+      "id": "Q06",
+      "distinctDecision": "Q02",
+      "nextAction": "Duplicate message; link to Q02",
+      "ownerReserved": false
+    }
+  ],
+  "canonical": "https://www.drconnorrobertsonbooks.com/books/built-to-run/chapters/1/"
+}
