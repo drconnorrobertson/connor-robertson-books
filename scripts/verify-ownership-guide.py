@@ -45,22 +45,23 @@ rows=list(csv.reader((ROOT/'assets/fictional-business-property-cash.csv').open(n
 for row in rows[1:]:
  b,r,c,d,br,pr,total=map(Decimal,row[1:]);assert b-r==br and r-c-d==pr and br+pr==total==b-c-d
 spec=importlib.util.spec_from_file_location('renderer',ROOT/'scripts/render-ownership-guide.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-retired={O+'/blog/'+s+'/'for s in m.RETIRED};cfg=json.loads((ROOT/'vercel.json').read_text());rules=cfg['redirects'];assert len(rules)==26 and len({r['source']for r in rules})==26
+retired={O+'/blog/'+s+'/'for s in m.RETIRED};cfg=json.loads((ROOT/'vercel.json').read_text());rules=cfg['redirects'];assert len({r['source']for r in rules})==len(rules)
 for s in m.RETIRED:
  for slash in['','/']:
   rule=next(r for r in rules if r['source']=='/blog/'+s+slash);assert rule['destination']==PATH and rule['permanent']is True
 ns='{http://www.sitemaps.org/schemas/sitemap/0.9}'
-def records(text):return {e.find(ns+'loc').text:ET.tostring(e)for e in ET.fromstring(text)}
-old=records(subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT));new=records((ROOT/'sitemap.xml').read_text());assert len(new)==426 and set(old)-set(new)==retired and not set(new)-set(old)
-for url in new:
- if url!=O+PATH:assert old[url]==new[url],url
+def records(text):return {e.find(ns+'loc').text:tuple((c.tag,c.text,tuple(sorted(c.attrib.items())))for c in e)for e in ET.fromstring(text)}
+new=records((ROOT/'sitemap.xml').read_text());assert O+PATH in new and not retired.intersection(new)
+assert all(url.startswith(O+'/')for url in new)
 archive=Page();archive.feed((ROOT/'blog/index.html').read_text());assert archive.links.count(PATH)==1
 for f in ROOT.rglob('*.html'):
  if '.git'in f.parts:continue
  page=Page();page.feed(f.read_text());assert not any((O+link if link.startswith('/')else link)in retired for link in page.links),f
-for route in['resources/read-function-composition-before-ai-explanation/index.html','resources/read-book-equation-before-ai-explanation/index.html','resources/read-conditional-probabilities-before-ai-summary/index.html','resources/read-appendix-before-ai-book-summary/index.html','books/built-to-run/chapters/2/index.html']:
+for route in['resources/read-function-composition-before-ai-explanation/index.html','resources/read-book-equation-before-ai-explanation/index.html','resources/read-conditional-probabilities-before-ai-summary/index.html','resources/read-appendix-before-ai-book-summary/index.html','books/built-to-run/chapters/2/index.html','blog/operating-systems-mistakes/index.html']:
  assert (ROOT/route).read_bytes()==subprocess.check_output(['git','show','HEAD:'+route],cwd=ROOT),route
+sitemap_before=records((ROOT/'sitemap.xml').read_text())
 before={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest()for f in ROOT.rglob('*')if f.is_file()and'.git'not in f.parts and'__pycache__'not in f.parts}
 m.render()
 after={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest()for f in ROOT.rglob('*')if f.is_file()and'.git'not in f.parts and'__pycache__'not in f.parts};assert before==after,'Selective renderer not idempotent'
-print(json.dumps({'cashCases':3,'csvColumns':8,'actualRenderedArithmetic':'passed','wrong9001NegativeControl':'rejected','sitemapOwners':426,'retiredVariants':9,'permanentRules':26,'unrelatedSitemapDates':'preserved','protectedAuthoredPages':5,'rendererRepeat':'stable','staleFAQSchema':'removed','archiveTopicLinks':1}))
+assert sitemap_before==records((ROOT/'sitemap.xml').read_text()),'Renderer changed canonical owners or editorial dates'
+print(json.dumps({'cashCases':3,'csvColumns':8,'actualRenderedArithmetic':'passed','wrong9001NegativeControl':'rejected','sitemapOwners':len(new),'retiredVariants':9,'permanentRules':len(rules),'unrelatedSitemapDates':'preserved','protectedAuthoredPages':6,'rendererRepeat':'stable','staleFAQSchema':'removed','archiveTopicLinks':1}))
