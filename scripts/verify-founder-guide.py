@@ -15,7 +15,9 @@ for path in ['resources/read-function-composition-before-ai-explanation/index.ht
 def snapshot():return {str(p.relative_to(ROOT)):p.read_bytes()for p in ROOT.rglob('*')if p.is_file()and'.git'not in p.parts and'__pycache__'not in p.parts}
 before=snapshot();subprocess.run(['python3','scripts/render-founder-guide.py'],cwd=ROOT,check=True);assert snapshot()==before
 records=lambda text:{e.find('{*}loc').text:ET.tostring(e)for e in ET.fromstring(text)}
-old=records(subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT));new=records((ROOT/'sitemap.xml').read_bytes());assert old.keys()==new.keys();assert all(old[u]==new[u]for u in old if u!=d['canonical'])
+old=records(subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT));new=records((ROOT/'sitemap.xml').read_bytes());assert old.keys()==new.keys()
+# This companion verifier owns its entry; later reviewed companions may revise theirs.
+entry=ET.fromstring(new[d['canonical']]);assert entry.find('{*}lastmod').text==d['reviewed']
 # Execute actual generator definitions without invoking its legacy main rebuild.
 source=(ROOT/'generate_site.py').read_text();baseline=subprocess.check_output(['git','show','HEAD:generate_site.py'],cwd=ROOT,text=True)
 with tempfile.TemporaryDirectory(prefix='books-founder-generator-')as name:
@@ -28,4 +30,4 @@ with tempfile.TemporaryDirectory(prefix='books-founder-generator-')as name:
   if i==1:
    ns['generate_chapter_page'](book,book['chapters'][0]);generated=(stage/'books/built-to-run/chapters/1/index.html').read_text();assert fragment in generated;assert '<h1>'+d['title']+'</h1>'in generated;assert 'tested approaches grounded in actual outcomes'not in generated
  assert outputs[0]==outputs[1]
-print(json.dumps({'messages':6,'distinctDecisions':5,'ownerReserved':1,'protectedAuthoredPages':7,'actualGeneratorTarget':'passed','otherGeneratorChapter':'byte-identical','rendererRepeat':'stable','sitemapOwners':len(new),'otherSitemapEntries':'unchanged'}))
+print(json.dumps({'messages':6,'distinctDecisions':5,'ownerReserved':1,'protectedAuthoredPages':7,'actualGeneratorTarget':'passed','otherGeneratorChapter':'byte-identical','rendererRepeat':'stable','sitemapOwners':len(new),'ownSitemapEntry':'reviewed date matches'}))

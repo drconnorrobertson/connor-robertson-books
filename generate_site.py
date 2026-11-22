@@ -1523,7 +1523,8 @@ def generate_book_landing(book):
 
 def generate_chapter_page(book, chapter):
     ch = chapter
-    companion = json.loads((Path(OUTPUT_DIR) / 'content/founder-decision-guide.json').read_text()) if book['slug'] == 'built-to-run' and ch['num'] == 1 else None
+    companion_file = {1: 'founder-decision-guide.json', 6: 'weekly-metrics-guide.json'}.get(ch['num']) if book['slug'] == 'built-to-run' else None
+    companion = json.loads((Path(OUTPUT_DIR) / 'content' / companion_file).read_text()) if companion_file else None
     bc = [("Home", "/"), (book["title"], f"/books/{book['slug']}/"), (companion["title"] if companion else f"Chapter {ch['num']}", f"/books/{book['slug']}/chapters/{ch['num']}/")]
     schemas = [book_schema(book), breadcrumb_schema(bc)]
 
@@ -1551,7 +1552,7 @@ def generate_chapter_page(book, chapter):
 
     # Reviewed companion material is authored separately from the generic
     # chapter summaries; do not turn it into an invented book excerpt.
-    if book['slug'] == 'built-to-run' and ch['num'] in (1, 2):
+    if book['slug'] == 'built-to-run' and ch['num'] in (1, 2, 6):
         content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / f'built-to-run-{ch["num"]}.html').read_text()
 
     # Nav links
