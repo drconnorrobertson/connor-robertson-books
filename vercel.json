@@ -13,6 +13,15 @@
           "value": "DENY"
         }
       ]
+    },
+    {
+      "source": "/chapter-guides/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ],
   "buildCommand": "node scripts/optimize-media.mjs . && node scripts/buyer-intent-release.cjs . && node scripts/contextual-crosslinks.cjs .",
