@@ -1,0 +1,186 @@
+{
+  "reviewed": "2026-11-22",
+  "retired": [
+    {
+      "path": "/books/built-to-run/chapters/3/",
+      "book": "built-to-run",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/built-to-run/chapters/4/",
+      "book": "built-to-run",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/built-to-run/chapters/5/",
+      "book": "built-to-run",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/built-to-run/chapters/7/",
+      "book": "built-to-run",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/1/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/2/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/3/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/4/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/5/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/6/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/7/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/buying-wealth/chapters/8/",
+      "book": "buying-wealth",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/1/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/2/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/3/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/4/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/5/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/6/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/creative-acquisitions/chapters/7/",
+      "book": "creative-acquisitions",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/1/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/2/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/3/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/4/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/5/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    },
+    {
+      "path": "/books/the-7-minute-phone-call/chapters/6/",
+      "book": "the-7-minute-phone-call",
+      "reason": "Genericgeneratorassertsbookcontents,testedoutcomesandreaderfeedbackwithoutrepositorysupport"
+    }
+  ],
+  "readingLinks": {
+    "buying-wealth": [
+      [
+        "Trace business and property cash",
+        "/blog/real-estate-ownership-mistakes/"
+      ],
+      [
+        "Review exit and succession records",
+        "/books/buying-wealth/transition-review/"
+      ]
+    ],
+    "creative-acquisitions": [
+      [
+        "Review proposed offers, assignments and integration records",
+        "/books/creative-acquisitions/decision-review/"
+      ],
+      [
+        "Compare original decision-evidence examples",
+        "/resources/decision-evidence-review/#business-acquisitions"
+      ]
+    ],
+    "the-7-minute-phone-call": [
+      [
+        "Review voicemail, referrals and follow-up records",
+        "/books/the-7-minute-phone-call/follow-up-review/"
+      ]
+    ],
+    "built-to-run": [
+      [
+        "Review a blocked founder-decision queue",
+        "/books/built-to-run/chapters/1/"
+      ],
+      [
+        "Document an executable operating handoff",
+        "/books/built-to-run/chapters/2/"
+      ],
+      [
+        "Reconcile weekly operations metrics",
+        "/books/built-to-run/chapters/6/"
+      ],
+      [
+        "Review automation and exception packets",
+        "/books/built-to-run/operations-review/"
+      ]
+    ]
+  },
+  "authoredChapterRoutes": [
+    "/books/built-to-run/chapters/1/",
+    "/books/built-to-run/chapters/2/",
+    "/books/built-to-run/chapters/6/"
+  ],
+  "documentationCompanion": {
+    "title": "Operating Handoff Documentation: Record an Executable Process",
+    "description": "Use an original website worksheet to document a recurring process, ownership and exceptions. This is not a verified chapter excerpt."
+  },
+  "scope": "Retireunverifiedchapterpreviewswithoutclaimingbookcontentsfalse;preserveauthoredexercisesandbookpurchaseoptions."
+}
