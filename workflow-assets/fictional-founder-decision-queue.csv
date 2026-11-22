@@ -1,0 +1,7 @@
+message_id,distinct_decision_id,next_action,owner_reserved,fictional
+Q01,Q01,Existing authorized rule,false,true
+Q02,Q02,Missing capacity record,false,true
+Q03,Q03,Discount exception review,false,true
+Q04,Q04,Scope review,false,true
+Q05,Q05,Reserved owner decision,true,true
+Q06,Q02,Duplicate message; link to Q02,false,true

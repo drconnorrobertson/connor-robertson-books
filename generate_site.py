@@ -1523,7 +1523,8 @@ def generate_book_landing(book):
 
 def generate_chapter_page(book, chapter):
     ch = chapter
-    bc = [("Home", "/"), (book["title"], f"/books/{book['slug']}/"), (f"Chapter {ch['num']}", f"/books/{book['slug']}/chapters/{ch['num']}/")]
+    companion = json.loads((Path(OUTPUT_DIR) / 'content/founder-decision-guide.json').read_text()) if book['slug'] == 'built-to-run' and ch['num'] == 1 else None
+    bc = [("Home", "/"), (book["title"], f"/books/{book['slug']}/"), (companion["title"] if companion else f"Chapter {ch['num']}", f"/books/{book['slug']}/chapters/{ch['num']}/")]
     schemas = [book_schema(book), breadcrumb_schema(bc)]
 
     # Generate extended chapter content
@@ -1550,8 +1551,8 @@ def generate_chapter_page(book, chapter):
 
     # Reviewed companion material is authored separately from the generic
     # chapter summaries; do not turn it into an invented book excerpt.
-    if book['slug'] == 'built-to-run' and ch['num'] == 2:
-        content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / 'built-to-run-2.html').read_text()
+    if book['slug'] == 'built-to-run' and ch['num'] in (1, 2):
+        content_body = (Path(OUTPUT_DIR) / 'chapter-guides' / f'built-to-run-{ch["num"]}.html').read_text()
 
     # Nav links
     prev_ch = None
@@ -1575,8 +1576,8 @@ def generate_chapter_page(book, chapter):
     nav += '</div>'
 
     page = head(
-        f"Chapter {ch['num']}: {ch['title']} - {book['title']} by Dr. Connor Robertson",
-        f"Chapter {ch['num']} of {book['title']}: {ch['summary'][:155]}",
+        escape(companion["title"]) + " | Robertson Books" if companion else f"Chapter {ch['num']}: {ch['title']} - {book['title']} by Dr. Connor Robertson",
+        escape(companion["description"], quote=True) if companion else f"Chapter {ch['num']} of {book['title']}: {ch['summary'][:155]}",
         f"/books/{book['slug']}/chapters/{ch['num']}/",
         schemas
     )
@@ -1584,7 +1585,7 @@ def generate_chapter_page(book, chapter):
     page += f"""
 <div class="page-hero" style="background: linear-gradient(135deg, {book['color']}, {book['accent']}); padding: 40px 20px;">
     <p style="font-size:0.85rem;text-transform:uppercase;letter-spacing:2px;opacity:0.8;margin-bottom:8px;">{book['title']}</p>
-    <h1>Chapter {ch['num']}: {ch['title']}</h1>
+    <h1>{escape(companion['title']) if companion else 'Chapter ' + str(ch['num']) + ': ' + ch['title']}</h1>
 </div>
 """
     page += breadcrumb_html(bc)
