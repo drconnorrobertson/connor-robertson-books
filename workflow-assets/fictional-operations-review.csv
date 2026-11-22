@@ -1,0 +1,4 @@
+test_id,topic,source_packet,expected_action,exception_control,observed_action,unresolved_issue,fictional
+R01,Routine drafting,Approved service record; complete delivery window,Prepare draft and route to required reviewer; do not send,Missing window: hold and identify the missing field,,,true
+R02,Conflicting records,Customer requests Thursday; capacity record has no Thursday slot,Hold promise; route both records to capacity reviewer,No recorded resolution: retain hold and named next action,,,true
+R03,Reserved commitment,Supplier comparison; owner-reserved commitment rule,Prepare comparison; hold commitment for authorized decision,Owner absent with no documented delegate: do not self-authorize,,,true

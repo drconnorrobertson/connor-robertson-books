@@ -1,0 +1,35 @@
+{
+  "title":"Review Automation Before the Owner Steps Away",
+  "description":"An original operations guide with three fictional handoff tests: routine drafting, conflicting records and reserved supplier decisions. Includes a review worksheet.",
+  "reviewed":"2026-11-22",
+  "canonical":"https://www.drconnorrobertsonbooks.com/books/built-to-run/operations-review/",
+  "sections":[
+    {"id":"automation","heading":"Choose a bounded automation task","paragraphs":[
+      "Begin with a task whose inputs, permitted output and stop conditions can be written down. Preparing a draft from an approved record is a different task from sending that draft or changing the record. Name each action separately. A tool being able to perform an action does not establish that the team has authorized it.",
+      "In fictional packet R01, an approved service record contains the customer name, job identifier and agreed delivery window. The assigned coordinator may prepare a confirmation draft using those fields. The local rule requires a reviewer to check the draft before it is sent. The successful test produces a draft, retains its source reference and routes it to that reviewer. It does not send the message or infer a missing delivery window.",
+      "Run a second version with the window missing. The expected result is a held draft that identifies the missing field, not a plausible invented date. This exception test matters even if the ordinary case looks correct. A report that counts every generated draft as completed communication would hide the difference between preparation and release.",
+      "Keep the first test reversible and use fictional or appropriately protected records. Observe the actual output and retained evidence before considering a wider workflow. This exercise does not establish that a particular software product is suitable, that automation saves a measured amount of time or that a business can operate without supervision."
+    ]},
+    {"id":"review","heading":"Review exceptions with a usable packet","paragraphs":[
+      "A useful check-in starts with the decision needed, the current source records, the assigned role and the reason work stopped. Frequency alone cannot establish whether a review is adequate. Choose a cadence that fits the work and keep an explicit route for exceptions that cannot wait until the next meeting. There is no measured basis here for claiming that one weekly meeting replaces every daily update.",
+      "Fictional packet R02 asks for a new delivery promise. The customer request names Thursday, while the approved capacity record shows no Thursday slot. The coordinator's role permits choosing an available slot from that record; it does not permit overriding capacity. The next step is to present the conflict to the designated capacity reviewer. The packet should include both references and the exact promise being requested.",
+      "The reviewer may resolve the discrepancy, approve an alternative under the company's rules or request more information. Until that decision is recorded, the draft remains on hold. Forwarding the request does not prove that a reviewer accepted it, that a delivery was promised or that the conflict was resolved. Retain a named next action so the request does not disappear between queues.",
+      "Use the review to improve the instruction only after understanding the exception. A missing record needs a record owner; an ambiguous rule needs clarification; a requested change outside the assigned authority needs its authorized reviewer. These conditions can coexist, so do not force every blocked request into a single explanation merely to simplify a dashboard."
+    ]},
+    {"id":"absence","heading":"Test owner absence without silently widening authority","paragraphs":[
+      "Define the proposed absence window and identify the decisions that may arise during it. Record which role may act, which role provides backup, where the current evidence is kept and what happens if the required reviewer cannot be reached. A procedure is incomplete when its only exception instruction is ask the owner, but eliminating every owner decision is not automatically the right design.",
+      "Fictional packet R03 proposes replacing a recurring supplier. The comparison is available, but the local rule reserves a new continuing commitment to the owner. The operations lead can prepare the comparison and record unanswered questions. That role cannot approve the replacement merely because the owner is away. If no authorized delegate is documented, hold the commitment and follow the existing escalation route.",
+      "Test R01, R02 and R03 during a supervised exercise before relying on the process during a real absence. R01 should reach its required draft-review stage; R02 should stop on the capacity conflict; R03 should retain the reserved commitment decision. A result in which all three proceed automatically would fail the stated rules even if every item leaves the queue quickly.",
+      "After the exercise, compare the expected and observed actions, note missing access or unclear instructions and assign a responsible role for each correction. Repeat the affected case after a correction. These three fictional packets do not certify business continuity, replace incident planning or establish a staffing model for a real company. They show how to make a limited handoff test reviewable."
+    ]},
+    {"id":"record","heading":"Retain the result and the next revision","paragraphs":[
+      "Record the test identifier, source references, expected action, observed action and unresolved issue. Keep an empty observed-action field empty until a test has actually been run. The downloadable worksheet deliberately leaves observed results blank; its expected actions are instructions for this exercise, not evidence that a customer or employee achieved them.",
+      "Link duplicate requests to the same work identifier and distinguish an accepted handoff from a sent message. For recurring work, keep the procedure owner and review date alongside the instruction so another person knows where to report a conflict. Revisit a rule when the work, evidence or authority changes rather than updating a date to imply that a review occurred."
+    ]}
+  ],
+  "cases":[
+    {"id":"R01","topic":"Routine drafting","source":"Approved service record; complete delivery window","expected":"Prepare draft and route to required reviewer; do not send","exception":"Missing window: hold and identify the missing field"},
+    {"id":"R02","topic":"Conflicting records","source":"Customer requests Thursday; capacity record has no Thursday slot","expected":"Hold promise; route both records to capacity reviewer","exception":"No recorded resolution: retain hold and named next action"},
+    {"id":"R03","topic":"Reserved commitment","source":"Supplier comparison; owner-reserved commitment rule","expected":"Prepare comparison; hold commitment for authorized decision","exception":"Owner absent with no documented delegate: do not self-authorize"}
+  ]
+}

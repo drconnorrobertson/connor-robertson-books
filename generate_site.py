@@ -1508,7 +1508,7 @@ def generate_book_landing(book):
         <h2>Chapter by Chapter</h2>
         <div class="chapter-list">{chapters_html}</div>
 
-        <h2 style="margin-top:40px;">More from This Book</h2>
+{'<section id="operations-companion"><h2>Original website operations exercise</h2><p><a href="/books/built-to-run/operations-review/">Review automation, exception packets and owner-absence decisions</a> using three fictional handoff tests. This is a website companion, not verified chapter content.</p></section>' if book['slug'] == 'built-to-run' else ''}        <h2 style="margin-top:40px;">More from This Book</h2>
         <div style="display:flex;gap:15px;flex-wrap:wrap;margin-top:15px;">
             <a href="/books/{book['slug']}/key-lessons/" class="buy-btn" style="border-color:var(--border);color:var(--text);">Key Lessons</a>
             <a href="/books/{book['slug']}/who-should-read/" class="buy-btn" style="border-color:var(--border);color:var(--text);">Who Should Read This</a>
