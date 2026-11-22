@@ -54,22 +54,6 @@ def render():
   html=re.sub(r'<a\b[^>]*>[\s\S]*?</a>',anchor,html)
   html=html.replace('Browse all 100 guides','Browse the learning library')
   if html!=p.read_text():p.write_text(html)
- # Existing additional pages have distinct topic bodies; expose them as reading
- # companions without presenting their content as verified manuscript excerpts.
- for book,numbers in [('buying-wealth',[9,10])]:
-  overview=ROOT/'books'/book/'index.html';html=overview.read_text();start='<!-- ownership-review:companion-nav:start -->';end='<!-- ownership-review:companion-nav:end -->'
-  html=re.sub(re.escape(start)+r'[\s\S]*?'+re.escape(end),'',html)
-  items=[]
-  for number in numbers:
-   route='/books/'+book+'/chapters/'+str(number)+'/'
-   page=(ROOT/route.lstrip('/')/'index.html').read_text()
-   headings=re.findall(r'<h2[^>]*>([\s\S]*?)</h2>',page)
-   label=re.sub('<[^>]+>','',headings[0]) if headings else 'Companion '+str(number)
-   label=re.sub(r'^Chapter \d+:\s*','',label)
-   items.append('<li><a href="'+route+'">'+label+'</a></li>')
-  section=start+'<section class="section"><div class="container"><h2>Additional reading companions</h2><p>Explore these existing website discussions alongside the book overview. They are companion pages, not verified manuscript excerpts.</p><ul>'+''.join(items)+'</ul></div></section>'+end
-  assert '<footer'in html
-  html=html.replace('<footer',section+'<footer',1);overview.write_text(html)
  cfg=json.loads((ROOT/'vercel.json').read_text());rules=cfg.setdefault('redirects',[])
  for slug in RETIRED:
   for slash in['','/']:

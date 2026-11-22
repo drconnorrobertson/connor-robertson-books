@@ -868,11 +868,6 @@
       "permanent": true
     },
     {
-      "source": "/books/buying-wealth/chapters/10",
-      "destination": "/books/buying-wealth/chapters/10/",
-      "permanent": true
-    },
-    {
       "source": "/books/buying-wealth/chapters/2",
       "destination": "/books/buying-wealth/chapters/2/",
       "permanent": true
@@ -905,11 +900,6 @@
     {
       "source": "/books/buying-wealth/chapters/8",
       "destination": "/books/buying-wealth/chapters/8/",
-      "permanent": true
-    },
-    {
-      "source": "/books/buying-wealth/chapters/9",
-      "destination": "/books/buying-wealth/chapters/9/",
       "permanent": true
     },
     {
@@ -2390,6 +2380,31 @@
     {
       "source": "/books/creative-acquisitions/decision-review",
       "destination": "/books/creative-acquisitions/decision-review/",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/9/",
+      "destination": "/books/buying-wealth/transition-review/#sale",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/9",
+      "destination": "/books/buying-wealth/transition-review/#sale",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/10/",
+      "destination": "/books/buying-wealth/transition-review/#authority",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/chapters/10",
+      "destination": "/books/buying-wealth/transition-review/#authority",
+      "permanent": true
+    },
+    {
+      "source": "/books/buying-wealth/transition-review",
+      "destination": "/books/buying-wealth/transition-review/",
       "permanent": true
     }
   ]
