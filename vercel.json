@@ -58,6 +58,96 @@
       "source": "/blog/buying-wealth-blog/",
       "destination": "/books/buying-wealth/",
       "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-field-guide",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-field-guide/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-scorecard",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-scorecard/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-questions",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-questions/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-checklist",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-checklist/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-examples",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-examples/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-red-flags",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-red-flags/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-implementation",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-implementation/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-faq",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-faq/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-advanced",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/real-estate-ownership-advanced/",
+      "destination": "/blog/real-estate-ownership-mistakes/",
+      "permanent": true
     }
   ]
 }

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.drconnorrobertsonbooks.com/</loc><lastmod>2026-10-12</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/about/</loc><lastmod>2026-10-12</lastmod><changefreq>weekly</changefreq></url>
@@ -77,16 +77,7 @@
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/operating-systems-scorecard/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/protecting-what-you-build/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-acquisition-qa/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-advanced/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-checklist/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-examples/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-faq/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-field-guide/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-implementation/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-mistakes/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-questions/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-red-flags/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-scorecard/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.drconnorrobertsonbooks.com/blog/real-estate-ownership-mistakes/</loc><changefreq>weekly</changefreq><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/risk-management-advanced/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/risk-management-checklist/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://www.drconnorrobertsonbooks.com/blog/risk-management-examples/</loc><changefreq>weekly</changefreq></url>

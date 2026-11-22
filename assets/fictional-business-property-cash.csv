@@ -1,0 +1,4 @@
+fictional_case,business_before_rent_usd,rent_transfer_usd,other_property_costs_usd,principal_and_interest_usd,business_remainder_usd,property_remainder_usd,combined_remainder_usd
+Base illustration,14000,6000,1800,3200,8000,1000,9000
+Lower operating cash,10000,6000,1800,3200,4000,1000,5000
+"Lower cash, smaller transfer",10000,4000,1800,3200,6000,-1000,5000
