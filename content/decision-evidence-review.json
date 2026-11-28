@@ -83,8 +83,9 @@
       "id": "risk-management",
       "packet": "R01",
       "topic": "Risk management",
-      "heading": "R01: A backup checklist does not prove a restoration test",
+      "heading": "R01: Risk management due diligence checklist for backup recovery",
       "paragraphs": [
+        "For a recovery-focused due diligence checklist, record the system and data in scope, the business function that depends on it, the date of the last test, the evidence showing what was recovered, any unresolved exceptions, and the person who reviewed the result. For each missing item, identify who will provide the evidence and when the buyer will review it.",
         "The fictional checklist contains a row labeled restore complete, but the test date, result and reviewer fields are blank. The packet has no restoration log or retained output from a test. The label describes a step to be checked; it does not supply the missing test result.",
         "A useful finding states that restoration evidence is absent from the packet. It does not conclude that a backup failed, that a real system is insecure or that someone skipped a test. Those would be additional claims. The open question concerns what evidence supports recovery of the intended data and functions.",
         "The next request would identify the intended scope, a suitable test record and the person responsible for reviewing it. This exercise does not instruct anyone to restore or overwrite a production system. Keep confidential operational logs and credentials outside the teaching CSV; a non-sensitive reference is enough for your reading notes."
